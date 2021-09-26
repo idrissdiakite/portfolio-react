@@ -1,0 +1,18 @@
+@import "./../../styles/settings";
+
+.description {
+  position: fixed;
+  z-index: 11;
+  top: 100px;
+  right: 10vw;
+  max-width: 120px;
+
+  color: $color-3;
+  text-transform: uppercase;
+
+  font: {
+    weight: 300;
+    size: 15px;
+  }
+  text-align: right;
+}
