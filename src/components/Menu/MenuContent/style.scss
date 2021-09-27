@@ -1,0 +1,82 @@
+@import "./../../../styles/settings";
+
+.menu-holder {
+  .menu-inside {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: $color-4;
+
+    will-change: transform;
+    transition: transform 1s cubic-bezier(1, 0, 0, 1);
+    color: $color-1;
+    z-index: 10;
+    transform: translateX(-100%);
+
+    &.open {
+      transform: translateX(0);
+
+      .nav-links {
+        li {
+          a {
+            transform: translate(0);
+            transition-duration: 0.8s;
+            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          }
+        }
+      }
+    }
+
+    .menu-nav-container {
+      position: relative;
+      left: 220px;
+      top: 250px;
+      overflow: hidden;
+      width: calc(90vw - 260px);
+    }
+
+    .nav-links li a, .nav-icons li a{
+      color: $color-1;
+      cursor: pointer;
+      transform: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    .nav-links {
+      li {
+        margin-bottom: 20px;
+
+        a {
+          font-size: 5rem;
+        }
+
+        a:hover {
+          font-weight: 800;
+          color: $color-2;
+        }
+      }
+    }
+
+    .nav-icons {
+      margin-top: 40px;
+      margin-left: 5px;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        margin-right: 30px;
+
+        a {
+          font-size: 4rem;
+          transform: translate(-100%);
+        }
+        a:hover {
+          color: $color-2;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

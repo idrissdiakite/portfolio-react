@@ -1,0 +1,66 @@
+@import "./../../../styles/settings";
+
+.menu-button-wrap {
+  position: fixed;
+  left: 11px;
+  top: 92px;
+  z-index: 11;
+
+  transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  .menu-button {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: 0 0;
+    transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    span { // équivaut au bouton (2 barres parallèles)
+      &:after,
+      &:before {
+        content: "";
+
+        width: 2px;
+        height: 48px;
+        position: absolute;
+        background-color: $color-4;
+        left: 50%;
+        top: 50%;
+        display: block;
+
+        will-change: transform;
+        transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      &:before {
+        transform: translate(-5px, -50%) scaleY(0.7) rotate(180deg);
+      }
+      &:after {
+        transform: translate(5px, -50%) scaleY(0.7) rotate(0);
+      }
+    }
+  }
+  // lorsqu'on clique sur le bouton/les 2 barres parallèles (= on ouvre le menu)
+  &.open {
+    transform: translateX(80px); // on décalle le bouton de 80px sur la droite
+    transition-delay: 0.4s;
+
+    span {
+      &:before {
+        background-color: $color-1; // lorsque le menu est ouvert on modifie la couleur des span
+        transform: translate(-50%, -50%) rotate(315deg); // on transforme les 2 barres parellèles en croix
+      }
+      &:after {
+        background-color: $color-1;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) { 
+    .menu-button-wrap { // on affiche le bouton du menu (en haut à gauche) uniquement à partir de 768px
+        display: none;
+    }
+  }

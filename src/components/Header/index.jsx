@@ -1,4 +1,5 @@
 import React from "react";
+import Menu from "../Menu";
 
 import "./style.scss";
 
@@ -7,6 +8,7 @@ const Header = () => {
     <>
       <div className="header-wrap">
         <p className="description"> Développeur front-end</p>
+        <Menu />
       </div>
     </>
   );
