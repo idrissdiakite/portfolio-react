@@ -31,7 +31,7 @@
     .menu-nav-container {
       position: relative;
       left: 220px;
-      top: 250px;
+      top: 120px;
       overflow: hidden;
       width: calc(90vw - 260px);
     }
@@ -47,7 +47,7 @@
         margin-bottom: 20px;
 
         a {
-          font-size: 5rem;
+          font-size: 4rem;
         }
 
         a:hover {
@@ -58,15 +58,15 @@
     }
 
     .nav-icons {
-      margin-top: 90px;
+      margin-top: 80px;
       display: flex;
       flex-wrap: wrap;
 
       li {
-        margin-right: 30px;
+        margin-right: 10px;
 
         a {
-          font-size: 4rem;
+          font-size: 3rem;
           transform: translate(-100%);
         }
         a:hover {

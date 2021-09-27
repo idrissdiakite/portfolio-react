@@ -9,26 +9,31 @@ const internalLinks = [
   {
     id: 1,
     url: "/",
-    name: <span>Qui je suis</span>,
+    name: <span>Accueil</span>,
   },
   {
     id: 2,
-    url: "/",
-    name: <span>Dipômes</span>,
+    url: "/presentation",
+    name: <span>Qui je suis</span>,
   },
   {
     id: 3,
-    url: "/",
-    name: <span>Expériences</span>,
+    url: "/diplomes",
+    name: <span>Dipômes</span>,
   },
   {
     id: 4,
-    url: "/",
-    name: <span>Projets</span>,
+    url: "/experiences",
+    name: <span>Expériences</span>,
   },
   {
     id: 5,
-    url: "/",
+    url: "/projets",
+    name: <span>Projets</span>,
+  },
+  {
+    id: 6,
+    url: "/contact",
     name: <span>Contact</span>,
   },
 ];
@@ -51,12 +56,12 @@ const MenuContent = () => {
 
             <ul className="nav-icons">
               <li>
-                <a href="/">
+                <a href="https://www.linkedin.com/in/idiakite" target="_blank" rel="noreferrer">
                   <AiFillLinkedin />
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a href="https://github.com/idrissdiakite" target="_blank" rel="noreferrer">
                   <AiOutlineGithub />
                 </a>
               </li>

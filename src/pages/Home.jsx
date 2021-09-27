@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <MenuManager>
       <Header />
-      <div className="main-container">
+      <div className="home container">
         <h1>
           Idriss <br />
           Diakite

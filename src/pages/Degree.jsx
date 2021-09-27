@@ -1,10 +1,17 @@
-import React from 'react';
+import React from "react";
+import MenuManager from "../components/Menu/MenuManager";
+import Header from "../components/Menu";
+import HomeButton from "../components/HomeButton";
 
 const Degree = () => {
     return (
-        <>
-            <h1>Diplômes</h1>
-        </>
+        <MenuManager>
+        <Header />
+        <div className="degrees page container">
+          <h1>Diplômes</h1>
+          <HomeButton />
+        </div>
+      </MenuManager>
     );
 };
 
