@@ -1,7 +1,6 @@
 @import "./../../styles/settings";
 
-.contact-button {
-
+.menu-button {
     position: absolute;
     right: 7.6vw;
     bottom: 10vh;
@@ -22,7 +21,6 @@
     }
 
     &.open {
-        // border: 1px solid $color-1;
         transform: rotate(270deg);
         transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     }

@@ -5,15 +5,16 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: $color-4;
+    z-index: 10;
 
     will-change: transform;
+    transform: translateX(-100%); // par défaut on cache le menu
     transition: transform 1s cubic-bezier(1, 0, 0, 1);
-    color: $color-1;
-    z-index: 10;
-    transform: translateX(-100%);
 
-    &.open {
+    background: $color-4;
+    color: $color-1;
+
+    &.open { // lorsqu'on clique sur le bouton on affiche le menu
       transform: translateX(0);
 
       .nav-links {

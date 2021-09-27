@@ -11,7 +11,7 @@ const HomeButton = () => {
 
     return (
         <>
-            <button className={cn("contact-button", {open})} onClick={() => setOpen(!open)}>
+            <button className={cn("menu-button", {open})} onClick={() => setOpen(!open)}>
             <span><BiPlus fontSize="2em" /></span>
             </button>
         </>
