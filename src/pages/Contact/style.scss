@@ -1,5 +1,51 @@
 @import "./../../styles/settings";
 
 .contact {
-    background-color: $bg-4;
+  background-color: $bg-2;
+
+  .main-container {
+    width: 85%;
+
+    p,
+    a,
+    span {
+      font-size: 2rem;
+      font-weight: 200;
+      cursor: pointer;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+
+    .contact-container {
+      margin-top: 100px;
+      ul li {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .icon {
+          font-size: 40px;
+          margin-right: 20px;
+        }
+        a {
+          color: $color-4;
+        }
+      }
+
+      ul li:hover {
+        p,
+        a,
+        span {
+          font-weight: 600;
+          color: $color-3;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+        .main-container {
+            width: 65%;
+        }
 }

@@ -38,13 +38,13 @@ a {
 // global style
 body {
   font-family: $font-1;
+  font-weight: 200;
   background-color: $color-1;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: $font-2;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -69,13 +69,14 @@ section {
     border-left: 1px solid rgb(116, 116, 116);
 
     h1 {
-      font-size: 6rem;
-      padding-top: 22px;
+      font-size: 4rem;
+      padding-top: 38px;
       margin-left: -8px;
       margin-bottom: 50px;
     }
 
-    .container {
+    .main-container {
+      margin-left: -3px;
       margin-right: 60px;
     }
   }
