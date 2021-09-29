@@ -5,7 +5,7 @@ import { BiPlus } from "react-icons/bi";
 
 import "./style.scss";
 
-const HomeButton = () => {
+const Button = () => {
 
     const {open, setOpen} = useContext(MenuContext);
 
@@ -18,4 +18,4 @@ const HomeButton = () => {
     );
 };
 
-export default HomeButton;
+export default Button;

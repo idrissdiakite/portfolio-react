@@ -1,7 +1,7 @@
 import React from "react";
 import MenuManager from "../components/Menu/MenuManager";
 import Header from "../components/Menu";
-import HomeButton from "../components/HomeButton";
+import HomeButton from "../components/Button";
 
 const Info = () => {
   return (
