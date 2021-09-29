@@ -1,0 +1,41 @@
+.homepage {
+    display: flex;
+    align-items: flex-end;
+  
+    h1 {
+      font-size: 5rem;
+      line-height: 5rem;
+      margin-bottom: 40vh;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .homepage {
+      h1 {
+        font-size: 10rem;
+        line-height: 10rem;
+        margin-bottom: 30vh;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1444px) {
+    .homepage {
+      h1 {
+        font-size: 15rem;
+        line-height: 15rem;
+        margin-bottom: 20vh;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1680px) {
+    .homepage {
+      h1 {
+        font-size: 20rem;
+        line-height: 20rem;
+        margin-bottom: 15vh;
+      }
+    }
+  }
+  

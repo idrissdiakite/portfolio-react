@@ -12,7 +12,7 @@ const Button = () => {
     return (
         <>
             <button className={cn("button", {open})} onClick={() => setOpen(!open)}>
-            <span><BiPlus fontSize="2em" /></span>
+            MENU
             </button>
         </>
     );

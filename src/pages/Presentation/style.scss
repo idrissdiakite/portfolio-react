@@ -1,0 +1,12 @@
+@import "./../../styles/settings";
+
+.presentation {
+    background-color: $bg-1;
+
+    .container {
+        p {
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+    }
+    }
