@@ -1,3 +1,21 @@
 .info {
+  max-width: 90%;
+  p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: left;
+    margin-bottom: 3.5rem;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .info {
+    max-width: 90%;
+    p {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      text-align: left;
+      margin-bottom: 3.5rem;
+    }
+  }
 }

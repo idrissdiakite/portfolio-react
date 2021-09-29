@@ -9,6 +9,12 @@ $color-2: #ffff00;
 $color-3: #222;
 $color-4: #000;
 
+$bg-1: #FEF1E6;
+$bg-2: #F3F0D7;
+$bg-3: #CEE5D0;
+$bg-4: #FCFFA6;
+
+
 *,
 ::after,
 ::before {
@@ -48,10 +54,9 @@ body {
 
 .page {
   h1 {
-    font-size: 6rem;
-
+    font-size: 3rem;
     padding-top: 22px;
-    margin-left: -8px;
+    margin-left: -5px;
     margin-bottom: 50px;
   }
 }
@@ -60,8 +65,16 @@ body {
   .container {
     margin-left: 75px;
     padding-left: 35px;
-
-    width: calc(100vw - 126px);
     border-left: 1px solid rgb(116, 116, 116);
+  }
+
+  .page {
+    h1 {
+      font-size: 6rem;
+  
+      padding-top: 22px;
+      margin-left: -8px;
+      margin-bottom: 50px;
+    }
   }
 }

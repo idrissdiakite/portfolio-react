@@ -9,7 +9,6 @@ const Experience = () => {
         <Header />
         <div className="experiences page container">
           <h1>Expériences</h1>
-          <p>coucou les petits loups</p>
           <HomeButton />
         </div>
       </MenuManager>

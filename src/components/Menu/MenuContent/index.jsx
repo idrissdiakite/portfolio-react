@@ -18,21 +18,16 @@ const internalLinks = [
   },
   {
     id: 3,
-    url: "/diplomes",
-    name: <span>Dipômes</span>,
-  },
-  {
-    id: 4,
     url: "/experiences",
     name: <span>Expériences</span>,
   },
   {
-    id: 5,
+    id: 4,
     url: "/projets",
     name: <span>Projets</span>,
   },
   {
-    id: 6,
+    id: 5,
     url: "/contact",
     name: <span>Contact</span>,
   },

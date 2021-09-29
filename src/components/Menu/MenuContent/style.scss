@@ -30,10 +30,10 @@
 
     .menu-nav-container {
       position: relative;
-      left: 220px;
-      top: 120px;
+      left: 130px;
+      top: 95px;
       overflow: hidden;
-      width: calc(90vw - 260px);
+      width: 100vw;
     }
 
     .nav-links li a, .nav-icons li a{
@@ -44,10 +44,10 @@
 
     .nav-links {
       li {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
         a {
-          font-size: 4rem;
+          font-size: 3rem;
         }
 
         a:hover {
@@ -58,7 +58,7 @@
     }
 
     .nav-icons {
-      margin-top: 80px;
+      margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
 
@@ -66,7 +66,7 @@
         margin-right: 10px;
 
         a {
-          font-size: 3rem;
+          font-size: 2.5rem;
           transform: translate(-100%);
         }
         a:hover {
@@ -75,6 +75,79 @@
 
         &:last-of-type {
           margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-holder {
+    .menu-inside {
+      .menu-nav-container {
+        left: 220px;
+        top: 110px;
+        width: calc(90vw - 260px);
+      }
+      .nav-links {
+        li {
+          margin-bottom: 10px;
+          a {
+            font-size: 4rem;
+          }
+        }
+      }
+      .nav-icons {
+        margin-top: 40px;
+        li {
+          margin-right: 10px;
+          a {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1444px) {
+  .menu-holder {
+    .menu-inside {
+      .menu-nav-container {
+        top: 120px;
+      }
+      .nav-links {
+        li a {
+            font-size: 4.5rem;
+        }
+      }
+      .nav-icons {
+        li {
+          margin-right: 20px;
+          a {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .menu-holder {
+    .menu-inside {
+      .menu-nav-container {
+        top: 150px;
+      }
+      .nav-links {
+        li a {
+            font-size: 5.5rem;
+          }
+        }
+      .nav-icons {
+        li a {
+            font-size: 4.5rem;
         }
       }
     }

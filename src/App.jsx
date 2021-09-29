@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
-import Degree from "./pages/Degree";
 import Experience from "./pages/Experience";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
@@ -14,7 +13,6 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/presentation" exact component={Info} />
-        <Route path="/diplomes" exact component={Degree} />
         <Route path="/experiences" exact component={Experience} />
         <Route path="/projets" exact component={Project} />
         <Route path="/contact" exact component={Contact} />

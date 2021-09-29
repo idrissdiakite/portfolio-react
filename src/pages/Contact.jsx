@@ -7,8 +7,9 @@ const Contact = () => {
     return (
         <MenuManager>
         <Header />
-        <div className="info page container">
+        <div className="contact page container">
           <h1>Contact</h1>
+          <p>Je suis actuellement à la recherche d'un poste de développeur web (front-end de préférence) sur Lyon.</p>
           <HomeButton />
         </div>
       </MenuManager>

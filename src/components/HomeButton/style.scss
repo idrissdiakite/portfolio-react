@@ -2,15 +2,15 @@
 
 .button {
     position: absolute;
-    right: 7.6vw;
-    bottom: 10vh;
+    right: 0vw;
+    top: 5vh;
     z-index: 15;
 
     color: $color-1;
     background: $color-4;
-    padding: 10px;
-    height: 50px;
-    width: 50px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
 
     border: 1px solid $color-4;
     cursor: pointer;
@@ -26,9 +26,9 @@
     }
 }
 
-// @media screen and (max-width: 768px) { 
-//     .menu-button-wrap { // on affiche le bouton du menu (en haut à gauche) uniquement à partir de 768px
-//         display: none;
-//     }
-//   }
+@media screen and (min-width: 768px) { 
+    .button { // on affiche le bouton en bas uniquement à partir de 768px
+        display: none;
+    }
+  }
 
