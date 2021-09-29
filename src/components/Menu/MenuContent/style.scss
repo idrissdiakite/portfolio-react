@@ -30,7 +30,7 @@
 
     .menu-nav-container {
       position: relative;
-      left: 130px;
+      left: 100px;
       top: 120px;
       overflow: hidden;
       width: 100vw;
@@ -85,15 +85,15 @@
   .menu-holder {
     .menu-inside {
       .menu-nav-container {
-        left: 220px;
-        top: 110px;
+        left: 180px;
+        top: 180px;
         width: calc(90vw - 260px);
       }
       .nav-links {
         li {
           margin-bottom: 10px;
           a {
-            font-size: 4rem;
+            font-size: 4.25rem;
           }
         }
       }
@@ -115,7 +115,7 @@
   .menu-holder {
     .menu-inside {
       .menu-nav-container {
-        top: 120px;
+        top: 180px;
       }
       .nav-links {
         li a {

@@ -5,6 +5,7 @@ import MenuManager from "../../components/Menu/MenuManager";
 import { AiOutlineMail, AiOutlinePhone, AiOutlineHome, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 import "./style.scss";
+import Button from "../../components/Button";
 
 const Contact = () => {
   return (
@@ -35,7 +36,7 @@ const Contact = () => {
 
               <li>
                 <AiOutlineHome className="icon"/>
-                <span>Rue du Griffon - 69001 Lyon</span>
+                <span>Lyon (69001)</span>
               </li>
 
               <li>
@@ -51,6 +52,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <Button />
     </MenuManager>
   );
 };

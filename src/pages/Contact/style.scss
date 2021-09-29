@@ -4,27 +4,29 @@
   background-color: $bg-2;
 
   .main-container {
-    width: 85%;
+    width: 99%;
 
     p,
     a,
     span {
-      font-size: 2rem;
+      font-size: 1.25rem;
       font-weight: 200;
-      cursor: pointer;
     }
     p {
       margin-bottom: 20px;
     }
+    span {
+      cursor: pointer;
+    }
 
     .contact-container {
-      margin-top: 100px;
+      margin-top: 50px;
       ul li {
         display: flex;
         align-items: center;
         margin-top: 20px;
         .icon {
-          font-size: 40px;
+          font-size: 30px;
           margin-right: 20px;
         }
         a {
@@ -45,7 +47,23 @@
 }
 
 @media screen and (min-width: 768px) {
-        .main-container {
-            width: 65%;
-        }
+  .main-container {
+    width: 65%;
+
+    p,
+    a,
+    span {
+      font-size: 2rem;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .contact-container {
+      margin-top: 100px;
+      .icon {
+        font-size: 40px;
+        margin-right: 20px;
+      }
+    }
+  }
 }
