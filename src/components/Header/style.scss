@@ -1,18 +1,20 @@
 @import "./../../styles/settings";
 
-.description {
-  position: fixed;
-  z-index: 9;
-  top: 58px;
-  right: 10vw;
-  max-width: 120px;
-
-  color: $color-3;
-  text-align: right;
-  text-transform: uppercase;
-
-  font: {
-    weight: 300;
-    size: 15px;
+.header-wrap {
+  .description {
+    position: fixed;
+    z-index: 9;
+    top: 58px;
+    right: 10vw;
+    max-width: 120px;
+  
+    color: $color-3;
+    text-align: right;
+    text-transform: uppercase;
+  
+    font: {
+      weight: 300;
+      size: 15px;
+    }
   }
 }

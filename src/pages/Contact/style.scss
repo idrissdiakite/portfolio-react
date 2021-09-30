@@ -47,22 +47,24 @@
 }
 
 @media screen and (min-width: 768px) {
-  .main-container {
-    width: 65%;
-
-    p,
-    a,
-    span {
-      font-size: 2rem;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-    .contact-container {
-      margin-top: 100px;
-      .icon {
-        font-size: 40px;
-        margin-right: 20px;
+  .contact {
+    .main-container {
+      width: 75%;
+  
+      p,
+      a,
+      span {
+        font-size: 2rem;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      .contact-container {
+        margin-top: 100px;
+        .icon {
+          font-size: 40px;
+          margin-right: 20px;
+        }
       }
     }
   }
