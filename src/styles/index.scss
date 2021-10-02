@@ -1,6 +1,68 @@
 @import "./settings";
 
-@import "./../components/Header/style";
-@import "./../components/Button/style";
-@import "./../components/Menu/MenuButton/style";
-@import "./../components/Menu/MenuContent/style"
+//reset
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+// global style
+body {
+    font-family: $font-1;
+    font-weight: 200;
+    background-color: $color-1;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: $font-2;
+    text-transform: uppercase;
+  }
+  
+  section {
+    position: relative;
+    padding: 0 1.5rem 1.5rem;
+    // width: calc(100vw - 50px);
+    min-height: 100vh;
+    margin: 0 auto;
+    font-size: 1.25rem;
+  
+    h1 {
+      font-size: 3rem;
+      padding-top: 22px;
+      margin-left: -5px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    section {
+      margin-left: 75px;
+      padding-left: 35px;
+      border-left: 1px solid rgb(116, 116, 116);
+  
+      h1 {
+        font-size: 4rem;
+        padding-top: 38px;
+        margin-left: -8px;
+        margin-bottom: 40px;
+      }
+  
+      .main-container {
+        margin-left: -3px;
+        margin-right: 60px;
+      }
+    }
+  }
