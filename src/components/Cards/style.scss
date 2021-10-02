@@ -1,2 +1,119 @@
 @import "./../../styles/settings";
 
+.project {
+  margin-bottom: 2.5rem;
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $color-4;
+    }
+
+    .icons {
+      display: flex;
+    }
+    li {
+      margin-left: 10px;
+      margin-bottom: -7px;
+    }
+  }
+
+  .img {
+    width: 100%;
+    transition: $transition;
+    -webkit-filter: brightness(90%);
+  }
+
+  .img:hover {
+    box-shadow: $light-shadow;
+    -webkit-filter: brightness(50%);
+  }
+
+  .description,
+  .links {
+    margin-top: 5px;
+  }
+
+  .links a {
+    color: $color-4;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .links a:hover {
+    font-weight: 600;
+  }
+}
+
+.project:last-child {
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: 1680px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem 2rem;
+  }
+
+  .project {
+    .img {
+      height: 600px;
+      object-fit: cover;
+    }
+  }
+}
+
+// color icons
+
+.html:hover {
+  color: #e34c26;
+}
+.css:hover {
+  color: #264de4;
+}
+.react:hover {
+  color: #61dbfb;
+}
+.angular:hover {
+  color: #dd1b16;
+}
+.php:hover {
+  color: #8993be;
+}
+.docker:hover {
+  color: #0db7ed;
+}
+.wordpress:hover {
+  color: #444140;
+}
+.gatsby:hover {
+  color: #663399;
+}
+.graphql:hover {
+  color: #e535ab;
+}
+.sass:hover {
+  color: #cd6799;
+}
+.tailwind:hover {
+  color: #2596be;
+}
+.postcss:hover {
+  color: #dd3a0a;
+}
+.bootstrap:hover {
+  color: #563b7c;
+}
+.airtable:hover {
+  color: #fcb400;
+}
+.filezila:hover {
+  color: #bf0000;
+}

@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <MenuManager>
       <Menu />
-      <section className="projects">
+      <section className="my-projects">
         <h1>Projets</h1>
         <div className="main-container">
         <Cards />

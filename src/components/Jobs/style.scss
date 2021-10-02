@@ -60,3 +60,26 @@
   }
 }
 }
+
+@media screen and (min-width: 1440px) {
+
+  .job {
+
+    .title {
+      font-size: 3rem;
+    }
+    
+    .subtitle {
+      font-size: 1.5rem;
+    }
+
+    .show-description {
+      span {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}

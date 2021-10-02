@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./style.scss";
 
-const jobsData = [
+const jobs = [
   {
     id: 1,
     title: "Développeur frontend - Ultrō",
@@ -98,7 +98,7 @@ const Jobs = () => {
   return (
     <>
       <div className="jobs">
-        {jobsData.map((job) => (
+        {jobs.map((job) => (
           <div className="job" key={job.id}>
             <div
               onClick={() => toggleClass(job.id)}
