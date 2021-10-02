@@ -50,10 +50,11 @@ h1, h2, h3, h4, h5 {
 
 section {
   position: relative;
-  padding: 0 1.5rem 0.75rem;
+  padding: 0 1.5rem 1.5rem;
   // width: calc(100vw - 50px);
   min-height: 100vh;
   margin: 0 auto;
+  font-size: 1.25rem;
 
   h1 {
     font-size: 3rem;
@@ -73,7 +74,6 @@ section {
       font-size: 4rem;
       padding-top: 38px;
       margin-left: -8px;
-      margin-bottom: 50px;
     }
 
     .main-container {

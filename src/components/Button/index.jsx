@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import {MenuContext} from "../Menu/MenuManager";
 import cn from "classnames";
-import { BiPlus } from "react-icons/bi";
 
 import "./style.scss";
 
