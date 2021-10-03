@@ -5,7 +5,7 @@
 
   .info {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 5px;
 
@@ -18,21 +18,22 @@
     .icons {
       display: flex;
     }
+
     li {
-      margin-left: 10px;
-      margin-bottom: -7px;
+      margin-left: 5px;
     }
   }
 
   .img {
     width: 100%;
-    transition: $transition;
-    -webkit-filter: brightness(90%);
+    box-shadow: $shadow;
+    -webkit-filter: brightness(80%);
   }
 
   .img:hover {
+    border: 3px solid $color-4;
     box-shadow: $light-shadow;
-    -webkit-filter: brightness(50%);
+    -webkit-filter: brightness(100%);
   }
 
   .description,
@@ -53,6 +54,19 @@
 
 .project:last-child {
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    .info {
+      align-items: center;
+
+      li {
+        margin-left: 10px;
+        margin-bottom: -7px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1680px) {
@@ -116,4 +130,10 @@
 }
 .filezila:hover {
   color: #bf0000;
+}
+.svg:hover {
+  color: #ffb238;
+}
+.greensock:hover {
+  color: #88c304;
 }

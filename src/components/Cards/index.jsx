@@ -17,6 +17,8 @@ import {
   SiPostcss,
   SiBootstrap,
   SiFilezilla,
+  SiSvg,
+  SiGreensock,
 } from "react-icons/si";
 
 import ilttcom from "../../assets/ilttcom-react.png";
@@ -265,6 +267,12 @@ const projects = [
         <li>
           <SiJavascript className="javascript" />
         </li>
+        <li>
+          <SiGreensock className="greensock" />
+        </li>
+        <li>
+          <SiSvg className="svg" />
+        </li>
       </ul>
     ),
     img: <img src={js} alt="Projets Javascript" class="img" />,
@@ -302,7 +310,8 @@ const projects = [
     description: (
       <p>
         Application Symfony permettant d'afficher une liste de contacts avec
-        diverses informations. Formulaire de connexion, recherche, trie et CRUD complet.
+        diverses informations. Formulaire de connexion, recherche, trie et CRUD
+        complet.
       </p>
     ),
     links: (
@@ -373,17 +382,17 @@ const projects = [
 const Cards = () => {
   return (
     <div className="projects">
-      {projects.map((project) => (
-        <div class="project" key={project.id}>
-          <div className="info">
-            <p class="name">{project.name}</p>
-            {project.icons}
+        {projects.map((project) => (
+          <div class="project" key={project.id}>
+            <div className="info">
+              <p class="name">{project.name}</p>
+              {project.icons}
+            </div>
+            {project.img}
+            <div className="description">{project.description}</div>
+            <div className="links">{project.links}</div>
           </div>
-          {project.img}
-          <div className="description">{project.description}</div>
-          <div className="links">{project.links}</div>
-        </div>
-      ))}
+        ))}
     </div>
   );
 };
