@@ -302,7 +302,7 @@ const projects = [
     description: (
       <p>
         Application Symfony permettant d'afficher une liste de contacts avec
-        diverses informations. Formulaire de connexion + CRUD complet.
+        diverses informations. Formulaire de connexion, recherche, trie et CRUD complet.
       </p>
     ),
     links: (

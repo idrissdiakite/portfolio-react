@@ -25,7 +25,8 @@ const jobs = [
       <p>
         1. Développer la partie front-end d'une application web et web mobile:{" "}
         <br />
-        - Maquetter une application <br />- Réaliser une interface utilisateur
+        - Maquetter une application | <span>Figma</span>
+        <br />- Réaliser une interface utilisateur
         web statique et adaptable | <span>HTML, CSS</span>
         <br />- Développer une interface utilisateur web dynamique{" "} | <span>JavaScript, Angular</span>
         <br />- Réaliser une interface utilisateur avec une solution de gestion
