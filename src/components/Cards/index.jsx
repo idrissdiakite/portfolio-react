@@ -148,8 +148,7 @@ const projects = [
     description: (
       <p>
         Création d'un thème Wordpress sur-mesure effectué lors de mon stage au
-        sein de l'agence digitale Ultrō pour le compte de Picture Organic
-        Clothing.
+        sein de l'agence digitale Ultrō.
       </p>
     ),
     links: (

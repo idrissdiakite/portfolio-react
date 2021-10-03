@@ -1,4 +1,5 @@
 import React from "react";
+import Infos from "../../components/Infos";
 import Button from "../../components/Button";
 import Menu from "../../components/Menu";
 import MenuManager from "../../components/Menu/MenuManager";
@@ -18,6 +19,7 @@ const Presentation = () => {
             professionnaliser dans le développement web. ~ Titulaire du Titre
             Professionnel "Développeur web et web mobile full stack" (Bac +2).
           </p>
+          <Infos />
         </div>
         <Button />
       </section>

@@ -1,0 +1,17 @@
+@import "./../../styles/settings";
+
+.infos {
+    ul {
+        margin-top: 2rem;
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            .icon {
+                font-size: 2rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
