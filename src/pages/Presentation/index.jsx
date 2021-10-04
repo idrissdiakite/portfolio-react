@@ -23,12 +23,12 @@ const Presentation = () => {
         <h1>Qui je suis</h1>
 
         <div className="main-container">
-          <p>
+          {/* <p>
             Après plus de 10 années passées dans l'univers de la vente, j'ai
             décidé fin 2019 de quitter mon poste de manager adjoint afin de me
-            professionnaliser dans le développement web. ~ Titulaire du Titre
+            professionnaliser dans le développement web. <br /> ~ Titulaire du Titre
             Professionnel "Développeur web et web mobile full stack" (Bac +2).
-          </p>
+          </p> */}
           <Infos />
         </div>
 

@@ -6,6 +6,7 @@ import {
   AiOutlineHome,
   AiFillLinkedin,
   AiFillGithub,
+  AiOutlinePaperClip
 } from "react-icons/ai";
 
 import "./style.scss";
@@ -13,23 +14,35 @@ import "./style.scss";
 const contactDetails = [
   {
     id: 1,
+    icon: <AiOutlineHome className="icon" />,
+    link: <span>Lyon (69001)</span>,
+  },
+  {
+    id: 2,
     icon: <AiOutlinePhone className="icon" />,
     link: <a href="tel:0669674585">06.69.67.45.85</a>,
   },
   {
-    id: 2,
+    id: 3,
     icon: <AiOutlineMail className="icon" />,
     link: (
       <a href="mailto:idriss.diakite@hotmail.fr">idriss.diakite@hotmail.fr</a>
     ),
   },
   {
-    id: 3,
-    icon: <AiOutlineHome className="icon" />,
-    link: <span>Lyon (69001)</span>,
+    id: 4,
+    icon: <AiOutlinePaperClip className="icon" />,
+    link: (
+      <a
+        href="./assets/CV.pdf"
+        download
+      >
+        Télécharger mon CV
+      </a>
+    ),
   },
   {
-    id: 4,
+    id: 5,
     icon: <AiFillLinkedin className="icon" />,
     link: (
       <a
@@ -42,7 +55,7 @@ const contactDetails = [
     ),
   },
   {
-    id: 5,
+    id: 6,
     icon: <AiFillGithub className="icon" />,
     link: (
       <a

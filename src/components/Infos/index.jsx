@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import avatar from "./../../assets/avatar.jpeg";
+
 import {
   IoStopwatchOutline,
   IoLocationOutline,
@@ -18,7 +20,7 @@ const infos = [
   {
     id: 1,
     icon: <IoLocationOutline className="icon" />,
-    text: "Né à Annecy en 1990, j'habite à Lyon depuis maintenant plus de 20ans.",
+    text: "Né à Annecy, vis actuellement à Lyon.",
   },
   {
     id: 2,
@@ -28,43 +30,53 @@ const infos = [
   {
     id: 3,
     icon: <IoSchoolOutline className="icon" />,
-    text: "Issu initialement d'un cursus commercial, je possède un BTS Management des Unités Commerciales.",
+    text: "Également titulaire d'un BTS Management des Unités Commerciales.",
   },
   {
     id: 4,
     icon: <IoEarOutline className="icon" />,
-    text: "Toujours à l'écoute, je possède un excellent relationnel, le sens des responsabilités ainsi qu'une grande capacité d'adaptation.",
+    text: "Toujours à l'écoute, excellent relationnel, sens aïgu des responsabilités.",
   },
   {
     id: 5,
     icon: <IoSunnyOutline className="icon" />,
-    text: "Rigoureux, curieux, créatif et autonome, j'ai un goût prononcé pour le travail bien fait (et beau visuellement).",
+    text: "Ouvert d'esprit, curieux, créatif et autonome.",
   },
   {
     id: 6,
     icon: <IoMusicalNotesOutline className="icon" />,
-    text: "J'ai créé un site de musique en autodidacte (cf. ilovethistrack.com) et partage des playlists en tous genres sur Spotify.",
+    text: "Mélomane de naissance et accessoirement curator sur Spotify.",
   },
   {
     id: 7,
     icon: <IoEarthOutline className="icon" />,
-    text: "Particulièrement ouvert d'esprit, j'ai vécu 6 mois à Londres et ai eu la chance de visiter de nombreux pays (4 continents différents).",
+    text: "A vécu 6 mois à Londres et déjà parcouru 4 continents.",
   },
   {
     id: 8,
     icon: <IoStopwatchOutline className="icon" />,
-    text: "J'ai pratiqué de nombreux sports dans ma vie (foot, tennis, taekwendo..) et cours une à deux fois par semaine.",
+    text: "Sportif, cours une à deux fois par semaine (10km en moyenne).",
   },
   {
     id: 9,
     icon: <IoPawOutline className="icon" />,
-    text: "Papa d'un petit Beagle croisé Jagd Terrier (beaucoup d'amour pour les animaux).",
+    text: "Papa d'un petit Beagle croisé Jagd Terrier.",
   },
 ];
 
 const Infos = () => {
   return (
     <div className="infos">
+      <motion.div 
+      className="avatar"
+      initial="initial"
+        animate="in"
+        variants={variants}
+        transition={transition}>
+        <img src={avatar} alt="" />
+        <p>Désireux de me professionnaliser dans le développement web, j'ai quitté mon poste de Manager adjoint en 2019 et suis titulaire du titre professionnel "Développeur web et web mobile full stack" (Bac+2) depuis mai 2021.</p>
+      </motion.div>
+
       <motion.ul variants={container} initial="hidden" animate="visible">
         {infos.map((info) => (
           <motion.li key={info.id} variants={item}>
@@ -78,6 +90,23 @@ const Infos = () => {
 };
 
 // Motion
+const variants = {
+  initial: {
+    opacity: 0,
+    scale: 1,
+  },
+  in: {
+    opacity: 1,
+    x: 0,
+  },
+};
+
+const transition = {
+  type: "tween",
+  ease: "anticipate",
+  duration: 4,
+};
+
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {

@@ -23,14 +23,14 @@ import {
   SiMysql,
 } from "react-icons/si";
 
-import ilttcom from "../../assets/ilttcom-react.png";
-import artshop from "../../assets/artshop-tailwind.png";
-import pictureWp from "../../assets/picture-wp.png";
-import pictureGatsby from "../../assets/picture-gatsby.png";
-import js from "../../assets/js.png";
-import ilovethistrackcom from "../../assets/ilovethistrackcom.png";
-import contact from "../../assets/gestionnaire-contact.png";
-import serie from "../../assets/series-angular.png";
+import ilttcom from "../../assets/cards/ilttcom-react.png";
+import artshop from "../../assets/cards/artshop-tailwind.png";
+import pictureWp from "../../assets/cards/picture-wp.png";
+import pictureGatsby from "../../assets/cards/picture-gatsby.png";
+import js from "../../assets/cards/js.png";
+import ilovethistrackcom from "../../assets/cards/ilovethistrackcom.png";
+import contact from "../../assets/cards/gestionnaire-contact.png";
+import serie from "../../assets/cards/series-angular.png";
 
 import "./style.scss";
 
