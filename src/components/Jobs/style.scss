@@ -1,7 +1,7 @@
 @import "./../../styles/settings";
 
 .job {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 
   .header {
     margin-bottom: 0.5rem;
@@ -39,6 +39,24 @@
   }
 }
 
+.cv {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  .icon {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+  a {
+    color: $color-4;
+  }
+  a:hover {
+    font-weight: 600;
+  }
+} 
+
 @media screen and (min-width: 768px) {
   .job {
     margin-bottom: 1.5rem;
@@ -50,6 +68,7 @@
         font-size: 2.5rem;
       }
   }
+
   .show-description {
     span {
       font-size: 1.2rem;
@@ -57,6 +76,10 @@
     p {
       font-size: 1.4rem;
     }
+  }
+
+  .cv {
+    margin-top: 2rem;
   }
 }
 }

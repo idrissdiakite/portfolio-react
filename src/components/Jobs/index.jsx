@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { AiOutlinePaperClip } from "react-icons/ai";
 
 import "./style.scss";
 
@@ -129,6 +130,14 @@ const Jobs = () => {
             </div>
           </motion.div>
         ))}
+
+        <motion.div
+        variants={item}
+        className="cv">
+        <AiOutlinePaperClip className="icon" />
+        <a href="./assets/CV.pdf" download>Télécharger mon CV</a>
+        </motion.div>
+        
       </motion.div>
     </>
   );

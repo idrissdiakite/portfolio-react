@@ -30,18 +30,6 @@ const contactDetails = [
     ),
   },
   {
-    id: 4,
-    icon: <AiOutlinePaperClip className="icon" />,
-    link: (
-      <a
-        href="./assets/CV.pdf"
-        download
-      >
-        Télécharger mon CV
-      </a>
-    ),
-  },
-  {
     id: 5,
     icon: <AiFillLinkedin className="icon" />,
     link: (

@@ -50,7 +50,7 @@ const infos = [
   {
     id: 7,
     icon: <IoEarthOutline className="icon" />,
-    text: "A vécu 6 mois à Londres et déjà parcouru 4 continents.",
+    text: "A vécu 6 mois à Londres et déjà visité 4 continents différents.",
   },
   {
     id: 8,
