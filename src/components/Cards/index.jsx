@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   SiHtml5,
   SiCss3,
@@ -35,7 +36,7 @@ import "./style.scss";
 const projects = [
   {
     id: 1,
-    name: "ilttcom (react-airtable-scss)",
+    name: "ilttcom",
     icons: (
       <ul className="icons">
         <li>
@@ -52,11 +53,11 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={ilttcom} alt="ilttcom react" class="img" />,
+    img: <img src={ilttcom} alt="ilttcom react" class="img" loading="lazy"/>,
     description: (
       <p>
-        Application musicale réalisée avec React, Airtable (en guise de base de
-        donnée) et SCSS (pour la mise en forme).
+        Application musicale réalisée avec React, Airtable (base de donnée) et
+        SCSS.
       </p>
     ),
     links: (
@@ -80,7 +81,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "Artshop (tailwind)",
+    name: "Artshop",
     icons: (
       <ul className="icons">
         <li>
@@ -94,11 +95,11 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={artshop} alt="Artshop (Tailwind)" class="img" />,
+    img: <img src={artshop} alt="Artshop (Tailwind)" class="img" loading="lazy" />,
     description: (
       <p>
-        Site (fictif) de vente d'oeuvres d'art entièrement mis en forme à l'aide
-        du framework CSS Tailwind.
+        Site de vente d'oeuvres d'art entièrement mis en forme à l'aide du
+        framework Tailwind.
       </p>
     ),
     links: (
@@ -124,7 +125,7 @@ const projects = [
   },
   {
     id: 3,
-    name: "Picture Organic Clothing (wordpress-php)",
+    name: "Picture Organic Clothing",
     icons: (
       <ul className="icons">
         <li>
@@ -144,7 +145,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={pictureWp} alt="POC Wordpress" class="img" />,
+    img: <img src={pictureWp} alt="POC Wordpress" class="img" loading="lazy" />,
     description: (
       <p>
         Création d'un thème Wordpress sur-mesure effectué lors de mon stage au
@@ -174,7 +175,7 @@ const projects = [
   },
   {
     id: 4,
-    name: "Picture Organic Clothing (gatsbyjs-react-graphql)",
+    name: "Picture Organic Clothing",
     icons: (
       <ul className="icons">
         <li>
@@ -194,7 +195,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={pictureGatsby} alt="POC gatsby" class="img" />,
+    img: <img src={pictureGatsby} alt="POC gatsby" class="img" loading="lazy" />,
     description: (
       <p>
         Intégration dynamique du blog de Picture Organic Clothing via GatsbyJS,
@@ -224,7 +225,7 @@ const projects = [
   },
   {
     id: 5,
-    name: "ilovethistrack.com (wordpress)",
+    name: "ilovethistrack.com",
     icons: (
       <ul className="icons">
         <li>
@@ -241,8 +242,8 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={ilovethistrackcom} alt="ilovethistrack.com" class="img" />,
-    description: <p>Site de musique indépendant à caractère éducatif.</p>,
+    img: <img src={ilovethistrackcom} alt="ilovethistrack.com" class="img" loading="lazy" />,
+    description: <p>Site de musique réalisé sous Wordpress.</p>,
     links: (
       <p>
         ‣{" "}
@@ -254,7 +255,7 @@ const projects = [
   },
   {
     id: 6,
-    name: "Projets JavaScript (js vanilla)",
+    name: "Projets JavaScript",
     icons: (
       <ul className="icons">
         <li>
@@ -274,7 +275,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={js} alt="Projets Javascript" class="img" />,
+    img: <img src={js} alt="Projets Javascript" class="img" loading="lazy" />,
     description: <p>Divers projets réalisés en JavaScript (Vanilla).</p>,
     links: (
       <p>
@@ -291,7 +292,7 @@ const projects = [
   },
   {
     id: 7,
-    name: "Gestionnaire de contacts (php-symfony-bootstrap)",
+    name: "Gestionnaire de contacts",
     icons: (
       <ul className="icons">
         <li>
@@ -305,7 +306,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={contact} alt="Gestionnaire de contact" class="img" />,
+    img: <img src={contact} alt="Gestionnaire de contact" class="img" loading="lazy" />,
     description: (
       <p>
         Application Symfony permettant d'afficher une liste de contacts avec
@@ -336,7 +337,7 @@ const projects = [
   },
   {
     id: 8,
-    name: "Gestionnaire de séries (angular-bootstrap)",
+    name: "Gestionnaire de séries",
     icons: (
       <ul className="icons">
         <li>
@@ -347,7 +348,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={serie} alt="Gestionnaire de séries" class="img" />,
+    img: <img src={serie} alt="Gestionnaire de séries" class="img" loading="lazy" />,
     description: (
       <p>
         Application Angular permettant d'afficher une liste de séries avec
@@ -380,20 +381,46 @@ const projects = [
 
 const Cards = () => {
   return (
-    <div className="projects">
-        {projects.map((project) => (
-          <div class="project" key={project.id}>
-            <div className="info">
-              <p class="name">{project.name}</p>
-              {project.icons}
-            </div>
-            {project.img}
-            <div className="description">{project.description}</div>
-            <div className="links">{project.links}</div>
+    <motion.div
+      className="projects"
+      variants={container}
+      initial="hidden"
+      animate="visible"
+    >
+      {projects.map((project) => (
+        <motion.div class="project" key={project.id} variants={item}>
+          <div className="info">
+            <p class="name">{project.name}</p>
+            {project.icons}
           </div>
-        ))}
-    </div>
+          {project.img}
+          <div className="description">{project.description}</div>
+          <div className="links">{project.links}</div>
+        </motion.div>
+      ))}
+    </motion.div>
   );
+};
+
+// Motion
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 2,
+      staggerChildren: 1,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 0, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
 };
 
 export default Cards;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 import "./style.scss";
 
@@ -9,11 +10,14 @@ const jobs = [
     subtitle: "stage - février à mai 2021",
     description: (
       <p>
-        - Création d'un thème Wordpress sur-mesure | <span>Docker, PHP, WP Query, JavaScript</span> <br />- Intégration
-        dynamique d'un site avec GatsbyJS{" "} | <span>React, GraphQL, JS, Wordpress</span>
+        - Création d'un thème Wordpress sur-mesure |{" "}
+        <span>Docker, PHP, WP Query, JavaScript</span> <br />- Intégration
+        dynamique d'un site avec GatsbyJS |{" "}
+        <span>React, GraphQL, JS, Wordpress</span>
         <br />- Intégration statique & gestion du responsive à partir de
         maquettes | <span>HTML, CSS</span>
-        <br />- Gestion de contenus sur différents CMS | <span>Wordpress, Contentful, Shopify</span>
+        <br />- Gestion de contenus sur différents CMS |{" "}
+        <span>Wordpress, Contentful, Shopify</span>
       </p>
     ),
   },
@@ -24,20 +28,21 @@ const jobs = [
     description: (
       <p>
         1. Développer la partie front-end d'une application web et web mobile:{" "}
-        <br />
-        - Maquetter une application | <span>Figma</span>
-        <br />- Réaliser une interface utilisateur
-        web statique et adaptable | <span>HTML, CSS</span>
-        <br />- Développer une interface utilisateur web dynamique{" "} | <span>JavaScript, Angular</span>
+        <br />- Maquetter une application | <span>Figma</span>
+        <br />- Réaliser une interface utilisateur web statique et adaptable |{" "}
+        <span>HTML, CSS</span>
+        <br />- Développer une interface utilisateur web dynamique |{" "}
+        <span>JavaScript, Angular</span>
         <br />- Réaliser une interface utilisateur avec une solution de gestion
         de contenu | <span>Wordpress</span>
         <br />
         <br />
         2. Développer la partie back-end d'une application web et web mobile:
-        <br />- Créer une base de données |
-        <span> MCD, MLD, MPD, SQL</span>
-        <br />- Développer les composants d’accès aux données{" "} | <span>Web Service Rest</span>
-        <br />- Développer la partie back-end d’une application web | <span>PHP, Symfony</span>
+        <br />- Créer une base de données |<span> MCD, MLD, MPD, SQL</span>
+        <br />- Développer les composants d’accès aux données |{" "}
+        <span>Web Service Rest</span>
+        <br />- Développer la partie back-end d’une application web |{" "}
+        <span>PHP, Symfony</span>
         <br />- Elaborer et mettre en œuvre des composants dans une application
         de gestion de contenu | <span>Wordpress, PHP</span>
       </p>
@@ -49,12 +54,15 @@ const jobs = [
     subtitle: "janvier 2015 à aout 2020",
     description: (
       <p>
-        - Création site de musique | <span>Wordpress</span> <br />- Création logo et charte
-        graphique | <span>Pixelmator Pro</span>
+        - Création site de musique | <span>Wordpress</span> <br />- Création
+        logo et charte graphique | <span>Pixelmator Pro</span>
         <br />- Mise en page du site | <span>HTML, CSS, PHP</span>
-        <br />- Ajout, suppression, modification et transfert de fichiers | <span>FileZila</span>
-        <br />- Création et mise en ligne de contenus multimédias | <span>Final Cut Pro, Youtube</span>
-        <br />- Communication réseaux sociaux | <span>Facebook, Twitter, Instagram..</span>
+        <br />- Ajout, suppression, modification et transfert de fichiers |{" "}
+        <span>FileZila</span>
+        <br />- Création et mise en ligne de contenus multimédias |{" "}
+        <span>Final Cut Pro, Youtube</span>
+        <br />- Communication réseaux sociaux |{" "}
+        <span>Facebook, Twitter, Instagram..</span>
       </p>
     ),
   },
@@ -98,9 +106,18 @@ const Jobs = () => {
 
   return (
     <>
-      <div className="jobs">
+      <motion.div
+        className="jobs"
+        variants={container}
+        initial="hidden"
+        animate="visible"
+      >
         {jobs.map((job) => (
-          <div className="job" key={job.id}>
+          <motion.div
+            className="job"
+            key={job.id}
+            variants={item}
+          >
             <div
               onClick={() => toggleClass(job.id)}
               key={job.id}
@@ -116,11 +133,32 @@ const Jobs = () => {
             >
               {job.description}
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </>
   );
+};
+
+// Motion
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 2,
+      staggerChildren: 1,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 0, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
 };
 
 export default Jobs;

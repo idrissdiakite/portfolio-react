@@ -6,11 +6,16 @@
         li {
             display: flex;
             align-items: center;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
 
             .icon {
                 font-size: 2rem;
                 margin-right: 1rem;
+            }
+
+            p:hover {
+                font-weight: 600;
+                color: $color-4;
             }
         }
     }

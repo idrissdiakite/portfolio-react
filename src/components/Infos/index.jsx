@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   IoStopwatchOutline,
   IoLocationOutline,
@@ -36,27 +37,27 @@ const infos = [
   },
   {
     id: 5,
-    icon:  <IoSunnyOutline className="icon" />,
+    icon: <IoSunnyOutline className="icon" />,
     text: "Rigoureux, curieux, créatif et autonome, j'ai un goût prononcé pour le travail bien fait (et beau visuellement).",
   },
   {
     id: 6,
-    icon:  <IoMusicalNotesOutline className="icon" />,
+    icon: <IoMusicalNotesOutline className="icon" />,
     text: "J'ai créé un site de musique en autodidacte (cf. ilovethistrack.com) et partage des playlists en tous genres sur Spotify.",
   },
   {
     id: 7,
-    icon:  <IoEarthOutline className="icon" />,
+    icon: <IoEarthOutline className="icon" />,
     text: "Particulièrement ouvert d'esprit, j'ai vécu 6 mois à Londres et ai eu la chance de visiter de nombreux pays (4 continents différents).",
   },
   {
     id: 8,
-    icon:  <IoStopwatchOutline className="icon" />,
+    icon: <IoStopwatchOutline className="icon" />,
     text: "J'ai pratiqué de nombreux sports dans ma vie (foot, tennis, taekwendo..) et cours une à deux fois par semaine.",
   },
   {
     id: 9,
-    icon:  <IoPawOutline className="icon" />,
+    icon: <IoPawOutline className="icon" />,
     text: "Papa d'un petit Beagle croisé Jagd Terrier (beaucoup d'amour pour les animaux).",
   },
 ];
@@ -64,20 +65,37 @@ const infos = [
 const Infos = () => {
   return (
     <div className="infos">
-      <ul>
-      {infos.map((info) => (
-        <li>
-          <span>
-            {info.icon}
-          </span>
-          <p>
-            {info.text}
-          </p>
-        </li>
-      ))}
-      </ul>
+      <motion.ul variants={container} initial="hidden" animate="visible">
+        {infos.map((info) => (
+          <motion.li key={info.id} variants={item}>
+            <span>{info.icon}</span>
+            <p>{info.text}</p>
+          </motion.li>
+        ))}
+      </motion.ul>
     </div>
   );
+};
+
+// Motion
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 2,
+      staggerChildren: 1,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 0, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
 };
 
 export default Infos;
