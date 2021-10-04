@@ -82,17 +82,11 @@ const jobs = [
         <br />
         - Aménagement du point de vente
         <br />
-        - Remises en banque
-        <br />
-        - Gestion de caisse
-        <br />
-        - Gestion des stocks
-        <br />
-        - Inventaires tournant
-        <br />
-        - Réassort boutique
+        - Remises en banque / Gestion de caisse
         <br />
         - Réception et gestion des livraisons
+        <br />
+        - Gestion des stocks / Inventaires tournant
         <br />
       </p>
     ),

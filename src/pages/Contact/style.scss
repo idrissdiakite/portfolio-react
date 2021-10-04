@@ -2,75 +2,17 @@
 
 .contact {
   background-color: $bg-4;
-
-  .main-container {
-    width: 99%;
-
-    p,
-    a,
-    span {
-      font-weight: 200;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-    span {
-      cursor: pointer;
-    }
-
-    .contact-container {
-      margin-top: 60px;
-
-      ul li {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-
-        .icon {
-          font-size: 30px;
-          margin-right: 20px;
-        }
-
-        a {
-          color: $color-4;
-        }
-      }
-
-      ul li:hover {
-        p,
-        a,
-        span {
-          font-weight: 600;
-          color: $color-4;
-        }
-      }
-    }
-  }
 }
 
 @media screen and (min-width: 768px) {
   .contact {
-    
-    .main-container {
-      width: 85%;
-  
-      p,
-      a,
-      span {
-        font-size: 2rem;
-      }
-      p {
-        margin-bottom: 20px;
-      }
-
-      .contact-container {
-        margin-top: 100px;
-
-        .icon {
-          font-size: 40px;
-          margin-right: 20px;
-        }
-      }
+    p,
+    a,
+    span {
+      font-size: 2rem;
+    }
+    p {
+      margin-bottom: 20px;
     }
   }
 }

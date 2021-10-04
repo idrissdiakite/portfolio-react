@@ -1,0 +1,52 @@
+@import "./../../styles/settings";
+
+.contact .header {
+  margin-top: 1rem;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.details {
+  margin-top: 60px;
+
+  ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    .icon {
+      font-size: 30px;
+      margin-right: 20px;
+    }
+
+    a {
+      color: $color-4;
+    }
+  }
+
+  ul li:hover {
+    p,
+    a,
+    span {
+      font-weight: 600;
+      color: $color-4;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact .header p {
+    margin-bottom: 1rem;
+  }
+
+  .details {
+    margin-top: 100px;
+
+    ul li .icon {
+      font-size: 40px;
+      margin-right: 20px;
+    }
+  }
+}

@@ -20,6 +20,7 @@ import {
   SiFilezilla,
   SiSvg,
   SiGreensock,
+  SiMysql,
 } from "react-icons/si";
 
 import ilttcom from "../../assets/ilttcom-react.png";
@@ -53,7 +54,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={ilttcom} alt="ilttcom react" class="img" loading="lazy"/>,
+    img: <img src={ilttcom} alt="ilttcom react" class="img" loading="lazy" />,
     description: (
       <p>
         Application musicale réalisée avec React, Airtable (base de donnée) et
@@ -95,7 +96,9 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={artshop} alt="Artshop (Tailwind)" class="img" loading="lazy" />,
+    img: (
+      <img src={artshop} alt="Artshop (Tailwind)" class="img" loading="lazy" />
+    ),
     description: (
       <p>
         Site de vente d'oeuvres d'art entièrement mis en forme à l'aide du
@@ -195,7 +198,9 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={pictureGatsby} alt="POC gatsby" class="img" loading="lazy" />,
+    img: (
+      <img src={pictureGatsby} alt="POC gatsby" class="img" loading="lazy" />
+    ),
     description: (
       <p>
         Intégration dynamique du blog de Picture Organic Clothing via GatsbyJS,
@@ -242,7 +247,14 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={ilovethistrackcom} alt="ilovethistrack.com" class="img" loading="lazy" />,
+    img: (
+      <img
+        src={ilovethistrackcom}
+        alt="ilovethistrack.com"
+        class="img"
+        loading="lazy"
+      />
+    ),
     description: <p>Site de musique réalisé sous Wordpress.</p>,
     links: (
       <p>
@@ -296,6 +308,9 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
+          <SiMysql className="mysql" />
+        </li>
+        <li>
           <SiPhp className="php" />
         </li>
         <li>
@@ -306,7 +321,14 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={contact} alt="Gestionnaire de contact" class="img" loading="lazy" />,
+    img: (
+      <img
+        src={contact}
+        alt="Gestionnaire de contact"
+        class="img"
+        loading="lazy"
+      />
+    ),
     description: (
       <p>
         Application Symfony permettant d'afficher une liste de contacts avec
@@ -341,6 +363,9 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
+          <SiMysql className="mysql" />
+        </li>
+        <li>
           <SiAngular className="angular" />
         </li>
         <li>
@@ -348,7 +373,14 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={serie} alt="Gestionnaire de séries" class="img" loading="lazy" />,
+    img: (
+      <img
+        src={serie}
+        alt="Gestionnaire de séries"
+        class="img"
+        loading="lazy"
+      />
+    ),
     description: (
       <p>
         Application Angular permettant d'afficher une liste de séries avec
