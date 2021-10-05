@@ -23,4 +23,4 @@ Portfolio réalisé avec React et SCSS (pour la mise en forme).
 
 ## 💫 Live
 
-Portfolio en ligne [ici](https://idrissdiakite.netlify.app)
+Portfolio en ligne ici: [https://idrissdiakite.netlify.app](https://idrissdiakite.netlify.app)
