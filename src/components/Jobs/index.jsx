@@ -52,7 +52,7 @@ const jobs = [
   {
     id: 3,
     title: "Fondateur - ilovethistrack.com",
-    subtitle: "janvier 2015 à aout 2020",
+    subtitle: "janvier 2015 à juillet 2021",
     description: (
       <p>
         - Création site de musique | <span>Wordpress</span> <br />- Création
