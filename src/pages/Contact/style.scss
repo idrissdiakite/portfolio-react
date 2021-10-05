@@ -3,16 +3,3 @@
 .contact {
   background-color: $bg-4;
 }
-
-@media screen and (min-width: 768px) {
-  .contact {
-    p,
-    a,
-    span {
-      font-size: 2rem;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-  }
-}

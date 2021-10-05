@@ -37,16 +37,53 @@
 }
 
 @media screen and (min-width: 768px) {
-  .contact .header p {
-    margin-bottom: 1rem;
+  .contact p,
+  a,
+  span {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact p,
+  a,
+  span {
+    font-size: 2rem;
   }
 
   .details {
-    margin-top: 100px;
+    margin-top: 70px;
 
     ul li .icon {
       font-size: 40px;
       margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .contact p,
+  a,
+  span {
+    font-size: 2.5rem;
+  }
+
+  .contact .header p {
+    margin-bottom: 30px;
+  }
+
+  .details {
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    ul li {
+      margin-bottom: 30px;
+    }
+
+    ul li .icon {
+      font-size: 50px;
+      margin-right: 30px;
     }
   }
 }
