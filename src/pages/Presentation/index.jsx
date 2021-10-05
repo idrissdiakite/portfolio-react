@@ -10,28 +10,24 @@ import "./style.scss";
 const Presentation = () => {
   return (
     <MenuManager>
-
       <motion.div
         initial="initial"
         animate="in"
         variants={variants}
-        transition={pageTransition}>
-
+        transition={pageTransition}
+      >
         <Menu />
 
-      <section className="presentation">
-        <h1>Qui je suis</h1>
+        <section className="presentation">
+          <h1>Qui je suis</h1>
 
-        <div className="main-container">
-          <Infos />
-        </div>
+          <div className="main-container">
+            <Infos />
+          </div>
 
-        <Button />
-
-      </section>
-      
+          <Button />
+        </section>
       </motion.div>
-      
     </MenuManager>
   );
 };

@@ -1,11 +1,11 @@
 @import "./../../styles/settings";
 
 .presentation {
-    background-color: $bg-1;
+  background-color: $bg-1;
 }
 
 @media screen and (min-width: 768px) {
-    .presentation p {
-        font-size: 2rem;
-    }
+  .presentation p {
+    font-size: 2rem;
+  }
 }

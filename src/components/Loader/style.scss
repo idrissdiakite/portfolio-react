@@ -1,19 +1,20 @@
 @import "./../../styles/settings";
 
 .loader {
-    height: 100vh;
-    background-color: white;
-  
-    img {
-      width: 100px;
-      position: absolute;
-      top: 40%; right: 50%;
-      transform: translate(50%,-50%);
-    }
+  height: 100vh;
+  background-color: white;
+
+  img {
+    width: 100px;
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -50%);
   }
-  
-  @media screen and (min-width: 768px) {
-    .loader img {
-      width: 200px;
-    }
+}
+
+@media screen and (min-width: 768px) {
+  .loader img {
+    width: 200px;
   }
+}

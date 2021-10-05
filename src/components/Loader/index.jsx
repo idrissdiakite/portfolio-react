@@ -6,13 +6,13 @@ import "./style.scss";
 
 const Loader = () => {
   return (
-    <motion.div 
+    <motion.div
       className="loader"
       initial="initial"
       animate="in"
       variants={pageVariants}
       transition={pageTransition}
-      >
+    >
       <img src={LoaderGif} alt="loader" />
     </motion.div>
   );

@@ -25,8 +25,8 @@ const Home = () => {
         initial="initial"
         animate="in"
         variants={variants}
-        transition={pageTransition}>
-
+        transition={pageTransition}
+      >
         <Header />
 
         <section className="homepage">
@@ -44,7 +44,6 @@ const Home = () => {
 
           <Button />
         </section>
-        
       </motion.div>
     </MenuManager>
   );

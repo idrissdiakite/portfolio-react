@@ -52,7 +52,8 @@
   }
 }
 
-.project:nth-last-child(-n+2) { // permet de cibler les 2 derniers projets
+.project:nth-last-child(-n + 2) {
+  // permet de cibler les 2 derniers projets
   margin-bottom: 10px;
 }
 

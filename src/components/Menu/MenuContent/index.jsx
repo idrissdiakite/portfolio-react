@@ -51,12 +51,20 @@ const MenuContent = () => {
 
             <ul className="nav-icons">
               <li>
-                <a href="https://www.linkedin.com/in/idiakite" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/idiakite"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <AiFillLinkedin />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/idrissdiakite" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/idrissdiakite"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <AiOutlineGithub />
                 </a>
               </li>

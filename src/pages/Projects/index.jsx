@@ -10,13 +10,12 @@ import "./style.scss";
 const Projects = () => {
   return (
     <MenuManager>
-
       <motion.div
         initial="initial"
         animate="in"
         variants={variants}
-        transition={pageTransition}>
-
+        transition={pageTransition}
+      >
         <Menu />
 
         <section className="my-projects">
@@ -28,9 +27,7 @@ const Projects = () => {
 
           <Button />
         </section>
-
       </motion.div>
-      
     </MenuManager>
   );
 };

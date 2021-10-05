@@ -108,11 +108,7 @@ const Jobs = () => {
         animate="visible"
       >
         {jobs.map((job) => (
-          <motion.div
-            className="job"
-            key={job.id}
-            variants={item}
-          >
+          <motion.div className="job" key={job.id} variants={item}>
             <div
               onClick={() => toggleClass(job.id)} // lorsqu'on clique sur la div on déclenche la fonction "toggleClass" qui prend en paramètre l'id du job
               key={job.id}
@@ -131,13 +127,12 @@ const Jobs = () => {
           </motion.div>
         ))}
 
-        <motion.div
-        variants={item}
-        className="cv">
-        <AiOutlinePaperClip className="icon" />
-        <a href="./assets/CV.pdf" download>Télécharger mon CV</a>
+        <motion.div variants={item} className="cv">
+          <AiOutlinePaperClip className="icon" />
+          <a href="./assets/CV.pdf" download>
+            Télécharger mon CV
+          </a>
         </motion.div>
-        
       </motion.div>
     </>
   );

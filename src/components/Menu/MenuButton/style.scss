@@ -16,7 +16,8 @@
     background: 0 0;
     transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-    span { // équivaut au bouton (2 barres parallèles)
+    span {
+      // équivaut au bouton (2 barres parallèles)
       &:after,
       &:before {
         content: "";
@@ -59,8 +60,9 @@
   }
 }
 
-@media screen and (max-width: 768px) { 
-    .menu-button-wrap { // on cache le menu (à gauche) en dessous de 768px
-        display: none;
-    }
+@media screen and (max-width: 768px) {
+  .menu-button-wrap {
+    // on cache le menu (à gauche) en dessous de 768px
+    display: none;
   }
+}
