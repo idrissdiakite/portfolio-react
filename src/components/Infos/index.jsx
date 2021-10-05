@@ -68,13 +68,12 @@ const Infos = () => {
   return (
     <div className="infos">
       <motion.div
-        className="avatar"
+        className="header"
         initial="initial"
         animate="in"
         variants={variants}
         transition={transition}
       >
-        <img src={avatar} alt="" />
         <p>
           Désireux de me professionnaliser dans le développement web, j'ai
           quitté mon poste de Manager adjoint en 2019 et suis titulaire du titre
