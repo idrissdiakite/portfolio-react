@@ -1,5 +1,7 @@
 # Portfolio (React + SCSS + Framer + Particles)
 
+![Screenshot](screenshot.png)
+
 Portfolio réalisé avec React et SCSS (pour la mise en forme).
 - mise en place d'un preloader (gif) avant d'afficher la homepage
 - utilisation de la bibliothèque "particles" pour créer un background dynamique sur la homepage
@@ -10,8 +12,6 @@ Portfolio réalisé avec React et SCSS (pour la mise en forme).
 - intégration d'icônes SVG via la bibliothèque "react-icons"
 - ajout d'un favicon personnalisé
 - gestion du responsive mobile, tablette et grand écran
-
-![Screenshot](screenshot.png)
 
 ## 🚀 Installation
 
