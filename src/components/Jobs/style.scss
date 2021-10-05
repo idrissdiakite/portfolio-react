@@ -1,7 +1,7 @@
 @import "./../../styles/settings";
 
 .job {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   .header {
     margin-bottom: 0.5rem;
@@ -51,12 +51,12 @@
   }
 
   a {
-    color: 3;
+    color: $color-3;
   }
   a:hover {
     font-weight: 600;
   }
-} 
+}
 
 @media screen and (min-width: 768px) {
   .job {
@@ -64,19 +64,17 @@
 
     .header {
       margin-bottom: 1rem;
-
-      .title {
-        font-size: 2.5rem;
-      }
-  }
-
-  .show-description {
-    span {
-      font-size: 1.2rem;
     }
 
-    p {
-      font-size: 1.4rem;
+    .show-description {
+      span {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+      }
     }
   }
 
@@ -84,29 +82,57 @@
     margin-top: 2rem;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .job {
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-
   .job {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 
-    .title {
-      font-size: 3rem;
-    }
-    
-    .subtitle {
-      font-size: 1.5rem;
+    .header {
+      .title {
+        font-size: 2.3rem;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+      }
     }
 
     .show-description {
       span {
         font-size: 1.8rem;
       }
-      
+
       p {
         font-size: 2rem;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .job {
+    margin-bottom: 1.8rem;
+
+    .header .title {
+      font-size: 2.8rem;
+    }
+  }
+
+  .cv {
+    margin-top: 3rem;
+
+    .icon {
+      font-size: 40px;
+    }
+
+    a {
+      font-size: 2rem;
     }
   }
 }
