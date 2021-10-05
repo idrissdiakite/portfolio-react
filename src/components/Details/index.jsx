@@ -6,7 +6,6 @@ import {
   AiOutlineHome,
   AiFillLinkedin,
   AiFillGithub,
-  AiOutlinePaperClip,
 } from "react-icons/ai";
 
 import "./style.scss";

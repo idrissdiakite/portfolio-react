@@ -28,11 +28,12 @@
 
   .show-description {
     display: block;
+
     span {
-      // font-style: italic;
       font-weight: 400;
       font-size: 1rem;
     }
+
     p {
       margin-bottom: 0.5rem;
     }
@@ -73,6 +74,7 @@
     span {
       font-size: 1.2rem;
     }
+
     p {
       font-size: 1.4rem;
     }
@@ -101,6 +103,7 @@
       span {
         font-size: 1.8rem;
       }
+      
       p {
         font-size: 2rem;
       }

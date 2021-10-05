@@ -1,5 +1,8 @@
 import React, { useState, createContext } from "react";
 
+// Composant utilisant l'API Context de React afin de rendre le menu accessible 
+// à plusieurs endroits sur le site sans avoir à passer à chaque fois des propriétés 
+
 export const MenuContext = createContext({
   open: false,
   setOpen: () => {},

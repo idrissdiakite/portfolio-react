@@ -16,8 +16,10 @@
       opacity: 0.8;
     }
   }
+
   ul {
     margin-top: 2.5rem;
+
     li {
       display: flex;
       align-items: center;
@@ -42,6 +44,7 @@
     .avatar {
       max-width: 98%;
     }
+
     ul {
         margin-top: 1.5rem;
     }
@@ -53,8 +56,10 @@
         .avatar {
           max-width: 82%;
         }
+
         ul {
             margin-top: 2.7rem;
+            
             li {
                 margin-bottom: 1.6rem;
             }

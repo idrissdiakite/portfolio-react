@@ -3,6 +3,7 @@ import Menu from "../Menu";
 
 import "./style.scss";
 
+// Composant réutilisé sur la homepage (apparait en bas à droite)
 const Header = () => {
   return (
     <>

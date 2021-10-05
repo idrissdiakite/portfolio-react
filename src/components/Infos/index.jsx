@@ -67,14 +67,20 @@ const infos = [
 const Infos = () => {
   return (
     <div className="infos">
-      <motion.div 
-      className="avatar"
-      initial="initial"
+      <motion.div
+        className="avatar"
+        initial="initial"
         animate="in"
         variants={variants}
-        transition={transition}>
+        transition={transition}
+      >
         <img src={avatar} alt="" />
-        <p>Désireux de me professionnaliser dans le développement web, j'ai quitté mon poste de Manager adjoint en 2019 et suis titulaire du titre professionnel "Développeur web et web mobile full stack" (Bac+2) depuis mai 2021.</p>
+        <p>
+          Désireux de me professionnaliser dans le développement web, j'ai
+          quitté mon poste de Manager adjoint en 2019 et suis titulaire du titre
+          professionnel "Développeur web et web mobile full stack" (Bac+2)
+          depuis mai 2021.
+        </p>
       </motion.div>
 
       <motion.ul variants={container} initial="hidden" animate="visible">

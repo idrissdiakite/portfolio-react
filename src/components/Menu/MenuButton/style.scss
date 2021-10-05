@@ -60,7 +60,7 @@
 }
 
 @media screen and (max-width: 768px) { 
-    .menu-button-wrap { // on affiche le bouton du menu (en haut à gauche) uniquement à partir de 768px
+    .menu-button-wrap { // on cache le menu (à gauche) en dessous de 768px
         display: none;
     }
   }

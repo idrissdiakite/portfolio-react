@@ -95,7 +95,7 @@ const jobs = [
 ];
 
 const Jobs = () => {
-  const [isVisible, setVisible] = useState(1);
+  const [isVisible, setVisible] = useState(1); // "1" permet d'afficher par défault la description du premier job
 
   const toggleClass = (id) => setVisible(id);
 
@@ -114,7 +114,7 @@ const Jobs = () => {
             variants={item}
           >
             <div
-              onClick={() => toggleClass(job.id)}
+              onClick={() => toggleClass(job.id)} // lorsqu'on clique sur la div on déclenche la fonction "toggleClass" qui prend en paramètre l'id du job
               key={job.id}
               className="header"
             >
@@ -123,7 +123,7 @@ const Jobs = () => {
             </div>
             <div
               className={
-                isVisible === job.id ? "show-description" : "description"
+                isVisible === job.id ? "show-description" : "description" // si l'id du state correspond à l'id du job on remplace la classe "description" par "show-description"
               }
             >
               {job.description}
