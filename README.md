@@ -1,4 +1,4 @@
-# Portfolio (React + SCSS + Framer + Particles)
+# Portfolio (React + Particles.js + Framer Motion + Netlify)
 
 ![Screenshot](screenshot.png)
 
@@ -12,6 +12,7 @@ Portfolio réalisé avec React et SCSS (pour la mise en forme).
 - intégration d'icônes SVG via la bibliothèque "react-icons"
 - ajout d'un favicon personnalisé
 - gestion du responsive mobile, tablette et grand écran
+- mise en ligne du projet sur Netlify
 
 ## 🚀 Installation
 
