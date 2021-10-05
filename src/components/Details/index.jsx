@@ -67,7 +67,7 @@ const Details = () => {
         transition={header}
       >
         <p>
-          Actuellement à la recherche d'un poste de développeur web (front-end de préférence).
+          Actuellement à la recherche d'un poste de <span> <br /> </span> développeur web (front-end de préférence).
         </p>
 
         <p>Disponible de suite - et particulièrement motivé 🕺🏽</p>
