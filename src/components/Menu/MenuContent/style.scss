@@ -14,8 +14,7 @@
     background: $color-3;
     color: $color-1;
 
-    &.open {
-      // lorsqu'on clique sur le bouton on affiche le menu
+    &.open { // lorsqu'on clique sur le bouton on affiche le menu
       transform: translateX(0);
 
       .nav-links {
@@ -37,8 +36,7 @@
       width: 100vw;
     }
 
-    .nav-links li a,
-    .nav-icons li a {
+    .nav-links li a, .nav-icons li a{
       color: $color-1;
       cursor: pointer;
       transform: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -112,15 +110,23 @@
   }
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1024px) {
   .menu-holder {
     .menu-inside {
       .menu-nav-container {
-        top: 180px;
+        top: 140px;
       }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .menu-holder {
+    .menu-inside {
       .nav-links {
         li a {
-          font-size: 4.5rem;
+            font-size: 4.5rem;
         }
       }
       .nav-icons {
@@ -143,12 +149,12 @@
       }
       .nav-links {
         li a {
-          font-size: 5.5rem;
+            font-size: 5.5rem;
+          }
         }
-      }
       .nav-icons {
         li a {
-          font-size: 4.5rem;
+            font-size: 4.5rem;
         }
       }
     }
