@@ -75,7 +75,7 @@ const Infos = () => {
       >
         <p>
           Désireux de me professionnaliser dans le développement web, j'ai
-          quitté mon poste de Manager adjoint en 2019 et suis titulaire du titre
+          quitté mon poste de Manager Adjoint en 2019. Titulaire du titre
           professionnel "Développeur web et web mobile full stack" (Bac+2)
           depuis mai 2021.
         </p>
