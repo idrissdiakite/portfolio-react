@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import LoaderGif from "./../../assets/loader/loader.gif";
+import LoaderGif from "./../../assets/loader/loaderrr.gif";
 
 import "./style.scss";
 

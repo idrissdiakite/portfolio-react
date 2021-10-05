@@ -11,7 +11,7 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <BrowserRouter>
-      <AnimatePresence>
+      <AnimatePresence> 
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/presentation" exact component={Presentation} />

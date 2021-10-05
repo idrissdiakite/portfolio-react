@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 2000);
+    }, 2500);
   }, []);
 
   return loader ? (
