@@ -20,3 +20,7 @@ Portfolio réalisé avec React et SCSS (pour la mise en forme).
 2. à la racine du projet:
 - **npm i** pour installer les dépendances (nodes modules)
 - **npm start** pour lancer le projet
+
+## 💫 Live
+
+[https://idrissdiakite.netlify.app](https://idrissdiakite.netlify.app)
