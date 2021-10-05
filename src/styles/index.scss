@@ -21,7 +21,7 @@ a {
 // global style
 body {
   font-family: $font-1;
-  font-weight: 200;
+  font-weight: 400;
   background-color: $color-1;
   overflow-x: hidden;
 }
@@ -37,14 +37,14 @@ h5 {
 
 section {
   position: relative;
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 1rem 1.5rem;
   // width: calc(100vw - 50px);
   min-height: 100vh;
   margin: 0 auto;
   font-size: 1.2rem;
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.3rem;
     padding-top: 22px;
     margin-left: -5px;
     margin-bottom: 1.5rem;
@@ -53,6 +53,10 @@ section {
 
 // query
 @media screen and (min-width: 768px) {
+  body {
+    font-weight: 200;
+  }
+
   section {
     margin-left: 75px;
     padding: 0 2.1rem 2rem 2.5rem;
