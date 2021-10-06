@@ -44,7 +44,7 @@ const infos = [
   {
     id: 6,
     icon: <IoMusicalNotesOutline className="icon" />,
-    text: "Mélomane de naissance et accessoirement curator sur Spotify.",
+    text: <span>Mélomane de naissance et curator sur <a href="https://open.spotify.com/user/ilovethistrack.com?si=9ca1553a0af04aec" target="_blank" rel="noreferrer">Spotify</a>.</span>,
   },
   {
     id: 7,
@@ -54,7 +54,7 @@ const infos = [
   {
     id: 8,
     icon: <IoStopwatchOutline className="icon" />,
-    text: "Sportif, cours une à deux fois par semaine (10km en moyenne).",
+    text: "Très sportif, cours une à deux fois par semaine .",
   },
   {
     id: 9,
