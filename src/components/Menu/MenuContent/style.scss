@@ -21,7 +21,7 @@
         li {
           a {
             transform: translate(0);
-            transition-duration: 0.8s;
+            transition-duration: 0.1s;
             transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
           }
         }
@@ -39,7 +39,6 @@
     .nav-links li a, .nav-icons li a{
       color: $color-1;
       cursor: pointer;
-      transform: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     }
 
     .nav-links {

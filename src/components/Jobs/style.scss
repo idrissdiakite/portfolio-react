@@ -1,7 +1,7 @@
 @import "./../../styles/settings";
 
 .job {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.4rem;
 
   .header {
     margin-bottom: 0.5rem;
@@ -9,12 +9,8 @@
     .title {
       font-size: 1.5rem;
       line-height: 1.5rem;
-      cursor: pointer;
-    }
-
-    .title:hover {
       font-weight: 600;
-      color: 3;
+      cursor: pointer;
     }
 
     .subtitle {
@@ -60,10 +56,19 @@
 
 @media screen and (min-width: 768px) {
   .job {
-    margin-bottom: 1.5rem;
-
+    margin-bottom: 2rem;
     .header {
       margin-bottom: 1rem;
+
+      .title {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+      }
+  
+      .title:hover {
+        font-weight: 600;
+      }
     }
 
     .show-description {

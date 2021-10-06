@@ -70,7 +70,7 @@ const Details = () => {
           Actuellement à la recherche d'un poste de <span> <br /> </span> développeur web (front-end de préférence).
         </p>
 
-        <p>Disponible de suite - et particulièrement motivé 🕺🏽</p>
+        <p>Disponible de suite <span>-</span> et particulièrement motivé 🕺🏽</p>
       </motion.div>
 
       <motion.div
