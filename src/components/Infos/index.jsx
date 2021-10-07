@@ -11,6 +11,7 @@ import {
   IoMusicalNotesOutline,
   IoPawOutline,
   IoSunnyOutline,
+  IoStarOutline
 } from "react-icons/io5";
 
 import "./style.scss";
@@ -43,21 +44,26 @@ const infos = [
   },
   {
     id: 6,
-    icon: <IoMusicalNotesOutline className="icon" />,
-    text: <span>Mélomane de naissance et curator sur <a href="https://open.spotify.com/user/ilovethistrack.com?si=9ca1553a0af04aec" target="_blank" rel="noreferrer">Spotify</a>.</span>,
+    icon: <IoStarOutline className="icon" />,
+    text: "Goût prononcé pour le travail en équipe, l'UI/UX et les raclettes en été.",
   },
   {
     id: 7,
-    icon: <IoEarthOutline className="icon" />,
-    text: "A vécu 6 mois à Londres et déjà visité 4 continents différents.",
+    icon: <IoMusicalNotesOutline className="icon" />,
+    text: <span>Mélomane de naissance et accessoirement curator sur <a href="https://open.spotify.com/user/ilovethistrack.com?si=9ca1553a0af04aec" target="_blank" rel="noreferrer">Spotify</a>.</span>,
   },
   {
     id: 8,
     icon: <IoStopwatchOutline className="icon" />,
-    text: "Très sportif, cours une à deux fois par semaine .",
+    text: "Sportif, cours une à deux fois par semaine.",
   },
   {
     id: 9,
+    icon: <IoEarthOutline className="icon" />,
+    text: "A vécu 6 mois à Londres et déjà visité 4 continents différents.",
+  },
+  {
+    id: 10,
     icon: <IoPawOutline className="icon" />,
     text: "Papa d'un petit Beagle croisé Jagd Terrier.",
   },
@@ -75,7 +81,7 @@ const Infos = () => {
       >
         <p>
           Désireux de me professionnaliser dans le développement web, j'ai
-          quitté mon poste de Manager Adjoint en 2019. Titulaire du titre
+          quitté mon poste de Manager Adjoint en 2019. <span> <br /> </span>Titulaire du titre
           professionnel "Développeur web et web mobile full stack" (Bac+2)
           depuis mai 2021.
         </p>
@@ -117,17 +123,21 @@ const container = {
     opacity: 1,
     scale: 1,
     transition: {
-      delayChildren: 2,
+      delayChildren: 3,
       staggerChildren: 1,
     },
   },
 };
 
 const item = {
-  hidden: { y: 0, opacity: 0 },
+  hidden: { x: 300, opacity: 0 },
   visible: {
-    y: 0,
+    x: 0,
     opacity: 1,
+    transition: {
+      ease: [0.6, 0.01, -0.05, 0.95],
+      duration: 1.6
+    },
   },
 };
 
