@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Cursor from "../../components/Cursor";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
 import Loader from "../../components/Loader";
@@ -27,6 +28,7 @@ const Home = () => {
         variants={variants}
         transition={pageTransition}
       >
+          <Cursor />
         <Header />
 
         <section className="homepage">
