@@ -96,11 +96,12 @@
 
 @media screen and (min-width: 1440px) {
   .job {
-    margin-bottom: 1.2rem;
+    margin-bottom: 3rem;
 
     .header {
       .title {
         font-size: 2.3rem;
+        line-height: 2.5rem;
       }
 
       .subtitle {
@@ -121,6 +122,10 @@
   }
   .cv {
     margin-top: 1.5rem;
+
+    a {
+      font-size: 1.8rem;
+    }
   }
 }
 
