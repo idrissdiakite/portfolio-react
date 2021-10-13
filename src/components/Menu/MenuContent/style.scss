@@ -109,10 +109,23 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .menu-holder {
+    .menu-inside {
+      .menu-nav-container {
+        top: 130px;
+      }
+    }
+  }
+}
+
 
 @media screen and (min-width: 1440px) {
   .menu-holder {
     .menu-inside {
+      .menu-nav-container {
+        top: 140px;
+      }
       .nav-links {
         li a {
             font-size: 4.5rem;
