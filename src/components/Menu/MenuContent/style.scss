@@ -16,16 +16,6 @@
 
     &.open { // lorsqu'on clique sur le bouton on affiche le menu
       transform: translateX(0);
-
-      .nav-links {
-        li {
-          a {
-            transform: translate(0);
-            transition-duration: 0.1s;
-            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-          }
-        }
-      }
     }
 
     .menu-nav-container {

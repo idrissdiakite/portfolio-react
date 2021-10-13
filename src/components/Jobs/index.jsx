@@ -95,9 +95,9 @@ const jobs = [
 ];
 
 const Jobs = () => {
-  const [isVisible, setVisible] = useState(1); // "1" permet d'afficher par défault la description du premier job
+  const [isVisible, setIsVisible] = useState(1); // "1" permet d'afficher par défault la description du premier job
 
-  const toggleClass = (id) => setVisible(id);
+  const toggleClass = (id) => setIsVisible(id);
 
   return (
     <>
