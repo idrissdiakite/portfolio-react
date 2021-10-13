@@ -6,6 +6,7 @@ Portfolio réalisé avec React et SCSS (pour la mise en forme).
 - mise en place d'un preloader (gif) avant d'afficher la homepage
 - utilisation de la bibliothèque "particles" pour créer un background dynamique sur la homepage
 - utilisation de la bibliothèque "framer motion" afin de gérer les transitions entre les pages et l'apparition des composants
+- ajout d'un cursor personnalisé sur la homepage
 - création de plusieurs composants (cf. "Menu", "Loader", "Header"...) afin de ne pas surcharger les pages
 - création de tableaux d'objets et utilisation de la méthode ".map" sur ces derniers afin d'éviter la redondance de code
 - utilisation de différents hooks React (useState, createContext, useContext..)
