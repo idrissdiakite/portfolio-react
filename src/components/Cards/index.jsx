@@ -299,6 +299,14 @@ const projects = [
         >
           github
         </a>
+        <br />‣{" "}
+        <a
+          href="https://test-js.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          live
+        </a>
       </p>
     ),
   },
