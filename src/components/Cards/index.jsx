@@ -72,10 +72,10 @@ const projects = [
         </a>{" "}
         <br />‣{" "}
         <a
-          href="https://drive.google.com/file/d/19XmZkntqQG8eKVYJceQT8wImXwHJabgT"
+          href="https://ilttcom.netlify.app/"
           rel="noreferrer"
         >
-          demo
+          live
         </a>
       </p>
     ),
@@ -167,11 +167,11 @@ const projects = [
         </a>{" "}
         <br />‣{" "}
         <a
-          href="https://drive.google.com/file/d/1smJFAmxSP8zreWFDw4ewoZ3Tj-kUhPUN"
+          href="http://poc-wp.atwebpages.com/"
           target="_blank"
           rel="noreferrer"
         >
-          demo
+          live
         </a>
       </p>
     ),
