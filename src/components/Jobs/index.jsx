@@ -7,6 +7,26 @@ import "./style.scss";
 const jobs = [
   {
     id: 1,
+    title: "Développeur web - Zelda",
+    subtitle: "cdi - octobre 2021 à ce jour",
+    description: (
+      <p>
+        - Développement d'un jeu numérique |{" "}
+        <span>NextJS - Typescript - Wordpress/ACF (bo) - Axios - Phaser - Lottie - Sass</span> <br />
+        - Développement d'une carte de voeux numérique | <span>React - React Lottie - TSParticles - Framer Motion - Scss </span>
+        <br />- Création d'un thème Wordpress sur-mesure |{" "}
+        <span>Wordpress - PHP - ACF - Javascript - Sass</span>
+        <br />- Recherche et intégration thèmes payants | {" "}
+        <span>ThemeForest - Wordpress (Elementor, WPBakery,) - PHP - CSS - </span>
+        <br />- Gestion hébergements serveurs + bases de données | {" "}
+        <span>OVH - O2Switch - MySQL</span>
+        <br />- Suivi de projets + Relation clientèle | <span>Mail - Téléphone - Visio</span> <br />
+        - Outils / Applications | <span>Skype - Trello - Gitlab - FileZila - Mamp Pro - Illustrator - Google drive</span>
+      </p>
+    ),
+  },
+  {
+    id: 2,
     title: "Développeur frontend - Ultrō",
     subtitle: "stage - février à mai 2021",
     description: (
@@ -23,7 +43,7 @@ const jobs = [
     ),
   },
   {
-    id: 2,
+    id: 3,
     title: "Développeur fullstack - Human Booster",
     subtitle: "formation - juillet 2020 à mai 2021",
     description: (
@@ -50,7 +70,7 @@ const jobs = [
     ),
   },
   {
-    id: 3,
+    id: 4,
     title: "Fondateur - ilovethistrack.com",
     subtitle: "janvier 2015 à juillet 2021",
     description: (
@@ -68,7 +88,7 @@ const jobs = [
     ),
   },
   {
-    id: 4,
+    id: 5,
     title: "Responsable Adjoint - Bexley",
     subtitle: "cdi - mars 2014 à novembre 2019",
     description: (
