@@ -23,6 +23,8 @@ import {
   SiMysql,
 } from "react-icons/si";
 
+import zeldaNY from "../../assets/cards/zelda-ny.png";
+import birdiebox from "../../assets/cards/birdie-box.png";
 import ilttcom from "../../assets/cards/ilttcom-react.png";
 import artshop from "../../assets/cards/artshop-tailwind.png";
 import pictureWp from "../../assets/cards/picture-wp.png";
@@ -37,6 +39,94 @@ import "./style.scss";
 const projects = [
   {
     id: 1,
+    name: "Zelda - Meilleurs voeux 2022",
+    icons: (
+      <ul className="icons">
+        <li>
+          <SiReact className="react" />
+        </li>
+        <li>
+          <SiJavascript />
+        </li>
+        <li>
+          <SiSass className="sass" />
+        </li>
+        <li>
+          <SiSvg className="svg" />
+        </li>
+      </ul>
+    ),
+    img: <img src={zeldaNY} alt="birdie box" class="img" loading="lazy" />,
+    description: (
+      <p>
+        Carte de voeux (numérique) à destination des clients de Zelda Communication.
+      </p>
+    ),
+    links: (
+      <p>
+        ‣{" "}
+        <a
+          href="https://github.com/idrissdiakite/zelda-happy-new-year"
+          rel="noreferrer"
+        >
+          github
+        </a>{" "}
+        <br />‣{" "}
+        <a
+          href="https://2022.zelda.fr/"
+          rel="noreferrer"
+        >
+          live
+        </a>
+      </p>
+    ),
+  },
+  {
+    id: 2,
+    name: "Birdie Box",
+    icons: (
+      <ul className="icons">
+        <li>
+          <SiReact className="react" />
+        </li>
+        <li>
+          <SiJavascript />
+        </li>
+        <li>
+          <SiSass className="sass" />
+        </li>
+        <li>
+          <SiSvg className="svg" />
+        </li>
+      </ul>
+    ),
+    img: <img src={birdiebox} alt="birdie box" class="img" loading="lazy" />,
+    description: (
+      <p>
+        Site vitrine réalisé (sous React) au sein de l'agence Zelda Communication.
+      </p>
+    ),
+    links: (
+      <p>
+        ‣{" "}
+        <a
+          href="https://github.com/idrissdiakite/birdie-box"
+          rel="noreferrer"
+        >
+          github
+        </a>{" "}
+        <br />‣{" "}
+        <a
+          href="https://www.birdie-box.com/"
+          rel="noreferrer"
+        >
+          live
+        </a>
+      </p>
+    ),
+  },
+  {
+    id: 3,
     name: "ilttcom",
     icons: (
       <ul className="icons">
@@ -81,7 +171,7 @@ const projects = [
     ),
   },
   {
-    id: 2,
+    id: 4,
     name: "Artshop",
     icons: (
       <ul className="icons">
@@ -127,7 +217,7 @@ const projects = [
     ),
   },
   {
-    id: 3,
+    id: 5,
     name: "Picture Organic Clothing",
     icons: (
       <ul className="icons">
@@ -177,7 +267,7 @@ const projects = [
     ),
   },
   {
-    id: 4,
+    id: 6,
     name: "Picture Organic Clothing",
     icons: (
       <ul className="icons">
@@ -229,7 +319,7 @@ const projects = [
     ),
   },
   {
-    id: 5,
+    id: 7,
     name: "ilovethistrack.com",
     icons: (
       <ul className="icons">
@@ -266,7 +356,7 @@ const projects = [
     ),
   },
   {
-    id: 6,
+    id: 8,
     name: "Projets JavaScript",
     icons: (
       <ul className="icons">
@@ -311,7 +401,7 @@ const projects = [
     ),
   },
   {
-    id: 7,
+    id: 9,
     name: "Gestionnaire de contacts",
     icons: (
       <ul className="icons">
@@ -366,7 +456,7 @@ const projects = [
     ),
   },
   {
-    id: 8,
+    id: 10,
     name: "Gestionnaire de séries",
     icons: (
       <ul className="icons">
