@@ -16,8 +16,8 @@ const jobs = [
         - Développement d'une carte de voeux numérique | <span>React - React Lottie - TSParticles - Framer Motion - Scss </span>
         <br />- Création d'un thème Wordpress sur-mesure |{" "}
         <span>Wordpress - PHP - ACF - Javascript - Sass</span>
-        <br />- Recherche et intégration thèmes payants | {" "}
-        <span>ThemeForest - Wordpress (Elementor, WPBakery,) - PHP - CSS - </span>
+        <br />- Recherche, intégration et mise en ligne thèmes Wordpress | {" "}
+        <span>ThemeForest - Elementor, WPBakery, WP Rocket..</span>
         <br />- Gestion hébergements serveurs + bases de données | {" "}
         <span>OVH - O2Switch - MySQL</span>
         <br />- Suivi de projets + Relation clientèle | <span>Mail - Téléphone - Visio</span> <br />
