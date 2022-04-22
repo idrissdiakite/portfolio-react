@@ -26,7 +26,7 @@ const contactDetails = [
   {
     id: 3,
     icon: <AiOutlineHome className="icon" />,
-    link: <span>Lyon (69001)</span>,
+    link: <span>Lyon (69003)</span>,
   },
   {
     id: 4,
