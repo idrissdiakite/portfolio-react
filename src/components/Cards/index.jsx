@@ -45,13 +45,16 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiCss3 className="css" />
+          <SiPhp className="php" />
         </li>
         <li>
           <SiWordpress className="wordpress" />
         </li>
         <li>
           <SiMailchimp className="mailchimp" />
+        </li>
+        <li>
+          <SiCss3 className="css" />
         </li>
       </ul>
     ),
