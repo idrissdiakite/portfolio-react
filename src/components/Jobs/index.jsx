@@ -12,16 +12,26 @@ const jobs = [
     description: (
       <p>
         - Développement d'un jeu numérique |{" "}
-        <span>NextJS - Typescript - Wordpress/ACF (bo) - Axios - Phaser - Lottie - Sass</span> <br />
-        - Développement d'une carte de voeux numérique | <span>React - React Lottie - TSParticles - Framer Motion - Scss </span>
+        <span>
+          NextJS - Typescript - Wordpress/ACF (bo) - Axios - Phaser - Lottie -
+          Sass
+        </span>{" "}
+        <br />- Développement d'une carte de voeux numérique |{" "}
+        <span>React - React Lottie - TSParticles - Framer Motion - Scss </span>
         <br />- Création d'un thème Wordpress sur-mesure |{" "}
         <span>Wordpress - PHP - ACF - Javascript - Sass</span>
-        <br />- Recherche, intégration et mise en ligne thèmes Wordpress | {" "}
+        <br />- Refonte et développement sites web via Wordpress |{" "}
         <span>ThemeForest - Elementor, WPBakery, WP Rocket..</span>
-        <br />- Gestion hébergements serveurs + bases de données | {" "}
+        <br />- Gestion hébergements serveurs + bases de données |{" "}
         <span>OVH - O2Switch - MySQL</span>
-        <br />- Suivi de projets + Relation clientèle | <span>Mail - Téléphone - Visio</span> <br />
-        - Outils / Applications | <span>Skype - Trello - Gitlab - FileZila - Mamp Pro - Illustrator - Google drive</span>
+        <br />- Tests compatibilité navigateur et accessibilité |{" "}
+        <span>Lighthouse - Caniuse - W3C Link checker etc</span>
+        <br />- Suivi de projets + Relation clientèle |{" "}
+        <span>Mail - Téléphone - Visio</span> <br />- Outils / Applications |{" "}
+        <span>
+          Skype - Trello - Gitlab - FileZila - Mamp Pro - Illustrator - Google
+          drive
+        </span>
       </p>
     ),
   },
