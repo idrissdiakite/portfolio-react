@@ -21,6 +21,7 @@ import {
   SiSvg,
   SiGreensock,
   SiMysql,
+  SiMailchimp,
 } from "react-icons/si";
 
 import zelda from "../../assets/cards/zelda.png";
@@ -48,6 +49,9 @@ const projects = [
         </li>
         <li>
           <SiWordpress className="wordpress" />
+        </li>
+        <li>
+          <SiMailchimp className="mailchimp" />
         </li>
       </ul>
     ),
