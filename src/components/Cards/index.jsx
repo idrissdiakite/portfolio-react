@@ -4,6 +4,7 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiTypescript,
   SiReact,
   SiAngular,
   SiPhp,
@@ -24,6 +25,7 @@ import {
   SiMailchimp,
 } from "react-icons/si";
 
+import paillet from "../../assets/cards/paillet.png";
 import zelda from "../../assets/cards/zelda.png";
 import zeldaNY from "../../assets/cards/zelda-ny.png";
 import birdiebox from "../../assets/cards/birdie-box.png";
@@ -41,6 +43,47 @@ import "./style.scss";
 const projects = [
   {
     id: 1,
+    name: "Paillet",
+    icons: (
+      <ul className="icons">
+        <li>
+          <SiPhp className="php" />
+        </li>
+        <li>
+          <SiWordpress className="wordpress" />
+        </li>
+        <li>
+          <SiJavascript className="javascript" />
+        </li>
+        <li>
+          <SiTypescript className="typescript" />
+        </li>
+        <li>
+          <SiSass className="sass" />
+        </li>
+      </ul>
+    ),
+    img: <img src={paillet} alt="Paillet" class="img" loading="lazy" />,
+    description: (
+      <p>
+        Développement d'un thème Wordpress (+ ACF) from scratch.
+      </p>
+    ),
+    links: (
+      <p>
+        ‣{" "}
+        <a
+          href="https://github.com/idrissdiakite/paillet-wordpress"
+          target="_blank"
+          rel="noreferrer"
+        >
+          github
+        </a>
+      </p>
+    ),
+  },
+  {
+    id: 2,
     name: "Zelda.fr",
     icons: (
       <ul className="icons">
@@ -78,7 +121,7 @@ const projects = [
     ),
   },
   {
-    id: 2,
+    id: 3,
     name: "Meilleurs voeux 2022",
     icons: (
       <ul className="icons">
@@ -124,7 +167,7 @@ const projects = [
     ),
   },
   {
-    id: 3,
+    id: 4,
     name: "Birdie Box",
     icons: (
       <ul className="icons">
@@ -170,7 +213,7 @@ const projects = [
     ),
   },
   {
-    id: 4,
+    id: 5,
     name: "ilttcom",
     icons: (
       <ul className="icons">
@@ -217,7 +260,7 @@ const projects = [
     ),
   },
   {
-    id: 5,
+    id: 6,
     name: "Artshop",
     icons: (
       <ul className="icons">
@@ -263,7 +306,7 @@ const projects = [
     ),
   },
   {
-    id: 6,
+    id: 7,
     name: "Picture Organic Clothing",
     icons: (
       <ul className="icons">
@@ -313,7 +356,7 @@ const projects = [
     ),
   },
   {
-    id: 7,
+    id: 8,
     name: "Picture Organic Clothing",
     icons: (
       <ul className="icons">
@@ -365,7 +408,7 @@ const projects = [
     ),
   },
   {
-    id: 8,
+    id: 9,
     name: "ilovethistrack.com",
     icons: (
       <ul className="icons">
@@ -402,7 +445,7 @@ const projects = [
     ),
   },
   {
-    id: 9,
+    id: 10,
     name: "Projets JavaScript",
     icons: (
       <ul className="icons">
@@ -447,7 +490,7 @@ const projects = [
     ),
   },
   {
-    id: 10,
+    id: 11,
     name: "Gestionnaire de contacts",
     icons: (
       <ul className="icons">
@@ -502,7 +545,7 @@ const projects = [
     ),
   },
   {
-    id: 11,
+    id: 12,
     name: "Gestionnaire de séries",
     icons: (
       <ul className="icons">
