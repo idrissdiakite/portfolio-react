@@ -23,6 +23,7 @@ import {
   SiGreensock,
   SiMysql,
   SiMailchimp,
+  SiNetlify,
 } from "react-icons/si";
 
 import paillet from "../../assets/cards/paillet.png";
@@ -47,19 +48,22 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiPhp className="php" />
+          <SiPhp className="php" title="PHP" />
         </li>
         <li>
-          <SiWordpress className="wordpress" />
+          <SiWordpress className="wordpress" title="Wordpress" />
         </li>
         <li>
-          <SiJavascript className="javascript" />
+          <SiFilezilla className="filezila" title="FileZila" />
         </li>
         <li>
-          <SiTypescript className="typescript" />
+          <SiJavascript className="javascript" title="Javascript" />
         </li>
         <li>
-          <SiSass className="sass" />
+          <SiTypescript className="typescript" title="TypeScript" />
+        </li>
+        <li>
+          <SiSass className="sass" title="Sass" />
         </li>
       </ul>
     ),
@@ -88,16 +92,19 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiPhp className="php" />
+          <SiPhp className="php" title="PHP" />
         </li>
         <li>
-          <SiWordpress className="wordpress" />
+          <SiWordpress className="wordpress" title="Wordpress" />
         </li>
         <li>
-          <SiMailchimp className="mailchimp" />
+          <SiMailchimp className="mailchimp" title="Mailchimp" />
         </li>
         <li>
-          <SiCss3 className="css" />
+          <SiFilezilla className="filezila" title="FileZila" />
+        </li>
+        <li>
+          <SiCss3 className="css" title="CSS" />
         </li>
       </ul>
     ),
@@ -126,16 +133,16 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiReact className="react" />
+          <SiReact className="react" title="React" />
         </li>
         <li>
-          <SiJavascript className="javascript" />
+          <SiJavascript className="javascript" title="Javascript" />
         </li>
         <li>
-          <SiSass className="sass" />
+          <SiSass className="sass" title="Sass" />
         </li>
         <li>
-          <SiSvg className="svg" />
+          <SiSvg className="svg" title="SVG" />
         </li>
       </ul>
     ),
@@ -172,16 +179,16 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiReact className="react" />
+          <SiReact className="react" title="React" />
         </li>
         <li>
-          <SiJavascript className="javascript" />
+          <SiJavascript className="javascript" title="Javascript" />
         </li>
         <li>
-          <SiSass className="sass" />
+          <SiSass className="sass" title="Sass" />
         </li>
         <li>
-          <SiSvg className="svg" />
+          <SiSvg className="svg" title="SVG" />
         </li>
       </ul>
     ),
@@ -218,16 +225,19 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiReact className="react" />
+          <SiReact className="react" title="React" />
         </li>
         <li>
-          <SiJavascript className="javascript" />
+          <SiAirtable className="airtable" title="Airtable" />
         </li>
         <li>
-          <SiSass className="sass" />
+          <SiJavascript className="javascript" title="Javascript" />
         </li>
         <li>
-          <SiAirtable className="airtable" />
+          <SiSass className="sass" title="Sass" />
+        </li>
+        <li>
+          <SiNetlify className="netlify" title="Netlify" />
         </li>
       </ul>
     ),
@@ -265,13 +275,16 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiHtml5 className="html" />
+          <SiTailwindcss className="tailwind" title="Tailwind" />
         </li>
         <li>
-          <SiTailwindcss className="tailwind" />
+          <SiPostcss className="postcss" title="PostCSS" />
         </li>
         <li>
-          <SiPostcss className="postcss" />
+          <SiHtml5 className="html" title="HTML" />
+        </li>
+        <li>
+          <SiNetlify className="netlify" title="Netlify" />
         </li>
       </ul>
     ),
@@ -311,19 +324,19 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiDocker className="docker" />
+          <SiDocker className="docker" title="Docker" />
         </li>
         <li>
-          <SiPhp className="php" />
+          <SiPhp className="php"  title="PHP" />
         </li>
         <li>
-          <SiWordpress className="wordpress" />
+          <SiWordpress className="wordpress" title="Wordpress" />
         </li>
         <li>
-          <SiCss3 className="css" />
+          <SiCss3 className="css" title="CSS" />
         </li>
         <li>
-          <SiJavascript className="javascript" />
+          <SiJavascript className="javascript" title="Javascripthp" />
         </li>
       </ul>
     ),
@@ -361,19 +374,19 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiGatsby className="gatsby" />
+          <SiGatsby className="gatsby" title="Gatsby" />
         </li>
         <li>
-          <SiReact className="react" />
+          <SiReact className="react" title="React" />
         </li>
         <li>
-          <SiGraphql className="graphql" />
+          <SiGraphql className="graphql" title="GraphQL" />
         </li>
         <li>
-          <SiWordpress className="wordpress" />
+          <SiWordpress className="wordpress" title="Wordpress" />
         </li>
         <li>
-          <SiCss3 className="css" />
+          <SiCss3 className="css" title="CSS" />
         </li>
       </ul>
     ),
@@ -413,16 +426,16 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiCss3 className="css" />
+          <SiPhp className="php" title="PHP" />
         </li>
         <li>
-          <SiFilezilla className="filezila" />
+          <SiWordpress className="wordpress" title="Wordpress" />
         </li>
         <li>
-          <SiWordpress className="wordpress" />
+          <SiCss3 className="css" title="CSS" />
         </li>
         <li>
-          <SiPhp className="php" />
+          <SiFilezilla className="filezila" title="FileZila" />
         </li>
       </ul>
     ),
@@ -450,19 +463,19 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiHtml5 className="html" />
+          <SiHtml5 className="html" title="HTML" />
         </li>
         <li>
-          <SiCss3 className="css" />
+          <SiCss3 className="css" title="CSS" />
         </li>
         <li>
-          <SiJavascript className="javascript" />
+          <SiJavascript className="javascript" title="Javascript" />
         </li>
         <li>
-          <SiGreensock className="greensock" />
+          <SiGreensock className="greensock" title="GSAP" />
         </li>
         <li>
-          <SiSvg className="svg" />
+          <SiSvg className="svg" title="SVG" />
         </li>
       </ul>
     ),
@@ -495,16 +508,16 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiMysql className="mysql" />
+          <SiMysql className="mysql" title="MySQL" />
         </li>
         <li>
-          <SiPhp className="php" />
+          <SiPhp className="php" title="PHP" />
         </li>
         <li>
-          <SiSymfony className="symfony" />
+          <SiSymfony className="symfony" title="Symfony" />
         </li>
         <li>
-          <SiBootstrap className="bootstrap" />
+          <SiBootstrap className="bootstrap" title="Bootstrap" />
         </li>
       </ul>
     ),
@@ -550,13 +563,13 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
-          <SiMysql className="mysql" />
+          <SiMysql className="mysql" title="MySQL" />
         </li>
         <li>
-          <SiAngular className="angular" />
+          <SiAngular className="angular" title="Angular" />
         </li>
         <li>
-          <SiBootstrap className="bootstrap" />
+          <SiBootstrap className="bootstrap" title="Bootstrap" />
         </li>
       </ul>
     ),
