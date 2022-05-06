@@ -66,7 +66,7 @@ const projects = [
     img: <img src={paillet} alt="Paillet" class="img" loading="lazy" />,
     description: (
       <p>
-        Développement d'un thème Wordpress (+ ACF) from scratch.
+        Co-développement d'un thème Wordpress (+ ACF) from scratch.
       </p>
     ),
     links: (
