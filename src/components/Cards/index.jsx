@@ -129,7 +129,7 @@ const projects = [
           <SiReact className="react" />
         </li>
         <li>
-          <SiJavascript />
+          <SiJavascript className="javascript" />
         </li>
         <li>
           <SiSass className="sass" />
@@ -175,7 +175,7 @@ const projects = [
           <SiReact className="react" />
         </li>
         <li>
-          <SiJavascript />
+          <SiJavascript className="javascript" />
         </li>
         <li>
           <SiSass className="sass" />
@@ -221,7 +221,7 @@ const projects = [
           <SiReact className="react" />
         </li>
         <li>
-          <SiJavascript />
+          <SiJavascript className="javascript" />
         </li>
         <li>
           <SiSass className="sass" />
