@@ -33,6 +33,7 @@ import paillet from "../../assets/cards/paillet.png";
 import zelda from "../../assets/cards/zelda.png";
 import zeldaNY from "../../assets/cards/zelda-ny.png";
 import birdiebox from "../../assets/cards/birdie-box.png";
+import portfolio from "../../assets/cards/portfolio.png";
 import ilttcom from "../../assets/cards/ilttcom-react.png";
 import artshop from "../../assets/cards/artshop-tailwind.png";
 import pictureWp from "../../assets/cards/picture-wp.png";
@@ -51,10 +52,13 @@ const projects = [
     icons: (
       <ul className="icons">
         <li>
+          <RiVuejsFill className="vuejs" title="Vuejs" />
+        </li>
+        <li>
           <SiWordpress className="wordpress" title="Wordpress" />
         </li>
         <li>
-          <RiVuejsFill className="vuejs" title="Vuejs" />
+          <SiSvg className="svg" title="SVG" />
         </li>
         <li>
           <SiJavascript className="javascript" title="Javascript" />
@@ -64,9 +68,6 @@ const projects = [
         </li>
         <li>
           <SiFilezilla className="filezila" title="FileZila" />
-        </li>
-        <li>
-          <SiSvg className="svg" title="SVG" />
         </li>
         <li>
           <SiSass className="sass" title="Sass" />
@@ -249,6 +250,48 @@ const projects = [
         </a>{" "}
         <br />‣{" "}
         <a href="https://www.birdie-box.com/" target="_blank" rel="noreferrer">
+          live
+        </a>
+      </p>
+    ),
+  },
+  {
+    id: 5,
+    name: "Portfolio",
+    icons: (
+      <ul className="icons">
+        <li>
+          <SiReact className="react" title="React" />
+        </li>
+        <li>
+          <SiJavascript className="javascript" title="Javascript" />
+        </li>
+        <li>
+          <SiSass className="sass" title="Sass" />
+        </li>
+        <li>
+          <SiNetlify className="netlify" title="Netlify" />
+        </li>
+      </ul>
+    ),
+    img: <img src={portfolio} alt="portfolio" class="img" loading="lazy" />,
+    description: (
+      <p>
+        Portfolio perso développé avec React.
+      </p>
+    ),
+    links: (
+      <p>
+        ‣{" "}
+        <a
+          href="https://github.com/idrissdiakite/portfolio-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          github
+        </a>{" "}
+        <br />‣{" "}
+        <a href="https://idrissdiakite.netlify.app/" target="_blank" rel="noreferrer">
           live
         </a>
       </p>
