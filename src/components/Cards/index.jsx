@@ -26,6 +26,9 @@ import {
   SiNetlify,
 } from "react-icons/si";
 
+import { RiVuejsFill } from "react-icons/ri";
+
+import jeu from "../../assets/cards/jeu.png";
 import paillet from "../../assets/cards/paillet.png";
 import zelda from "../../assets/cards/zelda.png";
 import zeldaNY from "../../assets/cards/zelda-ny.png";
@@ -42,6 +45,58 @@ import serie from "../../assets/cards/series-angular.png";
 import "./style.scss";
 
 const projects = [
+  {
+    id: 1,
+    name: "Jeu Prends le Bus",
+    icons: (
+      <ul className="icons">
+        <li>
+          <SiWordpress className="wordpress" title="Wordpress" />
+        </li>
+        <li>
+          <RiVuejsFill className="vuejs" title="Vuejs" />
+        </li>
+        <li>
+          <SiJavascript className="javascript" title="Javascript" />
+        </li>
+        <li>
+          <SiTypescript className="typescript" title="TypeScript" />
+        </li>
+        <li>
+          <SiFilezilla className="filezila" title="FileZila" />
+        </li>
+        <li>
+          <SiSvg className="svg" title="SVG" />
+        </li>
+        <li>
+          <SiSass className="sass" title="Sass" />
+        </li>
+      </ul>
+    ),
+    img: <img src={jeu} alt="Jeu Prends le Bus" class="img" loading="lazy" />,
+    description: (
+      <p>
+        Jeu numérique développé sous Nuxtjs (front) et
+        Wordpress + ACF (back).
+      </p>
+    ),
+    links: (
+      <p>
+        ‣{" "}
+        <a
+          href="https://github.com/idrissdiakite/jeu-prends-le-bus-nuxt"
+          target="_blank"
+          rel="noreferrer"
+        >
+          github
+        </a>
+        <br />‣{" "}
+        <a href="http://demo.jeu-prends-le-bus.zelllda.fr/" target="_blank" rel="noreferrer">
+          démo
+        </a>
+      </p>
+    ),
+  },
   {
     id: 1,
     name: "Paillet",
@@ -69,9 +124,7 @@ const projects = [
     ),
     img: <img src={paillet} alt="Paillet" class="img" loading="lazy" />,
     description: (
-      <p>
-        Co-développement d'un thème Wordpress (+ ACF) from scratch.
-      </p>
+      <p>Co-développement d'un thème Wordpress (+ ACF) from scratch.</p>
     ),
     links: (
       <p>
@@ -110,18 +163,12 @@ const projects = [
     ),
     img: <img src={zelda} alt="zelda.fr" class="img" loading="lazy" />,
     description: (
-      <p>
-        Refonte du site internet de Zelda Communication via Wordpress.
-      </p>
+      <p>Refonte du site internet de Zelda Communication via Wordpress.</p>
     ),
     links: (
       <p>
         ‣{" "}
-        <a
-          href="http://zelda.fr/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="http://zelda.fr/" target="_blank" rel="noreferrer">
           live
         </a>
       </p>
@@ -148,9 +195,7 @@ const projects = [
     ),
     img: <img src={zeldaNY} alt="birdie box" class="img" loading="lazy" />,
     description: (
-      <p>
-        Carte de voeux (numérique) à destination des clients de Zelda.
-      </p>
+      <p>Carte de voeux (numérique) à destination des clients de Zelda.</p>
     ),
     links: (
       <p>
@@ -163,11 +208,7 @@ const projects = [
           github
         </a>{" "}
         <br />‣{" "}
-        <a
-          href="https://2022.zelda.fr/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://2022.zelda.fr/" target="_blank" rel="noreferrer">
           live
         </a>
       </p>
@@ -194,9 +235,7 @@ const projects = [
     ),
     img: <img src={birdiebox} alt="birdie box" class="img" loading="lazy" />,
     description: (
-      <p>
-        Site vitrine réalisé (sous React) au sein de l'agence Zelda.
-      </p>
+      <p>Site vitrine réalisé (sous React) au sein de l'agence Zelda.</p>
     ),
     links: (
       <p>
@@ -209,11 +248,7 @@ const projects = [
           github
         </a>{" "}
         <br />‣{" "}
-        <a
-          href="https://www.birdie-box.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://www.birdie-box.com/" target="_blank" rel="noreferrer">
           live
         </a>
       </p>
@@ -259,11 +294,7 @@ const projects = [
           github
         </a>{" "}
         <br />‣{" "}
-        <a
-          href="https://ilttcom.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://ilttcom.netlify.app/" target="_blank" rel="noreferrer">
           live
         </a>
       </p>
@@ -327,7 +358,7 @@ const projects = [
           <SiDocker className="docker" title="Docker" />
         </li>
         <li>
-          <SiPhp className="php"  title="PHP" />
+          <SiPhp className="php" title="PHP" />
         </li>
         <li>
           <SiWordpress className="wordpress" title="Wordpress" />
@@ -492,11 +523,7 @@ const projects = [
           github
         </a>
         <br />‣{" "}
-        <a
-          href="https://test-js.netlify.app"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://test-js.netlify.app" target="_blank" rel="noreferrer">
           live
         </a>
       </p>
