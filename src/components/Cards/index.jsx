@@ -99,7 +99,7 @@ const projects = [
     ),
   },
   {
-    id: 1,
+    id: 2,
     name: "Paillet",
     icons: (
       <ul className="icons">
@@ -141,7 +141,7 @@ const projects = [
     ),
   },
   {
-    id: 2,
+    id: 3,
     name: "Zelda.fr",
     icons: (
       <ul className="icons">
@@ -176,7 +176,7 @@ const projects = [
     ),
   },
   {
-    id: 3,
+    id: 4,
     name: "Meilleurs voeux 2022",
     icons: (
       <ul className="icons">
@@ -216,7 +216,7 @@ const projects = [
     ),
   },
   {
-    id: 4,
+    id: 5,
     name: "Birdie Box",
     icons: (
       <ul className="icons">
@@ -256,7 +256,7 @@ const projects = [
     ),
   },
   {
-    id: 5,
+    id: 6,
     name: "Portfolio",
     icons: (
       <ul className="icons">
@@ -298,7 +298,7 @@ const projects = [
     ),
   },
   {
-    id: 5,
+    id: 7,
     name: "ilttcom",
     icons: (
       <ul className="icons">
@@ -344,7 +344,7 @@ const projects = [
     ),
   },
   {
-    id: 6,
+    id: 8,
     name: "Artshop",
     icons: (
       <ul className="icons">
@@ -393,7 +393,7 @@ const projects = [
     ),
   },
   {
-    id: 7,
+    id: 9,
     name: "Picture Organic Clothing",
     icons: (
       <ul className="icons">
@@ -443,7 +443,7 @@ const projects = [
     ),
   },
   {
-    id: 8,
+    id: 10,
     name: "Picture Organic Clothing",
     icons: (
       <ul className="icons">
@@ -495,7 +495,7 @@ const projects = [
     ),
   },
   {
-    id: 9,
+    id: 11,
     name: "ilovethistrack.com",
     icons: (
       <ul className="icons">
@@ -532,7 +532,7 @@ const projects = [
     ),
   },
   {
-    id: 10,
+    id: 12,
     name: "Projets JavaScript",
     icons: (
       <ul className="icons">
@@ -573,7 +573,7 @@ const projects = [
     ),
   },
   {
-    id: 11,
+    id: 13,
     name: "Gestionnaire de contacts",
     icons: (
       <ul className="icons">
@@ -628,7 +628,7 @@ const projects = [
     ),
   },
   {
-    id: 12,
+    id: 14,
     name: "Gestionnaire de séries",
     icons: (
       <ul className="icons">
