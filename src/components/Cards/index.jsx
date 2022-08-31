@@ -24,6 +24,13 @@ import {
   SiMysql,
   SiMailchimp,
   SiNetlify,
+  SiWoo,
+  SiStripe,
+  SiGooglepay,
+  SiApplepay,
+  SiPaypal
+
+
 } from "react-icons/si";
 
 import { RiVuejsFill } from "react-icons/ri";
@@ -32,6 +39,7 @@ import jeu from "../../assets/cards/jeu.png";
 import paillet from "../../assets/cards/paillet.png";
 import zelda from "../../assets/cards/zelda.png";
 import zeldaNY from "../../assets/cards/zelda-ny.png";
+import ateliers from "../../assets/cards/ateliers.png";
 import birdiebox from "../../assets/cards/birdie-box.png";
 import portfolio from "../../assets/cards/portfolio.png";
 import ilttcom from "../../assets/cards/ilttcom-react.png";
@@ -217,6 +225,55 @@ const projects = [
   },
   {
     id: 5,
+    name: "Ateliers",
+    icons: (
+      <ul className="icons">
+        <li>
+        <SiWoo className="woocommerce" title="Woocommerce" />
+        </li>
+        <li>
+        <SiWordpress className="wordpress" title="Wordpress" />
+        </li>
+        <li>
+        <SiFilezilla className="filezila" title="FileZila" />
+        </li>
+        <li>
+        <SiStripe className="stripe" title="Stripe" />
+        </li>
+        <li>
+        <SiPaypal className="paypal" title="Paypal" />
+        </li>
+        <li>
+        <SiGooglepay className="googlepay" title="Google Pay" />
+        </li>
+        <li>
+        <SiApplepay title="Apple Pay" />
+        </li>
+      </ul>
+    ),
+    img: <img src={ateliers} alt="birdie box" class="img" loading="lazy" />,
+    description: (
+      <p>Site (Wordpress) de réservation de cours de cuisine en ligne.</p>
+    ),
+    links: (
+      <p>
+        ‣{" "}
+        <a
+          href="https://github.com/idrissdiakite/ateliers-wordpress"
+          target="_blank"
+          rel="noreferrer"
+        >
+          github
+        </a>{" "}
+        <br />‣{" "}
+        <a href="Site de réservation de cours de cuisine en ligne" target="_blank" rel="noreferrer">
+          live
+        </a>
+      </p>
+    ),
+  },
+  {
+    id: 5,
     name: "Birdie Box",
     icons: (
       <ul className="icons">
@@ -277,7 +334,7 @@ const projects = [
     img: <img src={portfolio} alt="portfolio" class="img" loading="lazy" />,
     description: (
       <p>
-        Portfolio perso développé avec React.
+        Portfolio personnel développé avec React.
       </p>
     ),
     links: (
