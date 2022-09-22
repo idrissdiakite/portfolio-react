@@ -21,7 +21,7 @@ const jobs = [
         <br />- Création d'un thème Wordpress sur-mesure |{" "}
         <span>Wordpress - PHP - ACF - Javascript - Sass</span>
         <br />- Refonte et développement de sites web via Wordpress |{" "}
-        <span>ThemeForest - Elementor/WPBakery, Woocommerce + Stripe (CB, Paypal, Apple Pay, Google Pay), WP Rocket, Yoast SEO, Poedit (traductions) etc..</span>
+        <span>ThemeForest - Elementor/WPBakery, Woocommerce + Stripe (CB, Paypal, Apple Pay, Google Pay), WP Rocket, Yoast SEO, Mailchimp, Contact Form 7, Poedit (traductions) etc..</span>
         <br />- Rédaction de documentations technique |{" "}
         <span>Google Docs - Pages (Mac)</span>
         <br />- Gestion hébergements serveurs + bases de données |{" "}
