@@ -13,7 +13,7 @@ const jobs = [
       <p>
         - Développement d'un jeu numérique |{" "}
         <span>
-          NextJS - Typescript - Wordpress/ACF (bo) - Axios - Phaser - Lottie -
+          NuxtJS - Typescript - Wordpress/ACF (bo) - Axios - Phaser - Lottie -
           Sass
         </span>{" "}
         <br />- Développement d'une carte de voeux numérique |{" "}
