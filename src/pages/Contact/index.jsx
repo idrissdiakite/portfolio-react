@@ -14,7 +14,7 @@ const Contact = () => {
     >
       <section className="contact">
         <h1>Contact</h1>
-          <Details />
+        <Details />
       </section>
     </motion.div>
   )

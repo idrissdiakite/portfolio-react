@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Jobs from "../../components/Jobs";
-
 import "./style.scss";
 
 const Experience = () => {

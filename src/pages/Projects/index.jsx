@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Cards from "../../components/Cards";
-
 import "./style.scss";
 
 const Projects = () => {
@@ -12,7 +11,7 @@ const Projects = () => {
       variants={variants}
       transition={pageTransition}
     >
-      <section className="my-projects">
+      <section className="projects">
         <h1>Projets</h1>
         <Cards />
       </section>
