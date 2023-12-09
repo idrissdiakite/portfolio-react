@@ -14,9 +14,7 @@ const Projects = () => {
     >
       <section className="my-projects">
         <h1>Projets</h1>
-        <div className="main-container">
-          <Cards />
-        </div>
+        <Cards />
       </section>
     </motion.div>
   )

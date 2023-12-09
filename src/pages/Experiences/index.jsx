@@ -14,9 +14,7 @@ const Experience = () => {
     >
       <section className="experience">
         <h1>Experiences</h1>
-        <div className="main-container">
-          <Jobs />
-        </div>
+        <Jobs />
       </section>
     </motion.div>
   )

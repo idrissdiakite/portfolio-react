@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-// import Cursor from "../../components/Cursor";
 import Loader from "../../components/Loader";
 import ParticleBackground from "../../Particles/ParticleBackground";
-
 import "./style.scss";
+// import Cursor from "../../components/Cursor";
+
 
 const Home = () => {
   const [loader, setLoader] = useState(true)
@@ -39,8 +39,8 @@ const Home = () => {
           variants={variants}
           transition={titleTransition}
         >
-          Idriss <br />
-          Diakite
+          <span>Idriss</span> <br />
+          <span>Diakite</span>
         </motion.h1>
         <div className="homepage__suptitle">
           Développeur front-end

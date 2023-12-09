@@ -14,9 +14,7 @@ const Presentation = () => {
     >
       <section className="presentation">
         <h1>Qui je suis</h1>
-        <div className="main-container">
-          <Infos />
-        </div>
+        <Infos />
       </section>
     </motion.div>
   )
