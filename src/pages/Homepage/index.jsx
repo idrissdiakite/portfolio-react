@@ -35,6 +35,7 @@ const Home = () => {
           <ParticleBackground />
 
           <motion.h1
+            className="homepage__title"
             initial="initial"
             animate="in"
             variants={variants}

@@ -11,33 +11,23 @@
     right: 0;
   }
 
-  h1 {
+  &__title {
     font-size: 4.5rem;
     line-height: 4rem;
-  }
-}
+    width: max-content;
+    pointer-events: none;
 
-@media screen and (min-width: 768px) {
-  .homepage {
-    h1 {
+    @media screen and (min-width: 768px) {
       font-size: 10rem;
       line-height: 10rem;
     }
-  }
-}
 
-@media screen and (min-width: 1444px) {
-  .homepage {
-    h1 {
+    @media screen and (min-width: 1444px) {
       font-size: 15rem;
       line-height: 15rem;
     }
-  }
-}
 
-@media screen and (min-width: 1680px) {
-  .homepage {
-    h1 {
+    @media screen and (min-width: 1680px) {
       font-size: 20rem;
       line-height: 20rem;
     }
