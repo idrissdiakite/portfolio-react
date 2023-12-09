@@ -10,12 +10,17 @@ import ParticleBackground from "../../Particles/ParticleBackground";
 import "./style.scss";
 
 const Home = () => {
-  const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoader(false);
-    }, 2500); // durée d'affichage du loader
+    const isFirstVisit = localStorage.getItem('isFirstVisit')
+
+    if (!isFirstVisit) {
+      setTimeout(() => {
+        setLoader(false)
+        localStorage.setItem('isFirstVisit', 'false')
+      }, 2500)
+    } else { setLoader(false) }
   }, []);
 
   return loader ? (
