@@ -1,6 +1,6 @@
 @import "./settings";
 
-//RESET
+// RESET
 
 *,
 ::after,
@@ -10,23 +10,18 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
-ul {
-  list-style-type: none;
-}
+ul { list-style-type: none; }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
 
 // GLOBAL
 
 body {
   font-family: $font-1;
   font-weight: 400;
+  font-size: 1.2rem;
   background-color: $color-1;
   overflow-x: hidden;
 }
@@ -34,53 +29,34 @@ body {
 #root { overflow: hidden; }
 
 h1,
-h2,
-h3,
-h4,
-h5 {
+h2 {
   font-family: $font-2;
   text-transform: uppercase;
 }
 
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+
 section {
   position: relative;
-  padding: 0 1rem 1.5rem;
-  min-height: 100vh;
   margin: 0 auto;
-  font-size: 1.2rem;
+  min-height: 100vh;
+  padding: 2rem 1rem;
 
-  h1 {
-    font-size: 2.3rem;
-    padding-top: 22px;
-    margin-left: -5px;
-    margin-bottom: 1.5rem;
+  @media screen and (min-width: 768px) {
+    margin-left: 75px;
+    padding: 48px 2.5rem;
+    border-left: 1px solid rgb(116, 116, 116);
   }
 }
 
 // .homepage { // désactive le curseur par défaut sur la homepage
 //   cursor: none;
 // }
-
-// query
-@media screen and (min-width: 768px) {
-  body {
-    font-weight: 200;
-  }
-
-  section {
-    margin-left: 75px;
-    padding: 0 2.1rem 2rem 2.5rem;
-    border-left: 1px solid rgb(116, 116, 116);
-
-    h1 {
-      font-size: 4rem;
-      padding-top: 38px;
-      margin-left: -8px;
-      margin-bottom: 2rem;
-    }
-
-    .main-container {
-      margin-left: -3px;
-    }
-  }
-}
