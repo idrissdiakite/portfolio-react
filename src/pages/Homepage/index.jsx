@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 // import Cursor from "../../components/Cursor";
-import Header from "../../components/Header";
 import Loader from "../../components/Loader";
 import ParticleBackground from "../../Particles/ParticleBackground";
 
@@ -31,7 +30,6 @@ const Home = () => {
       transition={pageTransition}
     >
     {/* <Cursor /> */}
-      <Header />
       <section className="homepage">
         <ParticleBackground />
         <motion.h1
@@ -44,6 +42,9 @@ const Home = () => {
           Idriss <br />
           Diakite
         </motion.h1>
+        <div className="homepage__suptitle">
+          Développeur front-end
+        </div>
       </section>
     </motion.div>
   )
