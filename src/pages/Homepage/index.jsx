@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 // import Cursor from "../../components/Cursor";
-import Button from "../../components/Button";
 import Header from "../../components/Header";
 import Loader from "../../components/Loader";
 import ParticleBackground from "../../Particles/ParticleBackground";
@@ -33,10 +32,8 @@ const Home = () => {
     >
     {/* <Cursor /> */}
       <Header />
-
       <section className="homepage">
         <ParticleBackground />
-
         <motion.h1
           className="homepage__title"
           initial="initial"
@@ -47,8 +44,6 @@ const Home = () => {
           Idriss <br />
           Diakite
         </motion.h1>
-
-        <Button />
       </section>
     </motion.div>
   )

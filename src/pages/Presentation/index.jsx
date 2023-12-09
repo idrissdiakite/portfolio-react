@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Infos from "../../components/Infos";
-import Button from "../../components/Button";
-import Menu from "../../components/Menu";
 
 import "./style.scss";
 
@@ -14,16 +12,11 @@ const Presentation = () => {
       variants={variants}
       transition={pageTransition}
     >
-      <Menu />
-
       <section className="presentation">
         <h1>Qui je suis</h1>
-
         <div className="main-container">
           <Infos />
         </div>
-
-        <Button />
       </section>
     </motion.div>
   )

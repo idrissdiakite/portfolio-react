@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Button from "../../components/Button";
 import Jobs from "../../components/Jobs";
-import Menu from "../../components/Menu";
 
 import "./style.scss";
 
@@ -14,13 +12,11 @@ const Experience = () => {
       variants={variants}
       transition={pageTransition}
     >
-      <Menu />
       <section className="experience">
         <h1>Experiences</h1>
         <div className="main-container">
           <Jobs />
         </div>
-        <Button />
       </section>
     </motion.div>
   )
