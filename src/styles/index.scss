@@ -1,6 +1,7 @@
 @import "./settings";
 
-//reset
+//RESET
+
 *,
 ::after,
 ::before {
@@ -8,23 +9,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
 
-// global style
+// GLOBAL
+
 body {
   font-family: $font-1;
   font-weight: 400;
   background-color: $color-1;
   overflow-x: hidden;
 }
+
+#root { overflow: hidden; }
 
 h1,
 h2,
@@ -38,7 +45,6 @@ h5 {
 section {
   position: relative;
   padding: 0 1rem 1.5rem;
-  // width: calc(100vw - 50px);
   min-height: 100vh;
   margin: 0 auto;
   font-size: 1.2rem;
