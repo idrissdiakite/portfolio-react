@@ -3,31 +3,28 @@ import { motion } from "framer-motion";
 import Menu from "../../components/Menu";
 import Button from "../../components/Button";
 import Details from "../../components/Details";
-import MenuManager from "../../components/Menu/MenuManager";
 
 import "./style.scss";
 
 const Contact = () => {
   return (
-    <MenuManager>
-      <motion.div
-        initial="initial"
-        animate="in"
-        variants={variants}
-        transition={pageTransition}
-      >
-        <Menu />
-        <section className="contact">
-          <h1>Contact</h1>
-          <div className="main-container">
-            <Details />
-          </div>
-        </section>
-        <Button />
-      </motion.div>
-    </MenuManager>
-  );
-};
+    <motion.div
+      initial="initial"
+      animate="in"
+      variants={variants}
+      transition={pageTransition}
+    >
+       <Menu />
+       <section className="contact">
+        <h1>Contact</h1>
+         <div className="main-container">
+          <Details />
+         </div>
+       </section>
+       <Button />
+    </motion.div>
+  )
+}
 
 // Motion
 const variants = {

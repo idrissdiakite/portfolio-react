@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
 import Loader from "../../components/Loader";
-import MenuManager from "../../components/Menu/MenuManager";
 import ParticleBackground from "../../Particles/ParticleBackground";
 
 import "./style.scss";
@@ -26,36 +25,34 @@ const Home = () => {
   return loader ? (
     <Loader />
   ) : (
-    <MenuManager>
-      <motion.div
-        initial="initial"
-        animate="in"
-        variants={variants}
-        transition={pageTransition}
-      >
-        {/* <Cursor /> */}
-        <Header />
+    <motion.div
+      initial="initial"
+      animate="in"
+      variants={variants}
+      transition={pageTransition}
+    >
+    {/* <Cursor /> */}
+      <Header />
 
-        <section className="homepage">
-          <ParticleBackground />
+      <section className="homepage">
+        <ParticleBackground />
 
-          <motion.h1
-            className="homepage__title"
-            initial="initial"
-            animate="in"
-            variants={variants}
-            transition={titleTransition}
-          >
-            Idriss <br />
-            Diakite
-          </motion.h1>
+        <motion.h1
+          className="homepage__title"
+          initial="initial"
+          animate="in"
+          variants={variants}
+          transition={titleTransition}
+        >
+          Idriss <br />
+          Diakite
+        </motion.h1>
 
-          <Button />
-        </section>
-      </motion.div>
-    </MenuManager>
-  );
-};
+        <Button />
+      </section>
+    </motion.div>
+  )
+}
 
 // Motion
 const variants = {
