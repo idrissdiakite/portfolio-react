@@ -8,11 +8,14 @@ const MenuButton = () => {
   const { open, setOpen } = useContext(MenuContext);
   return (
     <>
-      <div className={cn("menu-button-wrap", { open })}>
-        <button className="menu-button" onClick={() => setOpen(!open)}>
+      <div className={cn("menu__btn", { open })}>
+        <button onClick={() => setOpen(!open)}>
           <span></span>
         </button>
       </div>
+      <button className={cn("menu__btn--mobile", { open })} onClick={() => setOpen(!open)}>
+        Menu
+      </button>
     </>
   );
 };

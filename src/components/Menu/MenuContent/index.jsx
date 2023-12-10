@@ -9,27 +9,27 @@ const internalLinks = [
   {
     id: 1,
     url: "/",
-    name: <span>Accueil</span>,
+    name: 'Accueil',
   },
   {
     id: 2,
     url: "/presentation",
-    name: <span>Qui je suis</span>,
+    name: 'Qui je suis',
   },
   {
     id: 3,
     url: "/experiences",
-    name: <span>Expériences</span>,
+    name: 'Expériences',
   },
   {
     id: 4,
     url: "/projets",
-    name: <span>Projets</span>,
+    name: 'Projets',
   },
   {
     id: 5,
     url: "/contact",
-    name: <span>Contact</span>,
+    name: 'Contact',
   },
 ];
 
@@ -38,42 +38,32 @@ const MenuContent = () => {
 
   return (
     <>
-      <div className="menu-holder">
-        <div className={cn("menu-inside", { open })}>
-          <div className="menu-nav-container">
-            <ul className="nav-links">
-              {internalLinks.map((link) => (
-                <li key={link.id}>
-                  <a href={link.url}>{link.name}</a>
-                </li>
-              ))}
-            </ul>
+      <div className={cn("menu__wrapper", { open })}>
+        <nav className="nav">
+          <ul className="nav__links">
+            {internalLinks.map((link) => (
+              <li key={link.id}>
+                <a href={link.url}>{link.name}</a>
+              </li>
+            ))}
+          </ul>
 
-            <ul className="nav-icons">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/idiakite"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <AiFillLinkedin />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/idrissdiakite"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <AiOutlineGithub />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+          <ul className="nav__icons">
+            <li>
+              <a href="https://www.linkedin.com/in/idiakite" target="_blank" rel="noreferrer">
+                <AiFillLinkedin />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/idrissdiakite" target="_blank" rel="noreferrer">
+                <AiOutlineGithub />
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </>
-  );
-};
+  )
+}
 
 export default MenuContent;

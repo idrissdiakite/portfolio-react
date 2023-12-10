@@ -1,14 +1,15 @@
 @import "./../../../styles/settings";
 
-.menu-button-wrap {
+.menu__btn {
   position: fixed;
   left: 11px;
   top: 50px;
   z-index: 11;
-
   transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-  .menu-button {
+  @media screen and (max-width: 768px) { display: none; }
+
+  button {
     cursor: pointer;
     width: 48px;
     height: 48px;
@@ -17,40 +18,34 @@
     transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
 
     span {
-      // équivaut au bouton (2 barres parallèles)
       &:after,
       &:before {
         content: "";
-
+        position: absolute;
+        top: 50%;
+        left: 50%;
         width: 2px;
         height: 48px;
-        position: absolute;
-        background-color: $color-3;
-        left: 50%;
-        top: 50%;
         display: block;
-
         will-change: transform;
+        background-color: $color-3;
         transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
       }
 
-      &:before {
-        transform: translate(-5px, -50%) scaleY(0.7) rotate(180deg);
-      }
-      &:after {
-        transform: translate(5px, -50%) scaleY(0.7) rotate(0);
-      }
+      &:before { transform: translate(-5px, -50%) scaleY(0.7) rotate(180deg); }
+      
+      &:after { transform: translate(5px, -50%) scaleY(0.7) rotate(0); }
     }
   }
-  // lorsqu'on clique sur le bouton/les 2 barres parallèles (= on ouvre le menu)
+  
   &.open {
-    transform: translateX(80px); // on décalle le bouton de 80px sur la droite
+    transform: translateX(80px);
     transition-delay: 0.4s;
 
     span {
       &:before {
-        background-color: $color-1; // lorsque le menu est ouvert on modifie la couleur des span
-        transform: translate(-50%, -50%) rotate(315deg); // on transforme les 2 barres parellèles en croix
+        background-color: $color-1;
+        transform: translate(-50%, -50%) rotate(315deg);
       }
       &:after {
         background-color: $color-1;
@@ -58,11 +53,31 @@
       }
     }
   }
-}
 
-@media screen and (max-width: 768px) {
-  .menu-button-wrap {
-    // on cache le menu (à gauche) en dessous de 768px
-    display: none;
+  &--mobile {
+    position: absolute;
+    right: 1rem;
+    top: 27px;
+    z-index: 15;
+    text-transform: uppercase;
+    color: $color-1;
+    font-weight: bold;
+    background: $color-3;
+    padding: 5px;
+    height: 30px;
+    width: 60px;
+    border: 1px solid $color-3;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &.open { transform: rotate(180deg); }
+
+    @media (hover: hover) {
+      &:hover {
+        color: $color-2;
+      }
+    }
+
+    @media screen and (min-width: 768px) { display: none; }
   }
 }
