@@ -33,7 +33,7 @@ const internalLinks = [
   },
 ];
 
-const MenuContent = () => {
+const Content = () => {
   const { open } = useContext(MenuContext);
 
   return (
@@ -66,4 +66,4 @@ const MenuContent = () => {
   )
 }
 
-export default MenuContent;
+export default Content;

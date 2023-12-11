@@ -1,13 +1,13 @@
 import React from 'react';
-import MenuButton from './MenuButton';
-import MenuContent from './MenuContent';
+import Button from './Button';
+import Content from './Content';
 
 const Menu = () => {
   return (
     <>
       <div className="menu">
-        <MenuButton />
-        <MenuContent />
+        <Button />
+        <Content />
       </div>
     </>
   )

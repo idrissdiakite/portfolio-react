@@ -4,7 +4,7 @@ import cn from "classnames";
 
 import "./style.scss";
 
-const MenuButton = () => {
+const Button = () => {
   const { open, setOpen } = useContext(MenuContext);
   return (
     <>
@@ -20,4 +20,4 @@ const MenuButton = () => {
   );
 };
 
-export default MenuButton;
+export default Button;
