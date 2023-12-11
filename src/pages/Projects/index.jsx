@@ -12,7 +12,8 @@ const Projects = () => {
       transition={pageTransition}
     >
       <section className="projects">
-        <h1>Projets</h1>
+        <h1 className="projects__title">Projets</h1>
+        {/* <h1>Projets</h1> */}
         <Cards />
       </section>
     </motion.div>

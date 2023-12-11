@@ -741,7 +741,7 @@ const projects = [
 const Cards = () => {
   return (
     <motion.div
-      className="projects"
+      className="projects__wrapper"
       variants={container}
       initial="hidden"
       animate="visible"

@@ -1,6 +1,6 @@
 @import "./../../styles/settings";
 
-.project {
+.projects__wrapper {
   margin-bottom: 2.5rem;
 
   .info {
@@ -57,7 +57,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .projects {
+  .projects__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem 2rem;
@@ -70,26 +70,26 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .projects .project .img {
+  .projects__wrapper .project .img {
     height: 450px;
     object-fit: cover;
   }
 }
 
 @media screen and (min-width: 1680px) {
-  .projects .project .img {
+  .projects__wrapper .project .img {
     height: 550px;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .projects .project .img {
+  .projects__wrapper .project .img {
     height: 650px;
   }
 }
 
 @media screen and (min-width: 2560px) {
-  .projects .project .img {
+  .projects__wrapper .project .img {
     height: 850px;
   }
 }
