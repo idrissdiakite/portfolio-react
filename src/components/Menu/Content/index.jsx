@@ -13,7 +13,7 @@ const internalLinks = [
   },
   {
     id: 2,
-    url: "/presentation",
+    url: "/qui-je-suis",
     name: 'Qui je suis',
   },
   {

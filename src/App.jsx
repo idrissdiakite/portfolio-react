@@ -14,7 +14,7 @@ function App() {
       <AnimatePresence> 
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/presentation" exact component={Presentation} />
+          <Route path="/qui-je-suis" exact component={Presentation} />
           <Route path="/experiences" exact component={Experiences} />
           <Route path="/projets" exact component={Projects} />
           <Route path="/contact" exact component={Contact} />
