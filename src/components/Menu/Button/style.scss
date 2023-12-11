@@ -42,6 +42,14 @@
     transform: translateX(80px);
     transition-delay: 0.4s;
 
+    @media (hover: hover) {
+      &:hover {
+        button {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
     span {
       &:before {
         background-color: $color-1;

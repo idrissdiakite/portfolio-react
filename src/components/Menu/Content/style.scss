@@ -47,17 +47,28 @@
         
         a {
           font-size: 3rem;
+          width: max-content;
+          text-decoration: none;
+          display: block;
+          position: relative;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-size: 200% 100%;
+          background-position: 100%;
+          background-image: linear-gradient(to right, $color-2, $color-2 50%, $color-1 50%);
+          transition: background-position 1s $ease-out;
+          overflow: hidden;
           
           @media screen and (min-width: 768px) { font-size: 4.25rem; }
 
           @media screen and (min-width: 1440px) { font-size: 4.5rem; }
 
           @media screen and (min-width: 1680px) { font-size: 5.5rem; }
-        }
-        
-        a:hover {
-          font-weight: 800;
-          color: $color-2;
+
+          @media (hover: hover) {
+            &:hover { background-position: 0%; }
+          }
         }
       }
     }
@@ -85,11 +96,13 @@
           @media screen and (min-width: 1440px) { font-size: 4rem; }
 
           @media screen and (min-width: 1680px) { font-size: 4.5rem; }
+
+          @media (hover: hover) {
+            &:hover { color: $color-2; }
+          }
+    
         }
-        a:hover {
-          color: $color-2;
-        }
-  
+
         &:last-of-type { margin-right: 0; }
       }
     }
