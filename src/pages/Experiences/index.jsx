@@ -11,8 +11,8 @@ const Experience = () => {
       variants={variants}
       transition={pageTransition}
     >
-      <section className="experience">
-        <h1>Experiences</h1>
+      <section className="experiences">
+        <h1 className="experiences__title">Experiences</h1>
         <Jobs />
       </section>
     </motion.div>

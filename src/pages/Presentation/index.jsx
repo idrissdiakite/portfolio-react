@@ -12,7 +12,7 @@ const Presentation = () => {
       transition={pageTransition}
     >
       <section className="presentation">
-        <h1>Qui je suis</h1>
+        <h1 className="presentation__title">Qui je suis</h1>
         <Infos />
       </section>
     </motion.div>

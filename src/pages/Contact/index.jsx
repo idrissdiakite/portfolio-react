@@ -13,7 +13,7 @@ const Contact = () => {
       transition={pageTransition}
     >
       <section className="contact">
-        <h1>Contact</h1>
+        <h1 className="contact__title">Contact</h1>
         <Details />
       </section>
     </motion.div>
