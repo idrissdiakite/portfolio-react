@@ -1,5 +1,5 @@
 import React from "react";
-import Content from "../components/Me";
+import Content from "../components/Whoiam";
 import PageTransition from "../utils/Transitions/transition";
 
 const Whoiam = () => {
