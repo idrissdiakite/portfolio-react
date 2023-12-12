@@ -31,6 +31,6 @@ const transition = {
   type: "tween",
   ease: "anticipate",
   duration: 5.5,
-};
+}
 
 export default Home;

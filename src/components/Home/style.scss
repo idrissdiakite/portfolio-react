@@ -5,14 +5,6 @@
   flex-direction: column;
   justify-content: center;
 
-  #tsparticles {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
   &__title,
   &__suptitle {
     width: max-content;
@@ -54,5 +46,13 @@
       weight: 300;
       size: 15px;
     }
+  }
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
