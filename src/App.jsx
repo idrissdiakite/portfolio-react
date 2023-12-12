@@ -1,16 +1,20 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+
 import Home from "./pages/Homepage";
 import Presentation from "./pages/Presentation";
 import Experiences from "./pages/Experiences";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import MenuManager from './components/Menu/MenuManager';
+
 
 function App() {
   return (
     <BrowserRouter>
+      <MenuManager />
       <AnimatePresence> 
         <Switch>
           <Route path="/" exact component={Home} />
