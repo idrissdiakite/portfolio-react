@@ -9,40 +9,25 @@ const Home = () => {
       <Particles />
       <motion.h1
         className="home__title"
-        initial="initial"
-        animate="in"
-        variants={variants}
-        transition={titleTransition}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={transition}
       >
-        <span>Idriss</span> <br />
+        <span>Idriss</span>
         <span>Diakite</span>
       </motion.h1>
-      <div className="home__suptitle">
-        Développeur front-end
-      </div>
+      <motion.div 
+        className="home__suptitle"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 2.5 }}
+      >Développeur front-end</motion.div>
     </>
   )
 }
 
 // Motion
-const variants = {
-  initial: {
-    opacity: 0,
-    scale: 1,
-  },
-  in: {
-    opacity: 1,
-    x: 0,
-  },
-};
-
-// const pageTransition = {
-//   type: "tween",
-//   ease: "anticipate",
-//   duration: 2.5,
-// };
-
-const titleTransition = {
+const transition = {
   type: "tween",
   ease: "anticipate",
   duration: 5.5,
