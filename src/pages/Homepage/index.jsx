@@ -23,7 +23,8 @@ const Home = () => {
   return loader ? (
     <Loader />
   ) : (
-    <motion.div
+    <motion.section
+      className="homepage"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -34,23 +35,21 @@ const Home = () => {
       // transition={pageTransition}
     >
     {/* <Cursor /> */}
-      <section className="homepage">
-        <ParticleBackground />
-        <motion.h1
-          className="homepage__title"
-          initial="initial"
-          animate="in"
-          variants={variants}
-          transition={titleTransition}
-        >
-          <span>Idriss</span> <br />
-          <span>Diakite</span>
-        </motion.h1>
-        <div className="homepage__suptitle">
-          Développeur front-end
-        </div>
-      </section>
-    </motion.div>
+      <ParticleBackground />
+      <motion.h1
+        className="homepage__title"
+        initial="initial"
+        animate="in"
+        variants={variants}
+        transition={titleTransition}
+      >
+        <span>Idriss</span> <br />
+        <span>Diakite</span>
+      </motion.h1>
+      <div className="homepage__suptitle">
+        Développeur front-end
+      </div>
+    </motion.section>
   )
 }
 

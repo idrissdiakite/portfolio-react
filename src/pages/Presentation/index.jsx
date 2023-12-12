@@ -5,21 +5,16 @@ import "./style.scss";
 
 const Presentation = () => {
   return (
-    <motion.div
+    <motion.section
+      className="presentation"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 3 }}
-      // initial="initial"
-      // animate="in"
-      // variants={variants}
-      // transition={pageTransition}
     >
-      <section className="presentation">
-        <h1 className="presentation__title">Qui je suis</h1>
-        <Infos />
-      </section>
-    </motion.div>
+      <h1 className="presentation__title">Qui je suis</h1>
+      <Infos />
+    </motion.section>
   )
 }
 

@@ -5,7 +5,8 @@ import "./style.scss";
 
 const Experience = () => {
   return (
-    <motion.div
+    <motion.section
+      className="experiences"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -15,11 +16,9 @@ const Experience = () => {
       // variants={variants}
       // transition={pageTransition}
     >
-      <section className="experiences">
-        <h1 className="experiences__title">Experiences</h1>
-        <Jobs />
-      </section>
-    </motion.div>
+      <h1 className="experiences__title">Experiences</h1>
+      <Jobs />
+    </motion.section>
   )
 }
 

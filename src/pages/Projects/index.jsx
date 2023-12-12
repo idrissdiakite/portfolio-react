@@ -5,7 +5,8 @@ import "./style.scss";
 
 const Projects = () => {
   return (
-    <motion.div
+    <motion.section
+      className="projects"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -15,11 +16,9 @@ const Projects = () => {
       // variants={variants}
       // transition={pageTransition}
     >
-      <section className="projects">
-        <h1 className="projects__title">Projets</h1>
-        <Cards />
-      </section>
-    </motion.div>
+      <h1 className="projects__title">Projets</h1>
+      <Cards />
+    </motion.section>
   )
 }
 
