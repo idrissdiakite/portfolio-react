@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import Loader from "../components/Loader";
 import Content from "../components/Home";
+import PageTransition from "../utils/Transitions/transition";
 // import Cursor from "../../components/Cursor";
 
 
@@ -22,16 +22,9 @@ const Home = () => {
   return loader ? (
     <Loader />
   ) : (
-    <motion.section
-      className="homepage"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 3 }}
-    >
-      {/* <Cursor /> */}
+    <PageTransition className="homepage">
       <Content />
-    </motion.section>
+    </PageTransition>
   )
 }
 

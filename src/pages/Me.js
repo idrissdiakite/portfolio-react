@@ -1,18 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Content from "../components/Me";
+import PageTransition from "../utils/Transitions/transition";
 
 const Me = () => {
   return (
-    <motion.section
-      className="presentation"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 3 }}
-    >
+    <PageTransition className="presentation">
       <Content />
-    </motion.section>
+    </PageTransition>
   )
 }
 
