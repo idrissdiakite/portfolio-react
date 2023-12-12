@@ -22,7 +22,7 @@ const Home = () => {
   return loader ? (
     <Loader />
   ) : (
-    <PageTransition className="homepage">
+    <PageTransition className="home">
       <Content />
     </PageTransition>
   )

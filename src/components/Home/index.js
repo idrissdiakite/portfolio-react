@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <Particles />
       <motion.h1
-        className="homepage__title"
+        className="home__title"
         initial="initial"
         animate="in"
         variants={variants}
@@ -17,7 +17,7 @@ const Home = () => {
         <span>Idriss</span> <br />
         <span>Diakite</span>
       </motion.h1>
-      <div className="homepage__suptitle">
+      <div className="home__suptitle">
         Développeur front-end
       </div>
     </>
