@@ -1,6 +1,7 @@
 import React from "react";
 // import { motion } from "framer-motion";
 import Infos from "./infos";
+import "./style.scss";
 
 const Me = () => {
   return (

@@ -8,8 +8,6 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 
-import "./style.scss";
-
 const contactDetails = [
   {
     id: 1,

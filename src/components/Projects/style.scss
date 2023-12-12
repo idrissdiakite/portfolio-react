@@ -1,5 +1,14 @@
 @import "./../../styles/settings";
 
+.projects {
+  background-color: $bg-2;
+
+  p {
+    line-height: 1.4em;
+    font-size: 1.2rem;
+  }
+}
+
 .projects__wrapper {
   margin-bottom: 2.5rem;
 

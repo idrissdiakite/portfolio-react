@@ -14,8 +14,6 @@ import {
   IoStarOutline
 } from "react-icons/io5";
 
-import "./style.scss";
-
 const infos = [
   {
     id: 1,

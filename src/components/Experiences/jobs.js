@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { AiOutlinePaperClip } from "react-icons/ai";
 
-import "./style.scss";
-
 const jobs = [
   {
     id: 1,

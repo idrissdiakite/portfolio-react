@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Particles from "../../utils/Particles/Particle";
+import "./style.scss";
 
 const Home = () => {
   return (

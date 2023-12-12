@@ -1,5 +1,13 @@
 @import "./../../styles/settings";
 
+.experiences {
+  background-color: $bg-3;
+
+  p {
+    line-height: 1.4em;
+  }
+}
+
 .job {
   margin-bottom: 1.4rem;
 

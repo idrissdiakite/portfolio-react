@@ -1,0 +1,55 @@
+@import "./../../styles/settings";
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__title,
+  &__suptitle {
+    width: max-content;
+    pointer-events: none;
+  }
+
+  &__title {
+    font-size: 4.5rem;
+    line-height: 4rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 10rem;
+      line-height: 10rem;
+    }
+
+    @media screen and (min-width: 1444px) {
+      font-size: 15rem;
+      line-height: 15rem;
+    }
+
+    @media screen and (min-width: 1680px) {
+      font-size: 20rem;
+      line-height: 20rem;
+    }
+  }
+
+  &__suptitle {
+    position: fixed;
+    right: 4vw;
+    bottom: 3.5vh;
+    max-width: 120px;
+    color: $color-3;
+    text-align: right;
+    text-transform: uppercase;
+    font: {
+      weight: 300;
+      size: 15px;
+    }
+  }
+}

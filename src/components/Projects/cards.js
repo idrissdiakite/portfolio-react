@@ -51,8 +51,6 @@ import ilovethistrackcom from "../../assets/cards/ilovethistrackcom.png";
 import contact from "../../assets/cards/gestionnaire-contact.png";
 import serie from "../../assets/cards/series-angular.png";
 
-import "./style.scss";
-
 const projects = [
   {
     id: 1,
