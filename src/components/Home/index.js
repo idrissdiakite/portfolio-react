@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ParticleBackground from "../../Particles/ParticleBackground";
+import Particles from "../../utils/Particles/Particle";
 
 const Home = () => {
   return (
     <>
-      <ParticleBackground />
+      <Particles />
       <motion.h1
         className="homepage__title"
         initial="initial"
