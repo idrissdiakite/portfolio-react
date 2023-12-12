@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Home from "./pages/Home";
-import Me from "./pages/Me";
+import Whoiam from "./pages/Whoiam";
 import Experiences from "./pages/Experiences";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -17,7 +17,7 @@ function App() {
       <AnimatePresence> 
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/me" exact component={Me} />
+          <Route path="/who-i-am" exact component={Whoiam} />
           <Route path="/experiences" exact component={Experiences} />
           <Route path="/projets" exact component={Projects} />
           <Route path="/contact" exact component={Contact} />

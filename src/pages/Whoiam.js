@@ -2,7 +2,7 @@ import React from "react";
 import Content from "../components/Me";
 import PageTransition from "../utils/Transitions/transition";
 
-const Me = () => {
+const Whoiam = () => {
   return (
     <PageTransition className="presentation">
       <Content />
@@ -10,4 +10,4 @@ const Me = () => {
   )
 }
 
-export default Me;
+export default Whoiam;
