@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Loader from "../../components/Loader";
-import ParticleBackground from "../../Particles/ParticleBackground";
-import "./style.scss";
+import Loader from "../components/Loader";
+import ParticleBackground from "../Particles/ParticleBackground";
 // import Cursor from "../../components/Cursor";
 
 
@@ -29,10 +28,6 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 3 }}
-      // initial="initial"
-      // animate="in"
-      // variants={variants}
-      // transition={pageTransition}
     >
     {/* <Cursor /> */}
       <ParticleBackground />
@@ -65,11 +60,11 @@ const variants = {
   },
 };
 
-const pageTransition = {
-  type: "tween",
-  ease: "anticipate",
-  duration: 2.5,
-};
+// const pageTransition = {
+//   type: "tween",
+//   ease: "anticipate",
+//   duration: 2.5,
+// };
 
 const titleTransition = {
   type: "tween",

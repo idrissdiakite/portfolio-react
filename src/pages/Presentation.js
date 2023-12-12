@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Infos from "../../components/Infos";
-import "./style.scss";
+import Infos from "../components/Infos";
 
 const Presentation = () => {
   return (
@@ -17,23 +16,5 @@ const Presentation = () => {
     </motion.section>
   )
 }
-
-// Motion
-const variants = {
-  initial: {
-    opacity: 0,
-    scale: 1,
-  },
-  in: {
-    opacity: 1,
-    x: 0,
-  },
-};
-
-const pageTransition = {
-  type: "tween",
-  ease: "anticipate",
-  duration: 2.5,
-};
 
 export default Presentation;

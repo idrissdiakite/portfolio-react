@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
-import Home from "./pages/Homepage";
+import Home from "./pages/Home";
 import Presentation from "./pages/Presentation";
 import Experiences from "./pages/Experiences";
 import Projects from "./pages/Projects";
