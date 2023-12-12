@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { MenuContext } from "../MenuManager";
 import cn from "classnames";
+import { Link } from "react-router-dom";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 import "./style.scss";
@@ -34,7 +35,7 @@ const internalLinks = [
 ];
 
 const Content = () => {
-  const { open } = useContext(MenuContext);
+  const { open, setOpen } = useContext(MenuContext);
 
   return (
     <>
@@ -42,8 +43,8 @@ const Content = () => {
         <nav className="nav">
           <ul className="nav__links">
             {internalLinks.map((link) => (
-              <li key={link.id}>
-                <a href={link.url}>{link.name}</a>
+              <li key={link.id} onClick={() => setOpen(!open)}>
+                <Link to={link.url}>{link.name}</Link>
               </li>
             ))}
           </ul>
