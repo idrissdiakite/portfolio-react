@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Infos from "../components/Infos";
+import Content from "../components/Me";
 
-const Presentation = () => {
+const Me = () => {
   return (
     <motion.section
       className="presentation"
@@ -11,10 +11,9 @@ const Presentation = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 3 }}
     >
-      <h1 className="presentation__title">Qui je suis</h1>
-      <Infos />
+      <Content />
     </motion.section>
   )
 }
 
-export default Presentation;
+export default Me;

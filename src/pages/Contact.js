@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Details from "../components/Details";
+import Content from "../components/Contact";
 
 const Contact = () => {
   return (
@@ -11,8 +11,7 @@ const Contact = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 3 }}
     >
-      <h1 className="contact__title">Contact</h1>
-      <Details />
+      <Content />
     </motion.section>
   )
 }

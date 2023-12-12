@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Jobs from "../components/Jobs";
+import Content from "../components/Experiences";
 
 const Experience = () => {
   return (
@@ -11,8 +11,7 @@ const Experience = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 3 }}
     >
-      <h1 className="experiences__title">Experiences</h1>
-      <Jobs />
+      <Content />
     </motion.section>
   )
 }

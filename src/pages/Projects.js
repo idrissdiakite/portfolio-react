@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Cards from "../components/Cards";
+import Content from "../components/Projects";
 
 const Projects = () => {
   return (
@@ -11,8 +11,7 @@ const Projects = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 3 }}
     >
-      <h1 className="projects__title">Projets</h1>
-      <Cards />
+      <Content />
     </motion.section>
   )
 }
