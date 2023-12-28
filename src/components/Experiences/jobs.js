@@ -120,68 +120,35 @@ const jobs = [
 ];
 
 const Jobs = () => {
-  const [isVisible, setIsVisible] = useState(1); // "1" permet d'afficher par défault la description du premier job
+  const [isVisible, setIsVisible] = useState(-1)
 
-  const toggleClass = (id) => setIsVisible(id);
+  const toggleClass = (id) => setIsVisible(id)
 
   return (
     <>
-      <motion.div
-        className="jobs"
-        variants={container}
-        initial="hidden"
-        animate="visible"
-      >
+      <div className="experiences__items">
         {jobs.map((job, index) => (
-          <motion.div className="job" key={index} variants={item}>
-            <div
-              onClick={() => toggleClass(index)} // lorsqu'on clique sur la div on déclenche la fonction "toggleClass" qui prend en paramètre l'id du job
-              key={index}
-              className="header"
-            >
-              <p className="title">{job.title}</p>
-              <p className="subtitle">{job.subtitle}</p>
+          <motion.div className="experiences__item" key={index} variants={item}>
+            <div onClick={() => toggleClass(index)} key={index} className="experiences__item--top">
+              <p className="experiences__item--title">{job.title}</p>
+              <p className="experiences__item--suptitle">{job.subtitle}</p>
             </div>
-            <div
-              className={
-                isVisible === index ? "show-description" : "description" // si l'id du state correspond à l'id du job on remplace la classe "description" par "show-description"
-              }
-            >
-              {job.description}
-            </div>
+            <div className={ isVisible === index ? "experiences__item--content show" : "experiences__item--content"}>{job.description}</div>
           </motion.div>
         ))}
-
-        <motion.div variants={item} className="cv">
-          <AiOutlinePaperClip className="icon" />
-          <a href="./assets/CV.pdf" download>
-            Télécharger mon CV
-          </a>
-        </motion.div>
+      </div>
+      <motion.div className="experiences__cv" variants={item} >
+        <AiOutlinePaperClip className="experiences__cv--icon" />
+        <a href="./assets/CV.pdf" download>Télécharger mon CV</a>
       </motion.div>
     </>
   );
 };
 
 // Motion
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 2,
-      staggerChildren: 1,
-    },
-  },
-};
-
 const item = {
-  hidden: { y: 0, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
 };
 
 export default Jobs;
