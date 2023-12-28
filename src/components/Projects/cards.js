@@ -22,7 +22,6 @@ import {
   SiSvg,
   SiGreensock,
   SiMysql,
-  SiMailchimp,
   SiNetlify,
   SiWoo,
   SiStripe,
@@ -37,7 +36,6 @@ import { RiVuejsFill } from "react-icons/ri";
 
 import jeu from "../../assets/cards/jeu.png";
 import paillet from "../../assets/cards/paillet.png";
-import zelda from "../../assets/cards/zelda.png";
 import zeldaNY from "../../assets/cards/zelda-ny.png";
 import ateliers from "../../assets/cards/ateliers.png";
 import birdiebox from "../../assets/cards/birdie-box.png";
@@ -47,7 +45,6 @@ import artshop from "../../assets/cards/artshop-tailwind.png";
 import pictureWp from "../../assets/cards/picture-wp.png";
 import pictureGatsby from "../../assets/cards/picture-gatsby.png";
 import js from "../../assets/cards/js.png";
-import ilovethistrackcom from "../../assets/cards/ilovethistrackcom.png";
 import contact from "../../assets/cards/gestionnaire-contact.png";
 import serie from "../../assets/cards/series-angular.png";
 
@@ -99,7 +96,7 @@ const projects = [
         </a>
         <br />‣{" "}
         <a href="http://demo.jeu-prends-le-bus.zelllda.fr/" target="_blank" rel="noreferrer">
-          démo
+          live/démo
         </a>
       </p>
     ),
@@ -142,41 +139,6 @@ const projects = [
           rel="noreferrer"
         >
           github
-        </a>
-      </p>
-    ),
-  },
-  {
-    id: 3,
-    name: "Zelda.fr",
-    icons: (
-      <ul className="icons">
-        <li>
-          <SiPhp className="php" title="PHP" />
-        </li>
-        <li>
-          <SiWordpress className="wordpress" title="Wordpress" />
-        </li>
-        <li>
-          <SiMailchimp className="mailchimp" title="Mailchimp" />
-        </li>
-        <li>
-          <SiFilezilla className="filezila" title="FileZila" />
-        </li>
-        <li>
-          <SiCss3 className="css" title="CSS" />
-        </li>
-      </ul>
-    ),
-    img: <img src={zelda} alt="zelda.fr" class="img" loading="lazy" />,
-    description: (
-      <p>Refonte du site internet de Zelda Communication via Wordpress.</p>
-    ),
-    links: (
-      <p>
-        ‣{" "}
-        <a href="http://zelda.fr/" target="_blank" rel="noreferrer">
-          live
         </a>
       </p>
     ),
@@ -264,7 +226,7 @@ const projects = [
           github
         </a>{" "}
         <br />‣{" "}
-        <a href="Site de réservation de cours de cuisine en ligne" target="_blank" rel="noreferrer">
+        <a href="https://ateliersbysergelabrosse.ch/" target="_blank" rel="noreferrer">
           live
         </a>
       </p>
@@ -438,7 +400,7 @@ const projects = [
         </a>{" "}
         <br />‣{" "}
         <a
-          href="https://drive.google.com/file/d/1sLLfqyYfETF59tDaqDbxJ_3zhF-OeYKb"
+          href="https://youtu.be/GDyM2mVWCW8?si=ajLyIuD030eD65u-"
           target="_blank"
           rel="noreferrer"
         >
@@ -488,11 +450,11 @@ const projects = [
         </a>{" "}
         <br />‣{" "}
         <a
-          href="http://poc-wp.atwebpages.com/"
+          href="https://youtu.be/X2kX9eSSveI?si=WSqPVzDbZQDkYyiy"
           target="_blank"
           rel="noreferrer"
         >
-          live
+          demo
         </a>
       </p>
     ),
@@ -540,48 +502,11 @@ const projects = [
         </a>{" "}
         <br />‣{" "}
         <a
-          href="https://drive.google.com/file/d/1T5zzW0QRBbjfzjGlWh0uzvURBvscKNgF"
+          href="https://youtu.be/HH5K28mIiEk?si=y28ElToezK0eoxvL"
           target="_blank"
           rel="noreferrer"
         >
           demo
-        </a>
-      </p>
-    ),
-  },
-  {
-    id: 12,
-    name: "ilovethistrack.com",
-    icons: (
-      <ul className="icons">
-        <li>
-          <SiPhp className="php" title="PHP" />
-        </li>
-        <li>
-          <SiWordpress className="wordpress" title="Wordpress" />
-        </li>
-        <li>
-          <SiCss3 className="css" title="CSS" />
-        </li>
-        <li>
-          <SiFilezilla className="filezila" title="FileZila" />
-        </li>
-      </ul>
-    ),
-    img: (
-      <img
-        src={ilovethistrackcom}
-        alt="ilovethistrack.com"
-        class="img"
-        loading="lazy"
-      />
-    ),
-    description: <p>Site de musique réalisé sous Wordpress.</p>,
-    links: (
-      <p>
-        ‣{" "}
-        <a href="https://ilovethistrack.com" target="_blank" rel="noreferrer">
-          live
         </a>
       </p>
     ),
@@ -673,7 +598,7 @@ const projects = [
         </a>
         <br />‣{" "}
         <a
-          href="https://drive.google.com/file/d/1ymH6R5VlYV9ljWj2izUu6CHX-Pce1aku"
+          href="https://youtu.be/B_eBvb3zPhM?si=dKS8XdeWa5b0Pw6x"
           target="_blank"
           rel="noreferrer"
         >
@@ -725,7 +650,7 @@ const projects = [
         </a>
         <br />‣{" "}
         <a
-          href="https://drive.google.com/file/d/1zKj0Qpd6Dgx5sr9BwzaMvyFKUWKA7u76"
+          href="https://youtu.be/plx5WmSU6ic?si=oaRP2V7qgdF6ZxOH"
           target="_blank"
           rel="noreferrer"
         >
