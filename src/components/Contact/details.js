@@ -10,24 +10,20 @@ import {
 
 const contactDetails = [
   {
-    id: 1,
     icon: <AiOutlinePhone className="icon" />,
     link: <a href="tel:0669674585">06.69.67.45.85</a>,
   },
   {
-    id: 2,
     icon: <AiOutlineMail className="icon" />,
     link: (
       <a href="mailto:idriss.diakite@hotmail.fr">idriss.diakite@hotmail.fr</a>
     ),
   },
   {
-    id: 3,
     icon: <AiOutlineHome className="icon" />,
     link: <span>Lyon (69003)</span>,
   },
   {
-    id: 4,
     icon: <AiFillLinkedin className="icon" />,
     link: (
       <a
@@ -40,7 +36,6 @@ const contactDetails = [
     ),
   },
   {
-    id: 5,
     icon: <AiFillGithub className="icon" />,
     link: (
       <a
@@ -87,8 +82,8 @@ const Details = () => {
       >
         <h2>Me contacter:</h2>
         <motion.ul variants={container} initial="hidden" animate="visible">
-          {contactDetails.map((detail) => (
-            <motion.li key={detail.id} variants={item}>
+          {contactDetails.map((detail, index) => (
+            <motion.li key={index} variants={item}>
               {detail.icon}
               {detail.link}
             </motion.li>
