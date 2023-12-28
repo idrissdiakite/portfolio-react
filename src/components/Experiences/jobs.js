@@ -4,7 +4,6 @@ import { AiOutlinePaperClip } from "react-icons/ai";
 
 const jobs = [
   {
-    id: 1,
     title: "Développeur web - Zelda",
     subtitle: "cdi - octobre 2021 à ce jour",
     description: (
@@ -36,7 +35,6 @@ const jobs = [
     ),
   },
   {
-    id: 2,
     title: "Développeur frontend - Ultrō",
     subtitle: "stage - février à mai 2021",
     description: (
@@ -53,7 +51,6 @@ const jobs = [
     ),
   },
   {
-    id: 3,
     title: "Développeur fullstack - Human Booster",
     subtitle: "formation - juillet 2020 à mai 2021",
     description: (
@@ -80,7 +77,6 @@ const jobs = [
     ),
   },
   {
-    id: 4,
     title: "Fondateur - ilovethistrack.com",
     subtitle: "janvier 2015 à juillet 2021",
     description: (
@@ -98,7 +94,6 @@ const jobs = [
     ),
   },
   {
-    id: 5,
     title: "Responsable Adjoint - Bexley",
     subtitle: "cdi - mars 2014 à novembre 2019",
     description: (
@@ -137,8 +132,8 @@ const Jobs = () => {
         initial="hidden"
         animate="visible"
       >
-        {jobs.map((job) => (
-          <motion.div className="job" key={job.id} variants={item}>
+        {jobs.map((job, index) => (
+          <motion.div className="job" key={index} variants={item}>
             <div
               onClick={() => toggleClass(job.id)} // lorsqu'on clique sur la div on déclenche la fonction "toggleClass" qui prend en paramètre l'id du job
               key={job.id}
