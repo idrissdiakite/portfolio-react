@@ -20,7 +20,6 @@ import {
   SiBootstrap,
   SiFilezilla,
   SiSvg,
-  SiGreensock,
   SiMysql,
   SiNetlify,
   SiWoo,
@@ -42,7 +41,6 @@ import ilttcom from "../../assets/cards/ilttcom-react.png";
 import artshop from "../../assets/cards/artshop-tailwind.png";
 import pictureWp from "../../assets/cards/picture-wp.png";
 import pictureGatsby from "../../assets/cards/picture-gatsby.png";
-import js from "../../assets/cards/js.png";
 import contact from "../../assets/cards/gestionnaire-contact.png";
 import serie from "../../assets/cards/series-angular.png";
 
@@ -495,46 +493,6 @@ const projects = [
           rel="noreferrer"
         >
           demo
-        </a>
-      </p>
-    ),
-  },
-  {
-    name: "Projets JavaScript",
-    icons: (
-      <ul className="icons">
-        <li>
-          <SiHtml5 className="html" title="HTML" />
-        </li>
-        <li>
-          <SiCss3 className="css" title="CSS" />
-        </li>
-        <li>
-          <SiJavascript className="javascript" title="Javascript" />
-        </li>
-        <li>
-          <SiGreensock className="greensock" title="GSAP" />
-        </li>
-        <li>
-          <SiSvg className="svg" title="SVG" />
-        </li>
-      </ul>
-    ),
-    img: <img src={js} alt="Projets Javascript" class="img" loading="lazy" />,
-    description: <p>Divers projets réalisés en JavaScript (Vanilla).</p>,
-    links: (
-      <p>
-        ‣{" "}
-        <a
-          href="https://github.com/idrissdiakite/js-projects"
-          target="_blank"
-          rel="noreferrer"
-        >
-          github
-        </a>
-        <br />‣{" "}
-        <a href="https://test-js.netlify.app" target="_blank" rel="noreferrer">
-          live
         </a>
       </p>
     ),
