@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Loader from "../components/Loader";
 import Content from "../components/Home";
 import PageTransition from "../utils/Transitions/transition";
-// import Cursor from "../../components/Cursor";
 
 
 const Home = () => {
