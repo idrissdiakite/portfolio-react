@@ -31,9 +31,7 @@ import {
 
 
 } from "react-icons/si";
-
 import { RiVuejsFill } from "react-icons/ri";
-
 import jeu from "../../assets/cards/jeu.png";
 import paillet from "../../assets/cards/paillet.png";
 import zeldaNY from "../../assets/cards/zelda-ny.png";
@@ -50,7 +48,6 @@ import serie from "../../assets/cards/series-angular.png";
 
 const projects = [
   {
-    id: 1,
     name: "Jeu Prends le Bus",
     icons: (
       <ul className="icons">
@@ -102,7 +99,6 @@ const projects = [
     ),
   },
   {
-    id: 2,
     name: "Paillet",
     icons: (
       <ul className="icons">
@@ -144,7 +140,6 @@ const projects = [
     ),
   },
   {
-    id: 4,
     name: "Meilleurs voeux 2022",
     icons: (
       <ul className="icons">
@@ -184,7 +179,6 @@ const projects = [
     ),
   },
   {
-    id: 5,
     name: "Ateliers",
     icons: (
       <ul className="icons">
@@ -233,7 +227,6 @@ const projects = [
     ),
   },
   {
-    id: 6,
     name: "Birdie Box",
     icons: (
       <ul className="icons">
@@ -273,7 +266,6 @@ const projects = [
     ),
   },
   {
-    id: 7,
     name: "Portfolio",
     icons: (
       <ul className="icons">
@@ -315,7 +307,6 @@ const projects = [
     ),
   },
   {
-    id: 8,
     name: "ilttcom",
     icons: (
       <ul className="icons">
@@ -361,7 +352,6 @@ const projects = [
     ),
   },
   {
-    id: 9,
     name: "Artshop",
     icons: (
       <ul className="icons">
@@ -410,7 +400,6 @@ const projects = [
     ),
   },
   {
-    id: 10,
     name: "Picture Organic Clothing",
     icons: (
       <ul className="icons">
@@ -460,7 +449,6 @@ const projects = [
     ),
   },
   {
-    id: 11,
     name: "Picture Organic Clothing",
     icons: (
       <ul className="icons">
@@ -512,7 +500,6 @@ const projects = [
     ),
   },
   {
-    id: 13,
     name: "Projets JavaScript",
     icons: (
       <ul className="icons">
@@ -553,7 +540,6 @@ const projects = [
     ),
   },
   {
-    id: 14,
     name: "Gestionnaire de contacts",
     icons: (
       <ul className="icons">
@@ -608,7 +594,6 @@ const projects = [
     ),
   },
   {
-    id: 15,
     name: "Gestionnaire de séries",
     icons: (
       <ul className="icons">
@@ -669,8 +654,8 @@ const Cards = () => {
       initial="hidden"
       animate="visible"
     >
-      {projects.map((project) => (
-        <motion.div class="project" key={project.id} variants={item}>
+      {projects.map((project, index) => (
+        <motion.div class="project" key={index} variants={item}>
           <div className="info">
             <p class="name">{project.name}</p>
             {project.icons}
