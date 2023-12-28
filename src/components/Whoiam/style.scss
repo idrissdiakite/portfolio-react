@@ -1,124 +1,42 @@
 @import "./../../styles/settings";
 
-.presentation {
+.whoiam {
   background-color: $bg-1;
-}
 
-@media screen and (min-width: 768px) {
-  .presentation p {
-    font-size: 2rem;
-  }
-}
-
-.infos {
-  .header p {
-    font-weight: 400;
-    text-align: justify;
-
-    span {
-      display: none;
-    }
+  &__suptitle {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 
-  ul {
+  &__wrapper {
     margin-top: 1.5rem;
 
-    li {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      margin-bottom: 0.9rem;
+    @media screen and (min-width: 1024px) { margin-top: 2rem; }
+  }
 
-      .icon {
-        font-size: 2rem;
-        margin-right: 1rem;
-      }
+  &__info {
+    display: flex;
+    align-items: center;
 
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+  
+      @media screen and (min-width: 1024px) { margin-bottom: 1.4rem; }
+    }
+
+    &--icon {
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+
+    &--text {
+      font-size: 1.5rem;
+
+      @media screen and (min-width: 1024px) { font-size: 2rem; }
+      
       a {
         color: $color-3;
         text-decoration: underline;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .infos .header p {
-    font-size: 1.5rem;
-    text-align: left;
-  }
-
-  .infos ul {
-    li {
-      margin-bottom: 1.2rem;
-
-      p {
-        font-size: 1.5rem;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .infos .header p {
-    font-size: 1.6rem;
-    max-width: 99%;
-  }
-
-  .infos ul {
-    margin-top: 2rem;
-
-    li {
-      margin-bottom: 1.4rem;
-
-      p {
-        font-size: 2rem;
-      }
-      p:hover {
-        font-weight: 600;
-        color: $color-3;
-      }
-
-      a:hover {
-        font-weight: 600;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .infos .header p {
-    span {
-      display: contents;
-    }
-  }
-
-  .infos ul {
-    margin-top: 4rem;
-
-    li {
-      margin-bottom: 2rem;
-
-      p {
-        font-size: 2rem;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .infos .header p {
-    font-size: 1.9rem;
-  }
-
-  .infos ul {
-    margin-top: 3rem;
-
-    li {
-      margin-bottom: 2rem;
-
-      p {
-        font-size: 2rem;
       }
     }
   }

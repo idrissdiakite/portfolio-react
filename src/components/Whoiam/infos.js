@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
 import {
   IoStopwatchOutline,
   IoLocationOutline,
@@ -59,63 +58,28 @@ const infos = [
 
 const Infos = () => {
   return (
-    <div className="infos">
-      <motion.div
-        className="header"
-        initial="initial"
-        animate="in"
-        variants={variants}
-        transition={transition}
-      >
-        <p>
-          Désireux de me professionnaliser dans le développement web, j'ai
-          quitté mon poste de Manager Adjoint en 2019. <span> <br /> </span>Titulaire du titre
-          professionnel "Développeur web et web mobile full stack" (Bac+2)
-          depuis mai 2021.
-        </p>
-      </motion.div>
-
-      <motion.ul variants={container} initial="hidden" animate="visible">
-        {infos.map((info, index) => (
-          <motion.li key={index} variants={item}>
-            <span>{info.icon}</span>
-            <p>{info.text}</p>
-          </motion.li>
-        ))}
-      </motion.ul>
-    </div>
-  );
-};
+    <motion.ul className="whoiam__infos" variants={container} initial="hidden" animate="visible">
+      {infos.map((info, index) => (
+        <motion.li className="whoiam__info" key={index} variants={item}>
+          <span className="whoiam__info--icon">{info.icon}</span>
+          <p className="whoiam__info--text">{info.text}</p>
+         </motion.li>
+      ))}
+    </motion.ul>
+  )
+}
 
 // Motion
-const variants = {
-  initial: {
-    opacity: 0,
-    scale: 1,
-  },
-  in: {
-    opacity: 1,
-    x: 0,
-  },
-};
-
-const transition = {
-  type: "tween",
-  ease: "anticipate",
-  duration: 4,
-};
-
 const container = {
-  hidden: { opacity: 1, scale: 0 },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    scale: 1,
     transition: {
-      delayChildren: 3,
-      staggerChildren: 1,
-    },
-  },
-};
+      delayChildren: 1,
+      staggerChildren: 0.1,
+    }
+  }
+}
 
 const item = {
   hidden: { x: 300, opacity: 0 },
@@ -124,7 +88,7 @@ const item = {
     opacity: 1,
     transition: {
       ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 1.6
+      duration: 0.6
     },
   },
 };

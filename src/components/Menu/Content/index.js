@@ -14,7 +14,7 @@ const internalLinks = [
   },
   {
     id: 2,
-    url: "/who-i-am",
+    url: "/whoiam",
     name: 'Qui je suis',
   },
   {

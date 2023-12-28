@@ -4,7 +4,7 @@ import PageTransition from "../utils/Transitions/transition";
 
 const Whoiam = () => {
   return (
-    <PageTransition className="presentation">
+    <PageTransition className="whoiam">
       <Content />
     </PageTransition>
   )
