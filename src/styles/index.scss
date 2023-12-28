@@ -37,9 +37,20 @@ h2 {
 h1 {
   font-size: 2.3rem;
   margin-bottom: 1.5rem;
+  // position: fixed;
+  // width: 100%;
+  // mix-blend-mode: difference;
+  overflow: hidden;
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
     font-size: 4rem;
+    margin-bottom: 2rem;
+    word-break: break-word;
+  }
+
+  @media screen and (min-width: 1400px) {
+    font-size: 15.5rem;
     margin-bottom: 2rem;
   }
 }
@@ -52,11 +63,9 @@ section {
 
   @media screen and (min-width: 768px) {
     margin-left: 75px;
-    padding: 48px 2.5rem;
+    padding: 48px 2.2rem;
     border-left: 1px solid rgb(116, 116, 116);
   }
-}
 
-// .homepage { // désactive le curseur par défaut sur la homepage
-//   cursor: none;
-// }
+  @media screen and (min-width: 1400px) { padding: 45px 2.2rem; }
+}
