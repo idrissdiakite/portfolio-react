@@ -16,52 +16,42 @@ import {
 
 const infos = [
   {
-    id: 1,
     icon: <IoLocationOutline className="icon" />,
     text: "Né à Annecy, vis actuellement à Lyon.",
   },
   {
-    id: 2,
     icon: <IoHeartOutline className="icon" />,
     text: "Passionné de musique, d'informatique, de cinéma, de sport et d'art en général.",
   },
   {
-    id: 3,
     icon: <IoSchoolOutline className="icon" />,
     text: "Également titulaire d'un BTS Management des Unités Commerciales.",
   },
   {
-    id: 4,
     icon: <IoEarOutline className="icon" />,
     text: "Toujours à l'écoute, excellent relationnel, sens aïgu des responsabilités.",
   },
   {
-    id: 5,
     icon: <IoSunnyOutline className="icon" />,
     text: "Ouvert d'esprit, curieux, créatif et autonome.",
   },
   {
-    id: 6,
     icon: <IoStarOutline className="icon" />,
     text: "Goût prononcé pour le travail en équipe, l'UI/UX et les raclettes en été.",
   },
   {
-    id: 7,
     icon: <IoMusicalNotesOutline className="icon" />,
     text: <span>Mélomane de naissance et accessoirement curator sur <a href="https://open.spotify.com/user/ilovethistrack.com?si=9ca1553a0af04aec" target="_blank" rel="noreferrer">Spotify</a>.</span>,
   },
   {
-    id: 8,
     icon: <IoStopwatchOutline className="icon" />,
     text: "Sportif, cours une à deux fois par semaine.",
   },
   {
-    id: 9,
     icon: <IoEarthOutline className="icon" />,
     text: "A vécu 6 mois à Londres et déjà visité 4 continents.",
   },
   {
-    id: 10,
     icon: <IoPawOutline className="icon" />,
     text: "Papa d'un petit Beagle croisé Jagd Terrier.",
   },
@@ -86,8 +76,8 @@ const Infos = () => {
       </motion.div>
 
       <motion.ul variants={container} initial="hidden" animate="visible">
-        {infos.map((info) => (
-          <motion.li key={info.id} variants={item}>
+        {infos.map((info, index) => (
+          <motion.li key={index} variants={item}>
             <span>{info.icon}</span>
             <p>{info.text}</p>
           </motion.li>
