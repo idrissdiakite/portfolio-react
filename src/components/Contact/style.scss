@@ -2,126 +2,43 @@
 
 .contact {
   background-color: $bg-4;
-}
 
-.contact .header {
-  margin-top: 1rem;
-
-  p:first-child {
-    margin-bottom: 1rem;
-  }
-
-  span {
-    display: none;
-  }
-}
-
-.contact {
   p,
-  a,
-  span {
+  a {
     font-size: 1.5rem;
+
+    @media screen and (min-width: 1024px) { font-size: 1.5rem; }
   }
-}
 
-.details {
-  margin-top: 50px;
+  &__suptitle {
+    margin-top: 1rem;
 
-  ul li {
+    p:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__details { margin-top: 50px; }
+
+  &__links {
+    margin-top: 1rem;
+  }
+
+  &__link {
     display: flex;
     align-items: center;
     margin-top: 15px;
 
-    .icon {
+    svg {
       font-size: 30px;
       margin-right: 20px;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 40px;
+        margin-right: 25px;
+      }
     }
 
-    a {
-      color: $color-3;
-    }
-  }
-
-  ul li:hover {
-    p,
-    a,
-    span {
-      font-weight: 600;
-      color: $color-3;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contact {
-    p,
-    a,
-    span {
-      font-size: 1.7rem;
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .contact .header {
-    p:first-child {
-      text-align: left;
-    }
-
-    span {
-      display: contents;
-    }
-  }
-
-  .contact {
-    p,
-    a,
-    span {
-      font-size: 2rem;
-    }
-  }
-
-  .details {
-    margin-top: 70px;
-
-    ul li .icon {
-      font-size: 40px;
-      margin-right: 20px;
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .contact .header p {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .contact {
-    p,
-    a,
-    span {
-      font-size: 2.5rem;
-    }
-  }
-
-  .contact .header p {
-    margin-bottom: 30px;
-  }
-
-  .details {
-    h2 {
-      margin-bottom: 30px;
-    }
-
-    ul li {
-      margin-bottom: 30px;
-    }
-
-    ul li .icon {
-      font-size: 50px;
-      margin-right: 30px;
-    }
+    a { color: $color-3; }
   }
 }

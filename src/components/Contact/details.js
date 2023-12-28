@@ -10,21 +10,21 @@ import {
 
 const contactDetails = [
   {
-    icon: <AiOutlinePhone className="icon" />,
+    icon: <AiOutlinePhone />,
     link: <a href="tel:0669674585">06.69.67.45.85</a>,
   },
   {
-    icon: <AiOutlineMail className="icon" />,
+    icon: <AiOutlineMail />,
     link: (
       <a href="mailto:idriss.diakite@hotmail.fr">idriss.diakite@hotmail.fr</a>
     ),
   },
   {
-    icon: <AiOutlineHome className="icon" />,
+    icon: <AiOutlineHome />,
     link: <span>Lyon (69003)</span>,
   },
   {
-    icon: <AiFillLinkedin className="icon" />,
+    icon: <AiFillLinkedin />,
     link: (
       <a
         href="https://www.linkedin.com/in/idiakite"
@@ -53,32 +53,16 @@ const Details = () => {
   return (
     <>
       <motion.div
-        className="header"
-        initial="initial"
-        animate="in"
-        variants={variants}
-        transition={header}
-      >
-        <p>
-          Actuellement en poste au sein de l'agence Digital Cover.
-        </p>
-
-        <p>
-          Ouvert à toutes propositions <span>-</span> développeur front-end/créatif.
-        </p>
-      </motion.div>
-
-      <motion.div
-        className="details"
+        className="contact__details"
         initial="initial"
         animate="in"
         variants={variants}
         transition={details}
       >
         <h2>Me contacter:</h2>
-        <motion.ul variants={container} initial="hidden" animate="visible">
+        <motion.ul className="contact__links" variants={container} initial="hidden" animate="visible">
           {contactDetails.map((detail, index) => (
-            <motion.li key={index} variants={item}>
+            <motion.li className="contact__link" key={index} variants={item}>
               {detail.icon}
               {detail.link}
             </motion.li>
@@ -91,21 +75,9 @@ const Details = () => {
 
 // Motion
 const variants = {
-  initial: {
-    opacity: 0,
-    scale: 1,
-  },
-  in: {
-    opacity: 1,
-    x: 0,
-  },
-};
-
-const header = {
-  type: "tween",
-  ease: "anticipate",
-  duration: 3,
-};
+  initial: { opacity: 0 },
+  in: { opacity: 1 }
+}
 
 const details = {
   type: "tween",
