@@ -122,7 +122,7 @@ const projects = [
     ),
     img: <img src={paillet} alt="Paillet" class="img" loading="lazy" />,
     description: (
-      <p>Co-développement d'un thème Wordpress (+ ACF) from scratch.</p>
+      <p>Développement d'un thème Wordpress (+ ACF) from scratch.</p>
     ),
     links: (
       <p>
@@ -157,7 +157,7 @@ const projects = [
     ),
     img: <img src={zeldaNY} alt="birdie box" class="img" loading="lazy" />,
     description: (
-      <p>Carte de voeux (numérique) à destination des clients de Zelda.</p>
+      <p>Carte de voeux numérique à destination des clients de Zelda.</p>
     ),
     links: (
       <p>
@@ -205,7 +205,7 @@ const projects = [
     ),
     img: <img src={ateliers} alt="birdie box" class="img" loading="lazy" />,
     description: (
-      <p>Site (Wordpress) de réservation de cours de cuisine en ligne.</p>
+      <p>Site de réservation de cours de cuisine en ligne (thème Wordpress).</p>
     ),
     links: (
       <p>
@@ -244,7 +244,7 @@ const projects = [
     ),
     img: <img src={birdiebox} alt="birdie box" class="img" loading="lazy" />,
     description: (
-      <p>Site vitrine réalisé (sous React) au sein de l'agence Zelda.</p>
+      <p>Site vitrine réalisé avec React au sein de l'agence Zelda.</p>
     ),
     links: (
       <p>
@@ -328,8 +328,7 @@ const projects = [
     img: <img src={ilttcom} alt="ilttcom react" class="img" loading="lazy" />,
     description: (
       <p>
-        Application musicale réalisée avec React, Airtable (base de donnée) et
-        Scss.
+        Application musicale réalisée avec React et Airtable (base de donnée).
       </p>
     ),
     links: (
@@ -372,8 +371,7 @@ const projects = [
     ),
     description: (
       <p>
-        Site de vente d'oeuvres d'art entièrement mis en forme à l'aide du
-        framework Tailwind.
+        Site de vente d'oeuvres d'art mis en forme à l'aide de Tailwind.
       </p>
     ),
     links: (
