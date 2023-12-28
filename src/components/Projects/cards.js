@@ -48,7 +48,7 @@ const projects = [
   {
     name: "Jeu Prends le Bus",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li><RiVuejsFill className="vuejs" title="Vuejs" /></li>
         <li><SiWordpress className="wordpress" title="Wordpress" /></li>
         <li><SiSvg className="svg" title="SVG" /></li>
@@ -58,7 +58,7 @@ const projects = [
         <li><SiSass className="sass" title="Sass" /></li>
       </ul>
     ),
-    img: <img src={jeu} alt="Jeu Prends le Bus" class="projects__card--image" loading="lazy" />,
+    img: <img src={jeu} alt="Jeu Prends le Bus" class="card__image" loading="lazy" />,
     description: (
       <p>Jeu numérique développé sous Nuxtjs et Wordpress + ACF.</p>
     ),
@@ -82,7 +82,7 @@ const projects = [
   {
     name: "Paillet",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
           <SiPhp className="php" title="PHP" />
         </li>
@@ -103,7 +103,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={paillet} alt="Paillet" class="projects__card--image" loading="lazy" />,
+    img: <img src={paillet} alt="Paillet" class="card__image" loading="lazy" />,
     description: (
       <p>Développement d'un thème Wordpress (+ ACF) from scratch.</p>
     ),
@@ -123,7 +123,7 @@ const projects = [
   {
     name: "Meilleurs voeux 2022",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
           <SiReact className="react" title="React" />
         </li>
@@ -138,7 +138,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={zeldaNY} alt="birdie box" class="projects__card--image" loading="lazy" />,
+    img: <img src={zeldaNY} alt="birdie box" class="card__image" loading="lazy" />,
     description: (
       <p>Carte de voeux numérique à destination des clients de Zelda.</p>
     ),
@@ -162,7 +162,7 @@ const projects = [
   {
     name: "Ateliers",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
         <SiWoo className="woocommerce" title="Woocommerce" />
         </li>
@@ -186,7 +186,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={ateliers} alt="birdie box" class="projects__card--image" loading="lazy" />,
+    img: <img src={ateliers} alt="birdie box" class="card__image" loading="lazy" />,
     description: (
       <p>Site de réservation de cours de cuisine en ligne (thème Wordpress).</p>
     ),
@@ -210,7 +210,7 @@ const projects = [
   {
     name: "Birdie Box",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
           <SiReact className="react" title="React" />
         </li>
@@ -225,7 +225,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={birdiebox} alt="birdie box" class="projects__card--image" loading="lazy" />,
+    img: <img src={birdiebox} alt="birdie box" class="card__image" loading="lazy" />,
     description: (
       <p>Site vitrine réalisé avec React au sein de l'agence Zelda.</p>
     ),
@@ -249,7 +249,7 @@ const projects = [
   {
     name: "Portfolio",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
           <SiReact className="react" title="React" />
         </li>
@@ -264,7 +264,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={portfolio} alt="portfolio" class="projects__card--image" loading="lazy" />,
+    img: <img src={portfolio} alt="portfolio" class="card__image" loading="lazy" />,
     description: (
       <p>
         Portfolio personnel développé avec React.
@@ -290,7 +290,7 @@ const projects = [
   {
     name: "ilttcom",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
           <SiReact className="react" title="React" />
         </li>
@@ -308,7 +308,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={ilttcom} alt="ilttcom react" class="projects__card--image" loading="lazy" />,
+    img: <img src={ilttcom} alt="ilttcom react" class="card__image" loading="lazy" />,
     description: (
       <p>
         Application musicale réalisée avec React et Airtable (base de donnée).
@@ -334,7 +334,7 @@ const projects = [
   {
     name: "Artshop",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
           <SiTailwindcss className="tailwind" title="Tailwind" />
         </li>
@@ -350,7 +350,7 @@ const projects = [
       </ul>
     ),
     img: (
-      <img src={artshop} alt="Artshop (Tailwind)" class="projects__card--image" loading="lazy" />
+      <img src={artshop} alt="Artshop (Tailwind)" class="card__image" loading="lazy" />
     ),
     description: (
       <p>
@@ -381,7 +381,7 @@ const projects = [
   {
     name: "Picture Organic Clothing",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
           <SiDocker className="docker" title="Docker" />
         </li>
@@ -399,7 +399,7 @@ const projects = [
         </li>
       </ul>
     ),
-    img: <img src={pictureWp} alt="POC Wordpress" class="projects__card--image" loading="lazy" />,
+    img: <img src={pictureWp} alt="POC Wordpress" class="card__image" loading="lazy" />,
     description: (
       <p>
         Création d'un thème Wordpress sur-mesure effectué lors de mon stage au
@@ -430,7 +430,7 @@ const projects = [
   {
     name: "Picture Organic Clothing",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
           <SiGatsby className="gatsby" title="Gatsby" />
         </li>
@@ -449,7 +449,7 @@ const projects = [
       </ul>
     ),
     img: (
-      <img src={pictureGatsby} alt="POC gatsby" class="projects__card--image" loading="lazy" />
+      <img src={pictureGatsby} alt="POC gatsby" class="card__image" loading="lazy" />
     ),
     description: (
       <p>
@@ -481,7 +481,7 @@ const projects = [
   {
     name: "Gestionnaire de contacts",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
           <SiMysql className="mysql" title="MySQL" />
         </li>
@@ -500,7 +500,7 @@ const projects = [
       <img
         src={contact}
         alt="Gestionnaire de contact"
-        class="projects__card--image"
+        class="card__image"
         loading="lazy"
       />
     ),
@@ -535,7 +535,7 @@ const projects = [
   {
     name: "Gestionnaire de séries",
     icons: (
-      <ul className="projects__card--icons">
+      <ul className="card__icons">
         <li>
           <SiMysql className="mysql" title="MySQL" />
         </li>
@@ -551,7 +551,7 @@ const projects = [
       <img
         src={serie}
         alt="Gestionnaire de séries"
-        class="projects__card--image"
+        class="card__image"
         loading="lazy"
       />
     ),
@@ -589,14 +589,14 @@ const Cards = () => {
   return (
     <>
       {projects.map((project, index) => (
-        <motion.div class="projects__card" key={index} variants={item}>
-          <div className="projects__card--info">
-            <p class="projects__card--name">{project.name}</p>
+        <motion.div class="card" key={index} variants={item}>
+          <div className="card__info">
+            <p class="card__name">{project.name}</p>
             {project.icons}
           </div>
           {project.img}
-          <div className="projects__card--description">{project.description}</div>
-          <div className="projects__card--links">{project.links}</div>
+          <div className="card__description">{project.description}</div>
+          <div className="card__links">{project.links}</div>
         </motion.div>
       ))}
     </>

@@ -19,27 +19,27 @@
     }
   }
 
-  &__card {
-    &--info {
+  .card {
+    &__info {
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
       margin-bottom: 5px;
     }
 
-    &--name {
+    &__name {
       font-size: 1.4rem;
       font-weight: 600;
       color: $color-3;
     }
 
-    &--icons { 
+    &__icons { 
       display: flex;
 
       li:not(:first-of-type) { margin-left: 5px; }
     }
 
-    &--image {
+    &__image {
       width: 100%;
       object-fit: cover;
       box-shadow: $shadow;
@@ -60,13 +60,14 @@
       }
     }
 
-    &--description,
-    &--links {
+    &__description,
+    &__links {
       margin-top: 5px;
     }
 
-    &--links a {
+    &__links a {
       color: $color-3;
+      font-size: 1.5rem;
       font-weight: 400;
       cursor: pointer;
 
