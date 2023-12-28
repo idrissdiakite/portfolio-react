@@ -3,19 +3,10 @@
 .contact {
   background-color: $bg-4;
 
-  p,
-  a {
-    font-size: 1.5rem;
-
-    @media screen and (min-width: 1024px) { font-size: 1.5rem; }
-  }
-
   &__suptitle {
     margin-top: 1rem;
 
-    p:first-child {
-      margin-bottom: 1rem;
-    }
+    p:first-child { margin-bottom: 1rem; }
   }
 
   &__details { margin-top: 50px; }
@@ -38,7 +29,5 @@
         margin-right: 25px;
       }
     }
-
-    a { color: $color-3; }
   }
 }

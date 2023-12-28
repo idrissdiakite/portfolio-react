@@ -21,7 +21,7 @@ const contactDetails = [
   },
   {
     icon: <AiOutlineHome />,
-    link: <span>Lyon (69003)</span>,
+    link: <p>Lyon (69003)</p>,
   },
   {
     icon: <AiFillLinkedin />,
