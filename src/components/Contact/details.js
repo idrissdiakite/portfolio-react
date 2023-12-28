@@ -64,7 +64,7 @@ const Details = () => {
         </p>
 
         <p>
-          Ouvert à toutes propositions <span>-</span> et particulièrement motivé 🕺🏽
+          Ouvert à toutes propositions <span>-</span> développeur front-end/créatif.
         </p>
       </motion.div>
 
