@@ -135,8 +135,8 @@ const Jobs = () => {
         {jobs.map((job, index) => (
           <motion.div className="job" key={index} variants={item}>
             <div
-              onClick={() => toggleClass(job.id)} // lorsqu'on clique sur la div on déclenche la fonction "toggleClass" qui prend en paramètre l'id du job
-              key={job.id}
+              onClick={() => toggleClass(index)} // lorsqu'on clique sur la div on déclenche la fonction "toggleClass" qui prend en paramètre l'id du job
+              key={index}
               className="header"
             >
               <p className="title">{job.title}</p>
@@ -144,7 +144,7 @@ const Jobs = () => {
             </div>
             <div
               className={
-                isVisible === job.id ? "show-description" : "description" // si l'id du state correspond à l'id du job on remplace la classe "description" par "show-description"
+                isVisible === index ? "show-description" : "description" // si l'id du state correspond à l'id du job on remplace la classe "description" par "show-description"
               }
             >
               {job.description}
