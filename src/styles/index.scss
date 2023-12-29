@@ -45,18 +45,13 @@ h1 {
   }
 
   @media screen and (min-width: 1400px) {
-    font-size: 4.5rem;
-    margin-bottom: 2rem;
-  }
-
-  @media screen and (min-width: 1400px) {
     font-size: 22rem;
     margin-bottom: 2rem;
+    margin-top: -0.5rem;
   }
 }
 
-p,
-a {
+p {
   font-size: 1.5rem;
 
   @media screen and (min-width: 1024px) { font-size: 2rem; }
@@ -69,6 +64,7 @@ section {
   margin: 0 auto;
   min-height: 100vh;
   padding: 2rem 1rem;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     margin-left: 75px;
