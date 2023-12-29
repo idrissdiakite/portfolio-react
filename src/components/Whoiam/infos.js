@@ -40,7 +40,7 @@ const infos = [
   },
   {
     icon: <IoMusicalNotesOutline className="icon" />,
-    text: <span>Mélomane de naissance et accessoirement curator sur <a href="https://open.spotify.com/user/ilovethistrack.com?si=9ca1553a0af04aec" target="_blank" rel="noreferrer">Spotify</a>.</span>,
+    text: <span>Mélomane de naissance et accessoirement curator sur <a href="https://open.spotify.com/user/ilovethistrack.com" target="_blank" rel="noreferrer">Spotify</a>.</span>,
   },
   {
     icon: <IoStopwatchOutline className="icon" />,
@@ -52,7 +52,7 @@ const infos = [
   },
   {
     icon: <IoPawOutline className="icon" />,
-    text: "Papa d'un petit Beagle croisé Jagd Terrier.",
+    text: "Doublement Papa, d'un petit garçon et d'un petit beagle.",
   },
 ];
 

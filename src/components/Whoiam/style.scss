@@ -3,16 +3,7 @@
 .whoiam {
   background-color: $bg-1;
 
-  &__suptitle {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-
-  &__wrapper {
-    margin-top: 1.5rem;
-
-    @media screen and (min-width: 1024px) { margin-top: 2rem; }
-  }
+  &__wrapper { margin-top: 2rem; }
 
   &__info {
     display: flex;
@@ -21,18 +12,16 @@
     &:not(:last-of-type) {
       margin-bottom: 1rem;
   
-      @media screen and (min-width: 1024px) { margin-bottom: 1.4rem; }
+      @media screen and (min-width: 1024px) { margin-bottom: 0.75rem; }
     }
 
     &--icon {
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-right: 1rem;
     }
 
     &--text {
       font-size: 1.5rem;
-
-      @media screen and (min-width: 1024px) { font-size: 2rem; }
       
       a {
         color: $color-3;
