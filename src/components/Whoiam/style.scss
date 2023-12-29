@@ -3,6 +3,8 @@
 .whoiam {
   background-color: $bg-1;
 
+  &__suptitle { text-decoration: underline; }
+
   &__wrapper { margin-top: 2rem; }
 
   &__info {
