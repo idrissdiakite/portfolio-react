@@ -48,15 +48,14 @@ h1 {
   @media screen and (min-width: 1400px) {
     font-size: 22rem;
     line-height: 23rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     margin-top: -0.5rem;
   }
 }
 
 p {
   font-size: 1.5rem;
-
-  @media screen and (min-width: 1024px) { font-size: 2rem; }
+  line-height: 2rem;
 }
 
 a { color: $color-3; }
