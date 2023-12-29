@@ -3,13 +3,7 @@
 .contact {
   background-color: $bg-4;
 
-  &__suptitle {
-    margin-top: 1rem;
-
-    p:first-child { margin-bottom: 1rem; }
-  }
-
-  &__details { margin-top: 50px; }
+  &__details { margin-top: 1rem; }
 
   &__links {
     margin-top: 1rem;
