@@ -6,7 +6,7 @@ import "./style.scss";
 const Me = () => {
   return (
     <>
-      <h1 className="whoiam__title">Qui je suis <span>⇩</span></h1>
+      <h1 className="whoiam__title">Qui je suis</h1>
       <motion.p
         className="whoiam__suptitle"
         initial={{ opacity: 0, x: '-100%' }}
