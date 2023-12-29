@@ -106,11 +106,7 @@ const jobs = [
         <br />
         - Vente / Service après-vente
         <br />
-        - Aménagement du point de vente
-        <br />
         - Remises en banque / Gestion de caisse
-        <br />
-        - Réception et gestion des livraisons
         <br />
         - Gestion des stocks / Inventaires tournant
         <br />
