@@ -65,19 +65,21 @@
       margin-top: 5px;
     }
 
-    &__links a {
-      color: $color-3;
-      font-size: 1.5rem;
-      font-weight: 400;
-      cursor: pointer;
+    &__links {
+      ul li {
+        &:not(:last-of-type) { margin-bottom: 0.25rem; }
 
-      &:hover { font-weight: 600; }
+        span { margin-right: 0.5rem; }
+      }
+
+      a {  
+        &:hover { font-weight: 600; }
+      }
     }
   }
 }
 
 // color icons
-
 .html:hover {
   color: #e34c26;
 }
