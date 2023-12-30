@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useEffect, useContext } from "react";
 import { MenuContext } from "../MenuManager";
 import cn from "classnames";
 import { Link } from "react-router-dom";
@@ -36,6 +36,20 @@ const internalLinks = [
 
 const Content = () => {
   const { open, setOpen } = useContext(MenuContext);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      document.body.style.overflow = open ? 'hidden' : 'visible';
+    }
+
+    !open && handleScroll()
+    open && window.addEventListener('scroll', handleScroll)
+  
+    return () => {
+      handleScroll()
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [open])
 
   return (
     <>
