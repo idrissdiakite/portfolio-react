@@ -21,11 +21,10 @@ const jobs = [
     subtitle: "cdi - octobre 2021 à novembre 2022",
     description: (
       <ul>
-        <li>・ Développement d'un jeu numérique <span>(nuxtjs, typescript, wp/acf (bo), axios, phaser, lottie, sass)</span></li>
+        <li>・ Développement d'un jeu numérique <span>(nuxtjs, typescript, wp/acf, axios, phaser, lottie, sass)</span></li>
         <li>・ Développement d'une carte de voeux numérique <span>(react, react lottie, tsparticles, framer motion, scss)</span></li>
         <li>・ Création d'un thème Wordpress sur-mesure <span>(php, wp/acf, javascript, sass)</span></li>
         <li>・ Refonte/développement de sites web WP <span>(elementor/wpbakery, woocommerce/stripe, wprocket, yoast, mailchimp, poedit..)</span></li>
-        <li>・ Rédaction de documentations technique <span>(google docs, pages)</span></li>
         <li>・ Gestion hébergements serveurs + bases de données <span>(ovh, o2switch, mysql)</span></li>
         <li> ・ Tests compatibilité navigateur et accessibilité <span>(lighthouse, caniuse, w3c link checker...)</span></li>
         <li>・ Suivi de projets + relation clientèle <span>(mail, téléphone, visio)</span></li>
