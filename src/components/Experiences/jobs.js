@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { AiOutlinePaperClip } from "react-icons/ai";
+import Accordion from "./accordion";
 
 const jobs = [
   {
@@ -92,25 +93,31 @@ const jobs = [
 ];
 
 const Jobs = () => {
-  const [isVisible, setIsVisible] = useState(-1)
+  const [expanded, setExpanded] = useState(null);
 
-  const toggleClass = (id) => setIsVisible(id)
+  const toggleAccordion = (index) => {
+    setExpanded((prevExpanded) => (prevExpanded === index ? null : index));
+  };
 
   return (
     <>
       <div className="experiences__items">
         {jobs.map((job, index) => (
-          <motion.div className="experiences__item" key={index} variants={item}>
-            <div onClick={() => toggleClass(index)} key={index} className="experiences__item--top">
-              <div className="experiences__item--title">{job.title} <span>({job.subtitle})</span></div>
-            </div>
-            <div className={isVisible === index ? "experiences__item--content show" : "experiences__item--content"}>{job.description}</div>
-          </motion.div>
+          <Accordion
+            key={index}
+            title={job.title}
+            subtitle={job.subtitle}
+            description={job.description}
+            isOpen={index === expanded}
+            onClick={() => toggleAccordion(index)}
+          />
         ))}
       </div>
-      <motion.div className="experiences__cv" variants={item} >
+      <motion.div className="experiences__cv" variants={item}>
         <AiOutlinePaperClip className="experiences__cv--icon" />
-        <a href="./assets/CV.pdf" download>Télécharger mon CV</a>
+        <a href="./assets/CV.pdf" download>
+          Télécharger mon CV
+        </a>
       </motion.div>
     </>
   );

@@ -25,10 +25,8 @@
     }
 
     &--content {
-      display: none;
-      margin-top: 1rem;
-
-      &.show { display: block; }
+      padding-top: 1rem;
+      transform-origin: top center;
 
       ul li {
         font-size: 1.25rem;
