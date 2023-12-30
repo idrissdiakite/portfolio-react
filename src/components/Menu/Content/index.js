@@ -35,7 +35,11 @@ const internalLinks = [
 ];
 
 const Content = () => {
-  const { open, setOpen } = useContext(MenuContext);
+  const { open, setOpen } = useContext(MenuContext)
+
+  const scrollTop = () => {
+    window.scrollTo(0, 0)
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,7 +61,9 @@ const Content = () => {
         <nav className="nav">
           <ul className="nav__links">
             {internalLinks.map((link) => (
-              <li key={link.id} onClick={() => setOpen(!open)}>
+              <li key={link.id} onClick={() => {
+              setOpen(!open)
+              scrollTop()}}>
                 <Link to={link.url}>{link.name}</Link>
               </li>
             ))}
