@@ -90,14 +90,24 @@ const jobs = [
       </ul>
     ),
   },
-];
+]
 
 const Jobs = () => {
-  const [expanded, setExpanded] = useState(null);
+  const [expanded, setExpanded] = useState(null)
+  const cv = document.querySelector('.experiences__cv')
 
   const toggleAccordion = (index) => {
-    setExpanded((prevExpanded) => (prevExpanded === index ? null : index));
-  };
+    setExpanded((prevExpanded) => (prevExpanded === index ? null : index))
+
+    setTimeout(function() {
+      const y = cv.offsetTop
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      })
+    }, 500)
+  }
 
   return (
     <>
