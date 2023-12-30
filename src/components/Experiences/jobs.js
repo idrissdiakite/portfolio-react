@@ -94,12 +94,12 @@ const jobs = [
 
 const Jobs = () => {
   const [expanded, setExpanded] = useState(null)
-  const cv = document.querySelector('.experiences__cv')
 
   const toggleAccordion = (index) => {
     setExpanded((prevExpanded) => (prevExpanded === index ? null : index))
 
     setTimeout(function() {
+      const cv = document.querySelector('.experiences__cv')
       const y = cv.offsetTop
 
       window.scrollTo({
