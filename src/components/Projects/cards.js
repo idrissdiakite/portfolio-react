@@ -58,7 +58,7 @@ const projects = [
         <li><SiSass className="sass" title="Sass" /></li>
       </ul>
     ),
-    img: <img src={jeu} alt="Jeu Prends le Bus" class="card__image" loading="lazy" />,
+    img: <img src={jeu} alt="Jeu Prends le Bus" className="card__image" loading="lazy" />,
     description: (<p>Jeu numérique développé sous Nuxtjs et Wordpress + ACF.</p>),
     links: (
       <ul>
@@ -79,7 +79,7 @@ const projects = [
         <li><SiSass className="sass" title="Sass" /></li>
       </ul>
     ),
-    img: <img src={paillet} alt="Paillet" class="card__image" loading="lazy" />,
+    img: <img src={paillet} alt="Paillet" className="card__image" loading="lazy" />,
     description: (<p>Développement d'un thème Wordpress (+ ACF) from scratch.</p>),
     links: (
       <ul>
@@ -97,7 +97,7 @@ const projects = [
         <li><SiSvg className="svg" title="SVG" /></li>
       </ul>
     ),
-    img: <img src={zeldaNY} alt="birdie box" class="card__image" loading="lazy" />,
+    img: <img src={zeldaNY} alt="birdie box" className="card__image" loading="lazy" />,
     description: (<p>Carte de voeux numérique à destination des clients de Zelda.</p>),
     links: (
       <ul>
@@ -119,7 +119,7 @@ const projects = [
         <li><SiApplepay title="Apple Pay" /></li>
       </ul>
     ),
-    img: <img src={ateliers} alt="birdie box" class="card__image" loading="lazy" />,
+    img: <img src={ateliers} alt="birdie box" className="card__image" loading="lazy" />,
     description: (<p>Site de réservation de cours de cuisine en ligne (thème Wordpress).</p>),
     links: (
       <ul>
@@ -138,7 +138,7 @@ const projects = [
         <li><SiSvg className="svg" title="SVG" /></li>
       </ul>
     ),
-    img: <img src={birdiebox} alt="birdie box" class="card__image" loading="lazy" />,
+    img: <img src={birdiebox} alt="birdie box" className="card__image" loading="lazy" />,
     description: (<p>Site vitrine réalisé avec React au sein de l'agence Zelda.</p>),
     links: (
       <ul>
@@ -157,7 +157,7 @@ const projects = [
         <li><SiNetlify className="netlify" title="Netlify" /></li>
       </ul>
     ),
-    img: <img src={portfolio} alt="portfolio" class="card__image" loading="lazy" />,
+    img: <img src={portfolio} alt="portfolio" className="card__image" loading="lazy" />,
     description: (<p>Portfolio personnel développé avec React.</p>),
     links: (
       <ul>
@@ -177,7 +177,7 @@ const projects = [
         <li><SiNetlify className="netlify" title="Netlify" /></li>
       </ul>
     ),
-    img: <img src={ilttcom} alt="ilttcom react" class="card__image" loading="lazy" />,
+    img: <img src={ilttcom} alt="ilttcom react" className="card__image" loading="lazy" />,
     description: (<p>Application musicale réalisée avec React et Airtable (base de donnée).</p>),
     links: (
       <ul>
@@ -196,7 +196,7 @@ const projects = [
         <li><SiNetlify className="netlify" title="Netlify" /></li>
       </ul>
     ),
-    img: (<img src={artshop} alt="Artshop (Tailwind)" class="card__image" loading="lazy" />),
+    img: (<img src={artshop} alt="Artshop (Tailwind)" className="card__image" loading="lazy" />),
     description: (<p>Site de vente d'oeuvres d'art mis en forme à l'aide de Tailwind.</p>),
     links: (
       <ul>
@@ -216,7 +216,7 @@ const projects = [
         <li><SiJavascript className="javascript" title="Javascripthp" /></li>
       </ul>
     ),
-    img: <img src={pictureWp} alt="POC Wordpress" class="card__image" loading="lazy" />,
+    img: <img src={pictureWp} alt="POC Wordpress" className="card__image" loading="lazy" />,
     description: (<p>Création d'un thème Wordpress sur-mesure effectué lors de mon stage au sein de l'agence digitale Ultrō.</p>),
     links: (
       <ul>
@@ -236,7 +236,7 @@ const projects = [
         <li><SiCss3 className="css" title="CSS" /></li>
       </ul>
     ),
-    img: (<img src={pictureGatsby} alt="POC gatsby" class="card__image" loading="lazy" />),
+    img: (<img src={pictureGatsby} alt="POC gatsby" className="card__image" loading="lazy" />),
     description: (
       <p>Intégration dynamique du blog de Picture Organic Clothing via GatsbyJS, un framework basé sur React et alimenté par GraphQL.</p>
     ),
@@ -257,7 +257,7 @@ const projects = [
         <li><SiBootstrap className="bootstrap" title="Bootstrap" /></li>
       </ul>
     ),
-    img: (<img src={contact} alt="Gestionnaire de contact" class="card__image" loading="lazy" />),
+    img: (<img src={contact} alt="Gestionnaire de contact" className="card__image" loading="lazy" />),
     description: (
       <p>Application Symfony permettant d'afficher une liste de contacts avec
         diverses informations. Formulaire de connexion, recherche, trie et CRUD
@@ -283,7 +283,7 @@ const projects = [
       <img
         src={serie}
         alt="Gestionnaire de séries"
-        class="card__image"
+        className="card__image"
         loading="lazy"
       />
     ),
@@ -307,9 +307,9 @@ const Cards = () => {
   return (
     <>
       {projects.map((project, index) => (
-        <motion.div class="card" key={index} variants={item}>
+        <motion.div className="card" key={index} variants={item}>
           <div className="card__info">
-            <p class="card__name">{project.name}</p>
+            <p className="card__name">{project.name}</p>
             {project.icons}
           </div>
           {project.img}
