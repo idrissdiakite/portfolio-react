@@ -8,12 +8,14 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import MenuManager from './components/Menu/MenuManager';
+import Cursor from "./components/Cursor/cursor";
 
 
 function App() {
   return (
     <BrowserRouter>
       <MenuManager />
+      <Cursor />
       <AnimatePresence> 
         <Switch>
           <Route path="/" exact component={Home} />
