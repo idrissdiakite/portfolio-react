@@ -106,7 +106,7 @@ const Jobs = () => {
         top: y,
         behavior: "smooth",
       })
-    }, 500)
+    }, 250)
   }
 
   return (
