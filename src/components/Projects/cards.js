@@ -59,8 +59,7 @@ const projects = [
         <li><SiSass className="sass" title="Sass" /></li>
       </ul>
     ),
-    img: <img src={jeu} alt="Jeu Prends le Bus" className="card__image" loading="lazy" />,
-    description: (<p>Jeu numérique développé sous Nuxtjs et Wordpress + ACF.</p>),
+    img: <img src={jeu} alt="Jeu Prends le Bus" loading="lazy" />,
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/jeu-prends-le-bus-nuxt" target="_blank" rel="noreferrer">github</a></li>
@@ -80,8 +79,7 @@ const projects = [
         <li><SiSass className="sass" title="Sass" /></li>
       </ul>
     ),
-    img: <img src={paillet} alt="Paillet" className="card__image" loading="lazy" />,
-    description: (<p>Développement d'un thème Wordpress (+ ACF) from scratch.</p>),
+    img: <img src={paillet} alt="Paillet" loading="lazy" />,
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/paillet-wordpress" target="_blank" rel="noreferrer">github</a></li>
@@ -98,8 +96,7 @@ const projects = [
         <li><SiSvg className="svg" title="SVG" /></li>
       </ul>
     ),
-    img: <img src={zeldaNY} alt="birdie box" className="card__image" loading="lazy" />,
-    description: (<p>Carte de voeux numérique à destination des clients de Zelda.</p>),
+    img: <img src={zeldaNY} alt="birdie box" loading="lazy" />,
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/zelda-happy-new-year" target="_blank" rel="noreferrer">github</a></li>
@@ -120,8 +117,7 @@ const projects = [
         <li><SiApplepay title="Apple Pay" /></li>
       </ul>
     ),
-    img: <img src={ateliers} alt="birdie box" className="card__image" loading="lazy" />,
-    description: (<p>Site de réservation de cours de cuisine en ligne (thème Wordpress).</p>),
+    img: <img src={ateliers} alt="birdie box" loading="lazy" />,
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/ateliers-wordpress" target="_blank" rel="noreferrer">github</a></li>
@@ -139,8 +135,7 @@ const projects = [
         <li><SiSvg className="svg" title="SVG" /></li>
       </ul>
     ),
-    img: <img src={birdiebox} alt="birdie box" className="card__image" loading="lazy" />,
-    description: (<p>Site vitrine réalisé avec React au sein de l'agence Zelda.</p>),
+    img: <img src={birdiebox} alt="birdie box" loading="lazy" />,
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/birdie-box" target="_blank" rel="noreferrer">github</a></li>
@@ -158,8 +153,7 @@ const projects = [
         <li><SiNetlify className="netlify" title="Netlify" /></li>
       </ul>
     ),
-    img: <img src={portfolio} alt="portfolio" className="card__image" loading="lazy" />,
-    description: (<p>Portfolio personnel développé avec React.</p>),
+    img: <img src={portfolio} alt="portfolio" loading="lazy" />,
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/portfolio-react" target="_blank" rel="noreferrer">github</a></li>
@@ -178,8 +172,7 @@ const projects = [
         <li><SiNetlify className="netlify" title="Netlify" /></li>
       </ul>
     ),
-    img: <img src={ilttcom} alt="ilttcom react" className="card__image" loading="lazy" />,
-    description: (<p>Application musicale réalisée avec React et Airtable (base de donnée).</p>),
+    img: <img src={ilttcom} alt="ilttcom react" loading="lazy" />,
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/ilttcom-react-airtable" target="_blank" rel="noreferrer">github</a></li>
@@ -197,8 +190,7 @@ const projects = [
         <li><SiNetlify className="netlify" title="Netlify" /></li>
       </ul>
     ),
-    img: (<img src={artshop} alt="Artshop (Tailwind)" className="card__image" loading="lazy" />),
-    description: (<p>Site de vente d'oeuvres d'art mis en forme à l'aide de Tailwind.</p>),
+    img: (<img src={artshop} alt="Artshop (Tailwind)" loading="lazy" />),
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/artshop-tailwind" target="_blank" rel="noreferrer">github</a></li>
@@ -217,8 +209,7 @@ const projects = [
         <li><SiJavascript className="javascript" title="Javascripthp" /></li>
       </ul>
     ),
-    img: <img src={pictureWp} alt="POC Wordpress" className="card__image" loading="lazy" />,
-    description: (<p>Création d'un thème Wordpress sur-mesure effectué lors de mon stage au sein de l'agence digitale Ultrō.</p>),
+    img: <img src={pictureWp} alt="POC Wordpress" loading="lazy" />,
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/picture-wordpress-theme" target="_blank" rel="noreferrer">github</a></li>
@@ -237,10 +228,7 @@ const projects = [
         <li><SiCss3 className="css" title="CSS" /></li>
       </ul>
     ),
-    img: (<img src={pictureGatsby} alt="POC gatsby" className="card__image" loading="lazy" />),
-    description: (
-      <p>Intégration dynamique du blog de Picture Organic Clothing via GatsbyJS, un framework basé sur React et alimenté par GraphQL.</p>
-    ),
+    img: (<img src={pictureGatsby} alt="POC gatsby" loading="lazy" />),
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/picture-wp-gatsbyjs" target="_blank" rel="noreferrer">github</a></li>
@@ -258,12 +246,7 @@ const projects = [
         <li><SiBootstrap className="bootstrap" title="Bootstrap" /></li>
       </ul>
     ),
-    img: (<img src={contact} alt="Gestionnaire de contact" className="card__image" loading="lazy" />),
-    description: (
-      <p>Application Symfony permettant d'afficher une liste de contacts avec
-        diverses informations. Formulaire de connexion, recherche, trie et CRUD
-        complet.</p>
-    ),
+    img: (<img src={contact} alt="Gestionnaire de contact" loading="lazy" />),
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/gestionnaire-contact" target="_blank" rel="noreferrer">github</a></li>
@@ -280,21 +263,7 @@ const projects = [
         <li><SiBootstrap className="bootstrap" title="Bootstrap" /></li>
       </ul>
     ),
-    img: (
-      <img
-        src={serie}
-        alt="Gestionnaire de séries"
-        className="card__image"
-        loading="lazy"
-      />
-    ),
-    description: (
-      <p>
-        Application Angular permettant d'afficher une liste de séries avec
-        diverses informations (affiche, année de lancement, nombre de saisons,
-        synopsis etc..).
-      </p>
-    ),
+    img: (<img src={serie} alt="Gestionnaire de séries" loading="lazy" />),
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/series-manager-angular" target="_blank" rel="noreferrer">github</a></li>
@@ -336,20 +305,21 @@ const Cards = () => {
         imageRefs.current[pairIndex] = imageRefs.current[pairIndex] || pair.map(() => createRef())
 
         return (
-          <div onMouseMove={(e) => manageMouseMove(e, pairIndex)} className="cards__wrapper" key={pairIndex}>
+          <div onMouseMove={(e) => manageMouseMove(e, pairIndex)} className="cards" key={pairIndex}>
             {pair.map((project, index) => {
               const cardRef = imageRefs.current[pairIndex][index]
 
               return (
-                <div className="card__container" key={index} ref={cardRef}>
-                  <div className="card">
-                    <div className="card__info">
-                      <p className="card__name">{project.name}</p>
-                      {project.icons}
+                <div className="card" key={index} ref={cardRef}>
+                  <div className="card__wrapper">
+                    <div className="card__image">{project.img}</div>
+                    <div className="card__content">
+                      <div className="card__top">
+                        <p className="card__name">{project.name}</p>
+                        {project.icons}
+                      </div>
+                      <div className="card__links">{project.links}</div>
                     </div>
-                    <div className="card__image--wrapper">{project.img}</div>
-                    <div className="card__description">{project.description}</div>
-                    <div className="card__links">{project.links}</div>
                   </div>
                 </div>
               );
