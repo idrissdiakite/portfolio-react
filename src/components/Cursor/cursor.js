@@ -33,10 +33,7 @@ export default function Cursor({ stickyElement }) {
 
 
   return (
-    <div className="cursor__wrapper">
       <motion.div className="cursor" style={{left: smoothMouse.x, top: smoothMouse.y}}></motion.div>
-    </div>
-
   )
 
 }
