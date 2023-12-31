@@ -8,14 +8,21 @@
     font-size: 1.2rem;
   }
 
-  &__cards {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
+  .cards__wrapper {
+    display: flex;
+    height: 45vw;
+    margin-top: 5rem;
 
-    @media screen and (min-width: 1024px) {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 2rem;
+    .card__container {
+      &:nth-of-type(1){ width: 66.66%; }
+      &:nth-of-type(2){ width: 33.33%; }
+    }
+
+    &:nth-child(even){
+      .card__container {
+        &:nth-of-type(1){ width: 33.33%; }
+        &:nth-of-type(2){ width: 66.66%; }
+      }
     }
   }
 
@@ -39,24 +46,20 @@
       li:not(:first-of-type) { margin-left: 5px; }
     }
 
-    &__image {
-      width: 100%;
-      object-fit: cover;
-      box-shadow: $shadow;
-      filter: brightness(80%);
-      -webkit-filter: brightness(80%);
+    &__image--wrapper {
+      padding-bottom: 66%;
+      position: relative;
 
-      @media screen and (min-width: 1024px) { height: 350px; }
-
-      @media screen and (min-width: 1440px) { height: 450px; }
-
-      @media screen and (min-width: 1680px) { height: 550px; }
-
-      &:hover {
-        border: 3px solid $color-3;
-        box-shadow: $light-shadow;
-        filter: brightness(100%);
-        -webkit-filter: brightness(100%);
+      img {
+        object-fit: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        color: transparent;
       }
     }
 

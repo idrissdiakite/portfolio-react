@@ -1,5 +1,6 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { useRef, createRef } from 'react'; 
+// import { motion } from "framer-motion";
 import {
   SiHtml5,
   SiCss3,
@@ -301,29 +302,63 @@ const projects = [
       </ul>
     ),
   },
-];
+]
 
 const Cards = () => {
+  const projectPairs = projects.reduce((acc, project, index) => {
+    const pairIndex = Math.floor(index / 2)
+
+    if (!acc[pairIndex]) { acc[pairIndex] = [] }
+    acc[pairIndex].push(project)
+
+    return acc
+  }, [])
+
+    const imageRefs = useRef([]);
+
+    const manageMouseMove = (e, pairIndex) => {
+      const { clientX } = e
+      const xPercent = (clientX / window.innerWidth) * 100
+  
+      imageRefs.current[pairIndex] = imageRefs.current[pairIndex] || []
+  
+      imageRefs.current[pairIndex].forEach((ref, index) => {
+        if (ref.current) {
+          const widthPercent = index === 0 ? 66.66 - xPercent * 0.33 : 33.33 + xPercent * 0.33
+          ref.current.style.width = `${widthPercent}%`;
+        }
+      })
+    }
+
   return (
     <>
-      {projects.map((project, index) => (
-        <motion.div className="card" key={index} variants={item}>
-          <div className="card__info">
-            <p className="card__name">{project.name}</p>
-            {project.icons}
-          </div>
-          {project.img}
-          <div className="card__description">{project.description}</div>
-          <div className="card__links">{project.links}</div>
-        </motion.div>
-      ))}
-    </>
-  )
-}
+      {projectPairs.map((pair, pairIndex) => {
+        imageRefs.current[pairIndex] = imageRefs.current[pairIndex] || pair.map(() => createRef())
 
-const item = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 }
+        return (
+          <div onMouseMove={(e) => manageMouseMove(e, pairIndex)} className="cards__wrapper" key={pairIndex}>
+            {pair.map((project, index) => {
+              const cardRef = imageRefs.current[pairIndex][index]
+
+              return (
+                <div className="card__container" key={index} ref={cardRef}>
+                  <div className="card">
+                    <div className="card__info">
+                      <p className="card__name">{project.name}</p>
+                      {project.icons}
+                    </div>
+                    <div className="card__image--wrapper">{project.img}</div>
+                    <div className="card__description">{project.description}</div>
+                    <div className="card__links">{project.links}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
+    </>
+  );
 }
 
 export default Cards;
