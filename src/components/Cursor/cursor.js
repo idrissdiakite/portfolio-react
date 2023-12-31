@@ -3,7 +3,7 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 import "./style.scss";
 
 
-export default function Cursor({ stickyElement }) {
+export default function Cursor() {
   const cursorSize = 15;
   const mouse = {
     x: useMotionValue(0),
