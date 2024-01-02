@@ -31,9 +31,8 @@ export default function Cursor() {
     }
   })
 
-
   return (
-      <motion.div className="cursor" style={{left: smoothMouse.x, top: smoothMouse.y}}></motion.div>
+    <motion.div className="cursor" style={{left: smoothMouse.x, top: smoothMouse.y}}></motion.div>
   )
 
 }
