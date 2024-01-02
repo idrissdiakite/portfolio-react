@@ -18,7 +18,7 @@ const jobs = [
     ),
   },
   {
-    title: "Développeur full stack - Zelda",
+    title: "Développeur frontend - Zelda",
     subtitle: "cdi - octobre 2021 à novembre 2022",
     description: (
       <ul>
