@@ -2,8 +2,9 @@
   position: fixed;
   width: 15px;
   height: 15px;
-  background-color: black;
   border-radius: 50%;
+  background-color: white;
+  mix-blend-mode: difference;
   pointer-events: none;
   z-index: 1;
 }
