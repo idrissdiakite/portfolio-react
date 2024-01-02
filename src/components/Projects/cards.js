@@ -1,12 +1,12 @@
 import React from "react";
 import { useRef, createRef } from 'react'; 
-// import { motion } from "framer-motion";
 import {
   SiHtml5,
   SiCss3,
   SiJavascript,
   SiTypescript,
   SiReact,
+  SiNextDotJs,
   SiAngular,
   SiPhp,
   SiSymfony,
@@ -32,6 +32,7 @@ import {
 
 } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
+import spotify from "../../assets/cards/spotify.png";
 import jeu from "../../assets/cards/jeu.png";
 import paillet from "../../assets/cards/paillet.png";
 import zeldaNY from "../../assets/cards/zelda-ny.png";
@@ -46,6 +47,22 @@ import contact from "../../assets/cards/gestionnaire-contact.png";
 import serie from "../../assets/cards/series-angular.png";
 
 const projects = [
+  {
+    name: "Spotify clone",
+    icons: (
+      <ul className="card__icons">
+        <li><SiNextDotJs className="nextjs" title="Nextjs" /></li>
+        <li><SiTailwindcss className="tailwind" title="Tailwind" /></li>
+      </ul>
+    ),
+    img: <img src={spotify} alt="Spotify clone" loading="lazy" />,
+    links: (
+      <ul>
+        <li><span>‣</span><a href="https://github.com/idrissdiakite/spotify-clone-nextjs" target="_blank" rel="noreferrer">github</a></li>
+        <li><span>‣</span><a href="https://www.youtube.com/watch?v=K-TKYTH5JrM" target="_blank" rel="noreferrer">démo</a></li>
+      </ul>
+    ),
+  },
   {
     name: "Jeu Prends le Bus",
     icons: (
