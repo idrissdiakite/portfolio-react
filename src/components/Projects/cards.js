@@ -7,6 +7,7 @@ import {
   SiTypescript,
   SiReact,
   SiNextDotJs,
+  SiSpotify,
   SiAngular,
   SiPhp,
   SiSymfony,
@@ -51,6 +52,7 @@ const projects = [
     name: "Spotify clone",
     icons: (
       <ul className="card__icons">
+        <li><SiSpotify className="spotify" title="Spotify" /></li>
         <li><SiNextDotJs className="nextjs" title="Nextjs" /></li>
         <li><SiTailwindcss className="tailwind" title="Tailwind" /></li>
       </ul>
