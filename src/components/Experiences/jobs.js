@@ -10,6 +10,7 @@ const jobs = [
     description: (
       <ul>
         <li>・ Création de sites web/thèmes wordpress sur-mesure <span>(php/laravel/blade, acf/cpt ui, es6, gsap/scrolltrigger, taxi.js, lenis...)</span></li>
+        <li>・ Déploiement et mise à jour prods/preprods via ssh <span>(terminal/wrap)</span></li>
         <li>・ Rédaction de documentations techniques <span>(google docs)</span></li>
         <li>・ Tests compatibilité navigateurs et accessibilité <span>(lighthouse, caniuse..)</span></li>
         <li>・ Gestion hébergements serveurs + création bases de données <span>(ovh)</span></li>
