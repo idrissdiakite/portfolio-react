@@ -3,10 +3,20 @@
 .contact {
   background-color: $bg-4;
 
-  &__details { margin-top: 3rem; }
+  &__suptitle {
+    p:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__details { 
+    margin-top: 3rem; 
+
+    .contact__desc { text-decoration: underline; }
+  }
 
   &__links {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   &__link {

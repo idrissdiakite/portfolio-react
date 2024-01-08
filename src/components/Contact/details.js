@@ -1,12 +1,12 @@
-import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 import {
   AiOutlineMail,
   AiOutlinePhone,
   AiOutlineHome,
   AiFillLinkedin,
   AiFillGithub,
-} from "react-icons/ai";
+} from "react-icons/ai"
 
 const contactDetails = [
   {
@@ -47,63 +47,47 @@ const contactDetails = [
       </a>
     ),
   },
-];
+]
 
 const Details = () => {
   return (
     <>
-      <motion.div
-        className="contact__details"
-        initial="initial"
-        animate="in"
-        variants={variants}
-        transition={details}
+      <div className="contact__details">
+      <motion.p
+        className="contact__desc"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ type: "tween", ease: "anticipate", duration: 2 }}
       >
-        <h2>Me contacter:</h2>
-        <motion.ul className="contact__links" variants={container} initial="hidden" animate="visible">
+        Me contacter:
+      </motion.p>
+        <motion.ul className="contact__links">
           {contactDetails.map((detail, index) => (
-            <motion.li className="contact__link" key={index} variants={item}>
-              {detail.icon}
-              {detail.link}
-            </motion.li>
+            <Detail key={index} detail={detail} />
           ))}
         </motion.ul>
-      </motion.div>
+      </div>
     </>
-  );
-};
-
-// Motion
-const variants = {
-  initial: { opacity: 0 },
-  in: { opacity: 1 }
+  )
 }
 
-const details = {
-  type: "tween",
-  ease: "anticipate",
-  duration: 6,
-};
-
-// Motion
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 2,
-      staggerChildren: 1,
-    },
-  },
-};
-
-const item = {
-  hidden: { y: 0, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
-
 export default Details;
+
+const Detail = ({ detail }) => {
+  const [ref, inView] = useInView()
+
+  return (
+    <motion.li 
+      className="contact__link"
+      ref={ref} 
+      initial={{ opacity: 0, x: 100 }} 
+      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
+      transition={{ type: "tween", ease: "anticipate", duration: 1 }}
+    >
+      {detail.icon}
+      {detail.link}
+    </motion.li>
+  )
+}
+
+
