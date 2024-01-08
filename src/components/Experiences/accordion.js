@@ -1,9 +1,18 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 const Accordion = ({ title, subtitle, description, isOpen, onClick }) => {
+  const [ref, inView] = useInView()
+
   return (
     <>
-      <div className="experiences__item">
+      <motion.div 
+        className="experiences__item"
+        ref={ref}
+        initial={{ opacity: 0, x: 100 }} 
+        animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
+        transition={{ type: "tween", ease: "anticipate", duration: 1 }}
+      >
         <motion.div className="experiences__item--top" initial={false} onClick={onClick}>
           <div className="experiences__item--title">{title} <span>({subtitle})</span></div>
         </motion.div>
@@ -27,7 +36,7 @@ const Accordion = ({ title, subtitle, description, isOpen, onClick }) => {
           </motion.div>
         )}
         </AnimatePresence>
-      </div>
+      </motion.div>
     </>
   );
 };
