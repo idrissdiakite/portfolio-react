@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "../Title";
 import { motion } from "framer-motion";
 import Jobs from "./jobs";
 import "./style.scss";
@@ -6,7 +7,7 @@ import "./style.scss";
 const Experiences = () => {
   return (
     <>
-      <h1 className="experiences__title">Experiences</h1>
+      <Title className="experiences__title">Experiences</Title>
       <motion.p
         className="experiences__suptitle"
         initial={{ opacity: 0 }}

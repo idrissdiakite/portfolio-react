@@ -2,11 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import Cards from "./cards";
 import "./style.scss";
+import Title from "../Title";
 
 const Projects = () => {
   return (
     <>
-      <h1 className="projects__title">Projets</h1>
+      <Title className="projects__title">Projets</Title>
       <motion.div
         className="projects__cards"
         variants={container}

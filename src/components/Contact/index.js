@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "../Title";
 import { motion } from "framer-motion";
 import Details from "./details";
 import "./style.scss";
@@ -6,7 +7,7 @@ import "./style.scss";
 const Contact = () => {
   return (
     <>
-      <h1 className="contact__title">Contact</h1>
+      <Title className="contact__title">Contact</Title>
       <motion.div 
         className="contact__suptitle"
         initial={{ opacity: 0 }}

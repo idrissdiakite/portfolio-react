@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "../Title";
 import { motion } from "framer-motion";
 import Infos from "./infos";
 import "./style.scss";
@@ -6,7 +7,7 @@ import "./style.scss";
 const Me = () => {
   return (
     <>
-      <h1 className="whoiam__title">Qui je suis</h1>
+      <Title className="whoiam__title">Qui je suis</Title>
       <motion.p
         className="whoiam__suptitle"
         initial={{ opacity: 0 }}
