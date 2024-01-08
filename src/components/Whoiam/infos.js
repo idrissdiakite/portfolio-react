@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
 import {
   IoStopwatchOutline,
   IoLocationOutline,
@@ -11,7 +11,7 @@ import {
   IoPawOutline,
   IoSunnyOutline,
   IoStarOutline
-} from "react-icons/io5";
+} from "react-icons/io5"
 
 const infos = [
   {
@@ -54,43 +54,33 @@ const infos = [
     icon: <IoPawOutline />,
     text: "Doublement Papa, d'un petit garçon et d'un petit beagle.",
   },
-];
+]
 
 const Infos = () => {
   return (
-    <motion.ul className="whoiam__infos" variants={container} initial="hidden" animate="visible">
+    <ul className="whoiam__infos">
       {infos.map((info, index) => (
-        <motion.li className="whoiam__info" key={index} variants={item}>
-          <span className="whoiam__info--icon">{info.icon}</span>
-          <p className="whoiam__info--text">{info.text}</p>
-         </motion.li>
+        <Info key={index} info={info} />
       ))}
-    </motion.ul>
+    </ul>
   )
 }
 
-// Motion
-const container = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      delayChildren: 1,
-      staggerChildren: 0.1,
-    }
-  }
-}
-
-const item = {
-  hidden: { x: 300, opacity: 0 },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 0.6
-    },
-  },
-};
-
 export default Infos;
+
+const Info = ({ info }) => {
+  const [ref, inView] = useInView()
+
+  return (
+    <motion.li 
+      className="whoiam__info" 
+      ref={ref} 
+      initial={{ opacity: 0, x: 100 }} 
+      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
+      transition={{ type: "tween", ease: "anticipate", duration: 1 }}
+    >
+      <span className="whoiam__info--icon">{info.icon}</span>
+      <p className="whoiam__info--text">{info.text}</p>
+    </motion.li>
+  )
+}
