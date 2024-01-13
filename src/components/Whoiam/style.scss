@@ -1,7 +1,7 @@
 @import "./../../styles/settings";
 
 .whoiam {
-  background-color: $bg-1;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 
   &__suptitle { text-decoration: underline; }
 

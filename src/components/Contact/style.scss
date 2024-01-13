@@ -1,7 +1,7 @@
 @import "./../../styles/settings";
 
 .contact {
-  background-color: $bg-4;
+  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
 
   &__suptitle {
     p:not(:last-of-type) {

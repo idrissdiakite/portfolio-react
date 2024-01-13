@@ -1,7 +1,7 @@
 @import "./../../styles/settings";
 
 .projects {
-  background-color: $bg-2;
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 
   p {
     line-height: 1.4em;
@@ -42,7 +42,7 @@
         right: 0;
         bottom: 0;
         color: transparent;
-        filter: brightness(0.5);
+        filter: brightness(0.8);
         transition: filter 0.3s ease-out;
 
         &:hover { filter: brightness(1); }
