@@ -3,6 +3,7 @@ import { MenuContext } from "../MenuManager";
 import cn from "classnames";
 import { Link } from "react-router-dom";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
+import { motion } from 'framer-motion';
 
 import "./style.scss";
 
@@ -61,25 +62,46 @@ const Content = () => {
         <nav className="nav">
           <ul className="nav__links">
             {internalLinks.map((link) => (
-              <li key={link.id} onClick={() => {
-              setOpen(!open)
-              scrollTop()}}>
+              <motion.li 
+                key={link.id} 
+                onClick={() => {
+                  setOpen(!open)
+                  scrollTop()}
+                }
+                transition={{ type: 'tween', ease: 'easeOut', duration: 0.5 }}
+                whileHover={{ 
+                  rotateX: 40,
+                  rotateY: 0
+                }}
+              >
                 <Link to={link.url}>{link.name}</Link>
-              </li>
+              </motion.li>
             ))}
           </ul>
 
           <ul className="nav__icons">
-            <li>
+            <motion.li
+            transition={{ type: 'tween', ease: 'easeOut', duration: 0.5 }}
+              whileHover={{ 
+                rotateX: 0,
+                rotateY: -30
+              }}
+            >
               <a href="https://www.linkedin.com/in/idiakite" target="_blank" rel="noreferrer">
                 <AiFillLinkedin />
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              transition={{ type: 'tween', ease: 'easeOut', duration: 0.5 }}
+              whileHover={{ 
+                rotateX: 0,
+                rotateY: 30
+              }}
+            >
               <a href="https://github.com/idrissdiakite" target="_blank" rel="noreferrer">
                 <AiOutlineGithub />
               </a>
-            </li>
+            </motion.li>
           </ul>
         </nav>
       </div>
