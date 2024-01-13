@@ -57,7 +57,7 @@ const Details = () => {
         className="contact__desc"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ type: "tween", ease: "anticipate", duration: 2 }}
+        transition={{ type: "tween", ease: "easeOut", duration: 2 }}
       >
         Me contacter:
       </motion.p>
@@ -80,9 +80,9 @@ const Detail = ({ detail }) => {
     <motion.li 
       className="contact__link"
       ref={ref} 
-      initial={{ opacity: 0, x: 100 }} 
-      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
-      transition={{ type: "tween", ease: "anticipate", duration: 1 }}
+      initial={{ opacity: 0, x: 50 }} 
+      animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
+      transition={{ type: "tween", ease: "easeOut", duration: 1 }}
     >
       {detail.icon}
       {detail.link}

@@ -11,7 +11,7 @@ const Accordion = ({ title, subtitle, description, isOpen, onClick }) => {
         ref={ref}
         initial={{ opacity: 0, x: 100 }} 
         animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
-        transition={{ type: "tween", ease: "anticipate", duration: 1 }}
+        transition={{ type: "tween", ease: "easeOut", duration: 1 }}
       >
         <motion.div className="experiences__item--top" initial={false} onClick={onClick}>
           <div className="experiences__item--title">{title} <span>({subtitle})</span></div>

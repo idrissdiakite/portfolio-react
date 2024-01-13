@@ -77,7 +77,7 @@ const Info = ({ info }) => {
       ref={ref} 
       initial={{ opacity: 0, x: 100 }} 
       animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
-      transition={{ type: "tween", ease: "anticipate", duration: 1 }}
+      transition={{ type: "tween", ease: "easeOut", duration: 1 }}
     >
       <span className="whoiam__info--icon">{info.icon}</span>
       <p className="whoiam__info--text">{info.text}</p>

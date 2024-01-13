@@ -15,14 +15,13 @@
     .contact__desc { text-decoration: underline; }
   }
 
-  &__links {
-    margin-top: 2rem;
-  }
+  &__links { margin-top: 2rem; }
+
+  &__link:not(:first-of-type) { margin-top: 15px; }
 
   &__link {
     display: flex;
     align-items: center;
-    margin-top: 15px;
 
     svg {
       font-size: 30px;
