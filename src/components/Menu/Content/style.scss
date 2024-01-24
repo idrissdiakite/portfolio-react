@@ -51,13 +51,7 @@
           text-decoration: none;
           display: block;
           position: relative;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-size: 200% 100%;
-          background-position: 100%;
-          background-image: linear-gradient(to right, $color-2, $color-2 50%, $color-1 50%);
-          transition: background-position 1s $ease-out;
+          transition: color 0.5s $ease-out;
           overflow: hidden;
           
           @media screen and (min-width: 768px) { font-size: 4.25rem; }
@@ -67,7 +61,7 @@
           @media screen and (min-width: 1680px) { font-size: 5.5rem; }
 
           @media (hover: hover) {
-            &:hover { background-position: 0%; }
+            &:hover { color: $color-2; }
           }
         }
       }

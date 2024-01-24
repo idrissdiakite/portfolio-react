@@ -83,8 +83,8 @@ const Content = () => {
             <motion.li
             transition={{ type: 'tween', ease: 'easeOut', duration: 0.5 }}
               whileHover={{ 
-                rotateX: 0,
-                rotateY: -30
+                rotateX: 30,
+                rotateY: 0
               }}
             >
               <a href="https://www.linkedin.com/in/idiakite" target="_blank" rel="noreferrer">
@@ -94,8 +94,8 @@ const Content = () => {
             <motion.li
               transition={{ type: 'tween', ease: 'easeOut', duration: 0.5 }}
               whileHover={{ 
-                rotateX: 0,
-                rotateY: 30
+                rotateX: 30,
+                rotateY: 0
               }}
             >
               <a href="https://github.com/idrissdiakite" target="_blank" rel="noreferrer">
