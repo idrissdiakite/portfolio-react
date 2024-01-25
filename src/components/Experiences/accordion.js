@@ -29,7 +29,7 @@ const Accordion = ({ title, subtitle, description, isOpen, onClick }) => {
             <motion.div 
               className="experiences__item--content"
               variants={{ collapsed: { scale: 0.9 }, open: { scale: 1 } }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.1 }}
             >
               {description}
             </motion.div>
