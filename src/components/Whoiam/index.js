@@ -14,7 +14,7 @@ const Me = () => {
         animate={{ opacity: 1 }}
         transition={{ type: "tween", ease: "anticipate", duration: 2 }}
       >
-        Me, myself and I en 10 points:
+        En 10 points:
       </motion.p>
       <div className="whoiam__wrapper">
         <Infos />
