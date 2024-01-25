@@ -36,6 +36,7 @@ h1 {
   margin-bottom: 1.5rem;
   word-break: break-word;
   text-transform: uppercase;
+  pointer-events: none;
 
   @media screen and (min-width: 768px) {
     font-size: 4rem;
