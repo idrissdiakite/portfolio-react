@@ -6,7 +6,7 @@
 
 Ce portfolio a été développé initialemment en 2021 juste à la suite de ma formation de développeur full stack. Préférant me consacrer pleinement à la refonte de mon site de musique ilovethistrack.com (headless + webgl), je n'ai effectué que très peu de modifications pour cette [v2](https://github.com/idrissdiakite/portfolio-react/tree/v2), il va donc sans dire que ce projet ne reflète pas forcément l'étandu de mes compétences techniques actuelles. 
 
-Pour cette v2, j'ai gardé la même base (en terme de mise en forme) que la v1, j'ai surtout revu l'architecture complète du projet: création de nouveaux components, concaténation du code et du css.. ainsi que l'intégration de quelques animations via Framer Motion.
+Pour cette v2, j'ai gardé la même base (en terme de mise en forme) que la v1, j'ai surtout revu l'architecture complète du projet: création de nouveaux components, concaténation du code et du css.. ainsi que l'intégration de quelques légères animations via Framer Motion.
 
 ## 📍 V1
 
