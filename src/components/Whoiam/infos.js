@@ -24,7 +24,7 @@ const infos = [
   },
   {
     icon: <IoSchoolOutline />,
-    text: "Titulaire d'un BTS Management des Unités Commerciales.",
+    text: "Titulaire (également) d'un BTS Management des Unités Commerciales.",
   },
   {
     icon: <IoEarOutline />,
