@@ -8,7 +8,6 @@ const Title = ({ className, children }) => {
   useEffect(() => {
     const handleScroll = () => {
       const yOffset = window.scrollY
-      console.log(yOffset)
       setScrollDirection(yOffset > 0 ? 'up' : 'down')
       controls.start({
         y: yOffset * 0.6,
