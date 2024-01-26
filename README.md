@@ -2,7 +2,7 @@
 
 ![Screenshot](screenshot.png)
 
-## ✨ V2
+## ✨ Contexte (V2)
 
 Ce portfolio a été développé initialemment en 2021 juste à la suite de ma formation de développeur full stack. Préférant me consacrer pleinement à la refonte de mon site de musique ilovethistrack.com (headless + webgl), je n'ai effectué que très peu de modifications pour cette [v2](https://github.com/idrissdiakite/portfolio-react/tree/v2), il va donc sans dire que ce projet ne reflète pas forcément l'étandu de mes compétences techniques actuelles. 
 
