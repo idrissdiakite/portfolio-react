@@ -8,9 +8,7 @@ import {
   SiReact,
   SiNextDotJs,
   SiSpotify,
-  SiAngular,
   SiPhp,
-  SiSymfony,
   SiDocker,
   SiGatsby,
   SiGraphql,
@@ -19,10 +17,10 @@ import {
   SiTailwindcss,
   SiSass,
   SiPostcss,
-  SiBootstrap,
+  // SiBootstrap,
   SiFilezilla,
   SiSvg,
-  SiMysql,
+  // SiMysql,
   SiNetlify,
   SiWoo,
   SiStripe,
@@ -44,8 +42,6 @@ import ilttcom from "../../assets/cards/ilttcom-react.png";
 import artshop from "../../assets/cards/artshop-tailwind.png";
 import pictureWp from "../../assets/cards/picture-wp.png";
 import pictureGatsby from "../../assets/cards/picture-gatsby.png";
-import contact from "../../assets/cards/gestionnaire-contact.png";
-import serie from "../../assets/cards/series-angular.png";
 
 const projects = [
   {
@@ -252,41 +248,6 @@ const projects = [
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/picture-wp-gatsbyjs" target="_blank" rel="noreferrer">github</a></li>
         <li><span>‣</span><a href="https://youtu.be/HH5K28mIiEk?si=y28ElToezK0eoxvL" target="_blank" rel="noreferrer">demo</a></li>
-      </ul>
-    ),
-  },
-  {
-    name: "Gestionnaire de contacts",
-    icons: (
-      <ul className="card__icons">
-        <li><SiMysql className="mysql" title="MySQL" /></li>
-        <li><SiPhp className="php" title="PHP" /></li>
-        <li><SiSymfony className="symfony" title="Symfony" /></li>
-        <li><SiBootstrap className="bootstrap" title="Bootstrap" /></li>
-      </ul>
-    ),
-    img: (<img src={contact} alt="Gestionnaire de contact" loading="lazy" />),
-    links: (
-      <ul>
-        <li><span>‣</span><a href="https://github.com/idrissdiakite/gestionnaire-contact" target="_blank" rel="noreferrer">github</a></li>
-        <li><span>‣</span><a href="https://youtu.be/B_eBvb3zPhM?si=dKS8XdeWa5b0Pw6x" target="_blank" rel="noreferrer">demo</a></li>
-      </ul>
-    ),
-  },
-  {
-    name: "Gestionnaire de séries",
-    icons: (
-      <ul className="card__icons">
-        <li><SiMysql className="mysql" title="MySQL" /></li>
-        <li><SiAngular className="angular" title="Angular" /></li>
-        <li><SiBootstrap className="bootstrap" title="Bootstrap" /></li>
-      </ul>
-    ),
-    img: (<img src={serie} alt="Gestionnaire de séries" loading="lazy" />),
-    links: (
-      <ul>
-        <li><span>‣</span><a href="https://github.com/idrissdiakite/series-manager-angular" target="_blank" rel="noreferrer">github</a></li>
-        <li><span>‣</span><a href="https://youtu.be/plx5WmSU6ic?si=oaRP2V7qgdF6ZxOH" target="_blank" rel="noreferrer">demo</a></li>
       </ul>
     ),
   },
