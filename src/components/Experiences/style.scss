@@ -10,14 +10,16 @@
   }
   
   &__item {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 
     @media screen and (min-width: 768px) { margin-bottom: 1rem; }
 
     &--title {
       font-weight: 400;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       cursor: pointer;
+
+      @media screen and (min-width: 768px) { font-size: 1.5rem; }
       
       span {
         font-weight: 200;
@@ -27,12 +29,19 @@
     }
 
     &--content {
-      padding-top: 1rem;
+      padding-top: 0.5rem;
       transform-origin: top center;
 
+      @media screen and (min-width: 768px) { padding-top: 1rem; }
+
       ul li {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+        }
 
         span { 
           opacity: 0.6;

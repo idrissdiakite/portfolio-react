@@ -32,8 +32,9 @@ h1,
 h2 { font-family: $font-2; }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: 8rem;
   margin-bottom: 1.5rem;
+  margin-top: 2rem;
   word-break: break-word;
   text-transform: uppercase;
   pointer-events: none;
@@ -41,6 +42,7 @@ h1 {
   @media screen and (min-width: 768px) {
     font-size: 4rem;
     margin-bottom: 2rem;
+    margin-top: 0;
   }
 
   @media screen and (min-width: 1400px) {
@@ -48,11 +50,22 @@ h1 {
     line-height: 23rem;
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: 1600px) {
+    font-size: 27rem;
+    line-height: 29rem;
+    margin-bottom: 0;
+  }
 }
 
 p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 
   &:not(:last-of-type) { margin-bottom: 1rem; }
 }
@@ -65,7 +78,7 @@ section {
   min-height: 100vh;
   padding: 2rem 1rem;
   overflow: hidden;
-
+  
   @media screen and (min-width: 768px) {
     margin-left: 75px;
     padding: 48px 2.2rem;
@@ -79,6 +92,8 @@ section {
       font-weight: 600;
 
       @media screen and (min-width: 1400px) { margin: -1rem 0 0 -0.5rem; }
+
+      @media screen and (min-width: 1600px) { margin: -1.5rem 0 0 -0.5rem; }
     }
   }
 }

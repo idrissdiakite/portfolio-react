@@ -15,13 +15,27 @@
     .contact__desc { text-decoration: underline; }
   }
 
-  &__links { margin-top: 2rem; }
+  &__links { 
+    margin-top: 1rem; 
+
+    @media screen and (min-width: 1024px) { margin-top: 2rem;  }
+  }
 
   &__link:not(:first-of-type) { margin-top: 15px; }
 
   &__link {
     display: flex;
     align-items: center;
+
+    a {
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
 
     svg {
       font-size: 30px;
@@ -32,8 +46,5 @@
         margin-right: 25px;
       }
     }
-
-    a,
-    p { font-size: 1.5rem; }
   }
 }

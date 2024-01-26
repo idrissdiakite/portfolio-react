@@ -65,7 +65,7 @@
   &--mobile {
     position: absolute;
     right: 1rem;
-    top: 27px;
+    top: 1rem;
     z-index: 15;
     text-transform: uppercase;
     color: $color-1;
@@ -77,8 +77,12 @@
     border: 1px solid $color-3;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
 
-    &.open { transform: rotate(180deg); }
+    &.open { 
+      transform: rotate(180deg); 
+      pointer-events: all;
+    }
 
     @media (hover: hover) {
       &:hover {
