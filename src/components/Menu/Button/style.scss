@@ -77,17 +77,11 @@
     border: 1px solid $color-3;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    pointer-events: none;
 
-    &.open { 
-      transform: rotate(180deg); 
-      pointer-events: all;
-    }
+    &.open { transform: rotate(180deg); }
 
     @media (hover: hover) {
-      &:hover {
-        color: $color-2;
-      }
+      &:hover { color: $color-2; }
     }
 
     @media screen and (min-width: 768px) { display: none; }
