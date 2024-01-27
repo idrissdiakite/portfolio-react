@@ -62,7 +62,11 @@
       }
     }
 
-    &__content { padding: 10px 20px; }
+    &__content { 
+      padding: 10px 0; 
+
+      @media screen and (min-width: 768px) { padidng: 10px 20px; }
+    }
 
     &__top {
       display: flex;
@@ -81,6 +85,10 @@
       display: flex;
 
       li:not(:first-of-type) { margin-left: 5px; }
+
+      svg {
+        @media screen and (max-width: 768px) { width: 15px; }
+      }
     }
 
     &__links {
