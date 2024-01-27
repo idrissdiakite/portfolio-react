@@ -7,4 +7,6 @@
   mix-blend-mode: difference;
   pointer-events: none;
   z-index: 3;
+
+  @media screen and (max-width: 1200px) { display: none; }
 }

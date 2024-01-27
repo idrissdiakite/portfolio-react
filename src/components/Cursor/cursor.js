@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
-import { motion, useMotionValue, useSpring } from 'framer-motion';
-import "./style.scss";
+import { useEffect, useState } from 'react'
+import { motion, useMotionValue, useSpring } from 'framer-motion'
+import "./style.scss"
 
 
 export default function Cursor() {
@@ -22,8 +22,15 @@ export default function Cursor() {
     mouse.y.set(clientY - cursorSize / 2)
   }
 
+  const [isMobile, setIsMobile] = useState(true)
 
   useEffect( () => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1200)
+    }
+
+    handleResize()
+
     window.addEventListener("mousemove", manageMouseMove)
 
     return () => {
@@ -31,8 +38,11 @@ export default function Cursor() {
     }
   })
 
-  return (
-    <motion.div className="cursor" style={{left: smoothMouse.x, top: smoothMouse.y}}></motion.div>
-  )
+  if (isMobile) {
+    return null
+  }
 
+  return (
+    <motion.div className="cursor" style={{ left: smoothMouse.x, top: smoothMouse.y }}></motion.div>
+  )
 }
