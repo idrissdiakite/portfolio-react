@@ -3,6 +3,7 @@ import { useRef, createRef } from 'react';
 import {
   SiHtml5,
   SiCss3,
+  SiGreensock,
   SiJavascript,
   SiTypescript,
   SiReact,
@@ -17,7 +18,7 @@ import {
   SiTailwindcss,
   SiSass,
   SiPostcss,
-  // SiBootstrap,
+  SiBootstrap,
   SiFilezilla,
   SiSvg,
   // SiMysql,
@@ -27,10 +28,9 @@ import {
   SiGooglepay,
   SiApplepay,
   SiPaypal
-
-
 } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
+import bycap from "../../assets/cards/bycap.png";
 import spotify from "../../assets/cards/spotify.png";
 import jeu from "../../assets/cards/jeu.png";
 import paillet from "../../assets/cards/paillet.png";
@@ -44,6 +44,27 @@ import pictureWp from "../../assets/cards/picture-wp.png";
 import pictureGatsby from "../../assets/cards/picture-gatsby.png";
 
 const projects = [
+  {
+    name: "Bycap",
+    icons: (
+      <ul className="card__icons">
+        <li><SiWordpress className="wordpress" title="Wordpress" /></li>
+        <li><SiJavascript className="javascript" title="Javascript" /></li>
+        <li><SiSass className="sass" title="Sass" /></li>
+        <li><SiBootstrap className="bootstrap" title="Bootstrap" /></li>
+        <li><SiFilezilla className="filezila" title="FileZila" /></li>
+        <li><SiGreensock className="greensock" title="Greensock" /></li>
+        <li><SiSvg className="svg" title="SVG" /></li>
+      </ul>
+    ),
+    img: <img src={bycap} alt="Bycap" loading="lazy" />,
+    links: (
+      <ul>
+        <li><span>‣</span><a href="https://github.com/idrissdiakite/bycap-wp-gsap" target="_blank" rel="noreferrer">github</a></li>
+        <li><span>‣</span><a href="https://by-cap.com/" target="_blank" rel="noreferrer">live</a></li>
+      </ul>
+    ),
+  },
   {
     name: "Spotify clone",
     icons: (
