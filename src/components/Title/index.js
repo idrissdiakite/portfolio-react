@@ -11,7 +11,7 @@ const Title = ({ className, children }) => {
       setScrollDirection(yOffset > 0 ? 'up' : 'down')
       controls.start({
         y: yOffset * 0.6,
-        opacity: yOffset > 0 ? 0.1 : 1
+        opacity: yOffset > 0 ? 0.05 : 1
       })
     }
 
