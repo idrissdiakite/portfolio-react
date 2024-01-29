@@ -284,20 +284,24 @@ const Cards = () => {
     return acc
   }, [])
 
-    const imageRefs = useRef([]);
+    const imageRefs = useRef([])
 
     const manageMouseMove = (e, pairIndex) => {
-      const { clientX } = e
-      const xPercent = (clientX / window.innerWidth) * 100
-  
-      imageRefs.current[pairIndex] = imageRefs.current[pairIndex] || []
-  
-      imageRefs.current[pairIndex].forEach((ref, index) => {
-        if (ref.current) {
-          const widthPercent = index === 0 ? 66.66 - xPercent * 0.33 : 33.33 + xPercent * 0.33
-          ref.current.style.width = `${widthPercent}%`;
-        }
-      })
+      const isMobile = window.innerWidth < 1200
+
+      if (!isMobile) {
+        const { clientX } = e
+        const xPercent = (clientX / window.innerWidth) * 100
+    
+        imageRefs.current[pairIndex] = imageRefs.current[pairIndex] || []
+    
+        imageRefs.current[pairIndex].forEach((ref, index) => {
+          if (ref.current) {
+            const widthPercent = index === 0 ? 66.66 - xPercent * 0.33 : 33.33 + xPercent * 0.33
+            ref.current.style.width = `${widthPercent}%`;
+          }
+        })
+      }
     }
 
   return (
@@ -326,7 +330,7 @@ const Cards = () => {
               );
             })}
           </div>
-        );
+        )
       })}
     </>
   );
