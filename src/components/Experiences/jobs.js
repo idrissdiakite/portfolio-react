@@ -99,15 +99,19 @@ const Jobs = () => {
   const toggleAccordion = (index) => {
     setExpanded((prevExpanded) => (prevExpanded === index ? null : index))
 
-    setTimeout(function() {
-      const cv = document.querySelector('.experiences__cv')
-      const y = cv.offsetTop
+    const isMobile = window.innerWidth < 1200
 
-      window.scrollTo({
-        top: y,
-        behavior: "smooth",
-      })
-    }, 20)
+      if (!isMobile) {
+        setTimeout(function() {
+          const cv = document.querySelector('.experiences__cv')
+          const y = cv.offsetTop
+    
+          window.scrollTo({
+            top: y,
+            behavior: "smooth",
+          })
+        }, 20)
+      }
   }
 
   return (
