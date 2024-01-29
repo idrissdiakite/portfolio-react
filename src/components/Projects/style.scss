@@ -56,6 +56,7 @@
         bottom: 0;
         color: transparent;
         filter: brightness(0.8);
+        object-position: 0% 0%;
         transition: filter 0.3s ease-out;
 
         &:hover { filter: brightness(1); }
