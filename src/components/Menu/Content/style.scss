@@ -20,7 +20,7 @@
   .nav {
     position: relative;
     left: 30px;
-    top: 150px;
+    top: 125px;
     width: 100vw;
     overflow: hidden;
 
@@ -45,7 +45,7 @@
 
     &__links {
       li {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
 
         @media screen and (min-width: 768px) { margin-bottom: 10px; }
         
@@ -80,7 +80,7 @@
       @media screen and (min-width: 768px) { margin-top: 40px; }
       
       li {
-        margin-right: 30px;
+        margin-right: 25px;
         
         @media screen and (min-width: 768px) { margin-right: 10px; }
 
