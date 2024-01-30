@@ -2,13 +2,7 @@
 
 ![Screenshot](screenshot.png)
 
-## ✨ Contexte ([v.2](https://github.com/idrissdiakite/portfolio-react/tree/v2))
-
-Ce portfolio a été développé initialemment en 2021 juste à la suite de ma formation de développeur full stack. Préférant me consacrer pleinement à la refonte de mon site de musique ilovethistrack.com (headless + webgl), je n'ai effectué que très peu de modifications pour cette v2, il va donc sans dire que ce projet ne reflète pas forcément l'étandu de mes compétences techniques actuelles. 
-
-Pour cette v2, j'ai gardé la même base (en terme de mise en forme) que la v1, j'ai surtout revu l'architecture complète du projet: création de nouveaux components, concaténation du code et du css, correction des bugs.. ainsi que l'intégration de quelques légères animations via Framer Motion.
-
-## 📍 V1
+## 📍 Contexte
 
 Portfolio réalisé avec React et SCSS (pour la mise en forme).
 - mise en place d'un preloader (gif) avant d'afficher la homepage
@@ -22,6 +16,13 @@ Portfolio réalisé avec React et SCSS (pour la mise en forme).
 - ajout d'un favicon personnalisé
 - gestion du responsive mobile, tablette et grand écran
 - mise en ligne du projet sur Netlify
+
+  
+## ✨ Update ([v2](https://github.com/idrissdiakite/portfolio-react/tree/v2))
+
+Ce portfolio a été développé initialemment en 2021 à la suite de ma formation de développeur full stack. Désireux de mettre à jour mon portfolio mais préférant à choisir, me consacrer pleinement à la refonte de mon site de musique ilovethistrack.com (sûrement en headless + webgl), je n'ai au final effectué que très peu de modifications.
+
+Pour cette v2, j'ai gardé la même base (notamment en terme de mise en forme) que la première version, j'ai néanmoins revu l'architecture complète du projet: création de nouveaux components, concaténation du code, optimisation du css, correction des différents bugs.. ainsi que l'intégration de quelques animations via Framer Motion.
 
 ## 🚀 Installation
 
