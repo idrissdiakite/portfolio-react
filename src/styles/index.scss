@@ -33,7 +33,7 @@ h2 { font-family: $font-2; }
 
 h1 {
   font-size: 3rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   margin-bottom: 1.5rem;
   width: 70%;
   word-break: break-word;
@@ -79,7 +79,7 @@ section {
   position: relative;
   margin: 0 auto;
   min-height: 100vh;
-  padding: 0 1rem;
+  padding: 0 1rem 2rem;
   overflow: hidden;
   
   @media screen and (min-width: 768px) {
