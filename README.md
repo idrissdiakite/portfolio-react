@@ -22,7 +22,7 @@ Portfolio réalisé avec React et SCSS (pour la mise en forme).
 
 Ce portfolio a été développé initialemment en 2021 à la suite de ma formation de développeur full stack. Désireux de mettre à jour mon portfolio mais préférant à choisir, me consacrer pleinement à la refonte de mon site de musique ilovethistrack.com (sûrement en headless + webgl), je n'ai au final effectué que très peu de modifications.
 
-Pour cette v2, j'ai gardé la même base (notamment en terme de mise en forme) que la première version, j'ai néanmoins revu l'architecture complète du projet: création de nouveaux components, concaténation du code, optimisation du css, correction des différents bugs.. ainsi que l'intégration de quelques animations via Framer Motion.
+Pour cette v2, j'ai gardé la même base (notamment en terme de mise en forme) que la première version, j'ai néanmoins revu l'architecture complète du projet: création de nouveaux components, concaténation du code, optimisation du css, correction des différents bugs.. ainsi qu'ajouter quelques animations via Framer Motion.
 
 ## 🚀 Installation
 
