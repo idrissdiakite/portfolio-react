@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { MenuContext } from "../MenuManager";
+import { motion } from "framer-motion";
 import cn from "classnames";
 
 import "./style.scss";
@@ -13,9 +14,15 @@ const Button = () => {
           <span></span>
         </button>
       </div>
-      <button className={cn("menu__btn--mobile", { open })} onClick={() => setOpen(!open)}>
+      <motion.button 
+        className={cn("menu__btn--mobile", { open })} 
+        onClick={() => setOpen(!open)}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 2.5 }}
+      >
         Menu
-      </button>
+      </motion.button>
     </>
   );
 };
