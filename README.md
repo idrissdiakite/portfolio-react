@@ -31,6 +31,6 @@ Pour cette v2, j'ai gardé la même base (notamment en terme de mise en forme) q
 - **npm i** pour installer les dépendances (nodes modules)
 - **npm start** pour lancer le projet
 
-## 💫 Live
+## 🚀 Live
 
 [https://idrissdiakite.netlify.app](https://idrissdiakite.netlify.app)
