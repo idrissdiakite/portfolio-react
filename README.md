@@ -24,13 +24,6 @@ Ce portfolio a été développé initialemment en 2021 à la suite de ma formati
 
 Pour cette v2, j'ai gardé la même base (notamment en terme de mise en forme) que la première version, j'ai néanmoins revu l'architecture complète du projet: création de nouveaux components, concaténation du code, optimisation du css, correction des différents bugs.. ainsi qu'ajouter quelques animations via Framer Motion.
 
-## 🚀 Installation
-
-1. git clone ou télécharger le projet
-2. à la racine du projet:
-- **npm i** pour installer les dépendances (nodes modules)
-- **npm start** pour lancer le projet
-
 ## 🚀 Live
 
 [https://idrissdiakite.netlify.app](https://idrissdiakite.netlify.app)
