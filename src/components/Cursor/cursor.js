@@ -43,6 +43,14 @@ export default function Cursor() {
   }
 
   return (
-    <motion.div className="cursor" style={{ left: smoothMouse.x, top: smoothMouse.y }}></motion.div>
+    <motion.div 
+      className="cursor" 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 5 }}
+      style={{ left: smoothMouse.x, top: smoothMouse.y }}
+      >
+      </motion.div>
   )
 }
