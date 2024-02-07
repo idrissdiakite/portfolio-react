@@ -10,6 +10,7 @@ import {
   SiNextDotJs,
   SiSpotify,
   SiPhp,
+  SiLaravel,
   SiDocker,
   SiGatsby,
   SiGraphql,
@@ -50,6 +51,7 @@ const projects = [
     name: "Anyos",
     icons: (
       <ul className="card__icons">
+        <li><SiLaravel className="laravel" title="Laravel" /></li>
         <li><SiWordpress className="wordpress" title="Wordpress" /></li>
         <li><SiJavascript className="javascript" title="Javascript" /></li>
         <li><SiSass className="sass" title="Sass" /></li>
@@ -71,6 +73,8 @@ const projects = [
     name: "Quodagis",
     icons: (
       <ul className="card__icons">
+        
+        <li><SiLaravel className="laravel" title="Laravel" /></li>
         <li><SiWordpress className="wordpress" title="Wordpress" /></li>
         <li><SiJavascript className="javascript" title="Javascript" /></li>
         <li><SiSass className="sass" title="Sass" /></li>
@@ -92,6 +96,7 @@ const projects = [
     name: "Bycap",
     icons: (
       <ul className="card__icons">
+        <li><SiLaravel className="laravel" title="Laravel" /></li>
         <li><SiWordpress className="wordpress" title="Wordpress" /></li>
         <li><SiJavascript className="javascript" title="Javascript" /></li>
         <li><SiSass className="sass" title="Sass" /></li>
