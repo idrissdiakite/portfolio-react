@@ -32,6 +32,7 @@ import {
 } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
 import anyos from "../../assets/cards/anyos.png";
+import cimes from "../../assets/cards/cimes.png";
 import quodagis from "../../assets/cards/quodagis.png";
 import bycap from "../../assets/cards/bycap.png";
 import spotify from "../../assets/cards/spotify.png";
@@ -89,6 +90,27 @@ const projects = [
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/quodagis/tree/main" target="_blank" rel="noreferrer">github</a></li>
         <li><span>‣</span><a href="https://quodagis.fr/" target="_blank" rel="noreferrer">live</a></li>
+      </ul>
+    ),
+  },
+  {
+    name: "Cimes",
+    icons: (
+      <ul className="card__icons">
+        <li><SiLaravel className="laravel" title="Laravel" /></li>
+        <li><SiWordpress className="wordpress" title="Wordpress" /></li>
+        <li><SiJavascript className="javascript" title="Javascript" /></li>
+        <li><SiSass className="sass" title="Sass" /></li>
+        <li><SiBootstrap className="bootstrap" title="Bootstrap" /></li>
+        <li><SiFilezilla className="filezila" title="FileZila" /></li>
+        <li><SiGreensock className="greensock" title="Greensock" /></li>
+        <li><SiSvg className="svg" title="SVG" /></li>
+      </ul>
+    ),
+    img: <img src={cimes} alt="Cimes" loading="lazy" />,
+    links: (
+      <ul>
+        <li><span>‣</span><a href="https://cimes.fr/" target="_blank" rel="noreferrer">live</a></li>
       </ul>
     ),
   },
