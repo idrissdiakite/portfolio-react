@@ -5,7 +5,7 @@ import Accordion from "./accordion";
 
 const jobs = [
   {
-    title: "Développeur créatif - Digital Cover",
+    title: "Développeur full-stack/créatif - Digital Cover",
     subtitle: "cdi - janvier 2023 à ce jour",
     description: (
       <ul>
@@ -19,7 +19,7 @@ const jobs = [
     ),
   },
   {
-    title: "Développeur frontend - Zelda",
+    title: "Développeur full-stack - Zelda",
     subtitle: "cdi - octobre 2021 à novembre 2022",
     description: (
       <ul>
