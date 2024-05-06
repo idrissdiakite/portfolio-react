@@ -110,7 +110,7 @@ const projects = [
     img: <img src={cimes} alt="Cimes" loading="lazy" />,
     links: (
       <ul>
-        <li><span>‣</span><a href="https://cimes.fr/" target="_blank" rel="noreferrer">live</a></li>
+        <li><span>‣</span><a href="https://cimes.idiakite.fr/" target="_blank" rel="noreferrer">live</a></li>
       </ul>
     ),
   },
