@@ -10,18 +10,12 @@ const Home = () => {
   useEffect(() => {
     const isFirstVisit = localStorage.getItem('isFirstVisit')
 
-    const menu = document.querySelector('.menu__btn')
-
     if (!isFirstVisit) {
       setTimeout(() => {
         setLoader(false)
-        menu.style.opacity = 1
         localStorage.setItem('isFirstVisit', 'false')
       }, 2500)
-    } else { 
-      setLoader(false) 
-      menu.style.opacity = 1
-    }
+    } else { setLoader(false) }
   }, [])
 
   return loader ? (
