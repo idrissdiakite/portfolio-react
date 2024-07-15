@@ -22,6 +22,8 @@
     }
 
     .card {
+      transition: width 0.1s linear;
+
       @media screen and (max-width: 1024px) { margin-top: 1rem; }
 
       @media screen and (min-width: 1024px) {
@@ -193,4 +195,7 @@
 }
 .laravel:hover {
   color: #ff291a;
+}
+.framer:hover {
+  color: #8015f2;
 }

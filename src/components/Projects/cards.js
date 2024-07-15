@@ -22,13 +22,14 @@ import {
   SiBootstrap,
   SiFilezilla,
   SiSvg,
+  SiFramer,
   // SiMysql,
   SiNetlify,
   SiWoo,
   SiStripe,
   SiGooglepay,
   SiApplepay,
-  SiPaypal
+  SiPaypal,
 } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
 import anyos from "../../assets/cards/anyos.png";
@@ -42,12 +43,33 @@ import zeldaNY from "../../assets/cards/zelda-ny.png";
 import ateliers from "../../assets/cards/ateliers.png";
 import birdiebox from "../../assets/cards/birdie-box.png";
 import portfolio from "../../assets/cards/portfolio.png";
-import ilttcom from "../../assets/cards/ilttcom-react.png";
+import ilttcom from "../../assets/cards/ilttcom.png";
+import appMusic from "../../assets/cards/ilttcom-react.png";
 import artshop from "../../assets/cards/artshop-tailwind.png";
 import pictureWp from "../../assets/cards/picture-wp.png";
 import pictureGatsby from "../../assets/cards/picture-gatsby.png";
 
 const projects = [
+  {
+    name: "ilttcom (en cours)",
+    icons: (
+      <ul className="card__icons">
+        <li><SiFramer className="framer" title="Framer Motion" /></li>
+        <li><SiNextDotJs className="nextjs" title="Nextjs" /></li>
+        <li><SiWordpress className="wordpress" title="Wordpress" /></li>
+        <li><SiGraphql className="graphql" title="GraphQL" /></li>
+        <li><SiSass className="sass" title="Sass" /></li>
+        <li><SiSvg className="svg" title="SVG" /></li>
+        <li><SiTailwindcss className="tailwind" title="Tailwind" /></li>
+      </ul>
+    ),
+    img: <img src={ilttcom} alt="ilovethistrack.com" loading="lazy" />,
+    links: (
+      <ul>
+        <li><span>‣</span><a href="https://ilttcom-next.vercel.app/" target="_blank" rel="noreferrer">live</a></li>
+      </ul>
+    ),
+  },
   {
     name: "Anyos",
     icons: (
@@ -269,7 +291,7 @@ const projects = [
     ),
   },
   {
-    name: "ilttcom",
+    name: "App musicale",
     icons: (
       <ul className="card__icons">
         <li><SiReact className="react" title="React" /></li>
@@ -279,7 +301,7 @@ const projects = [
         <li><SiNetlify className="netlify" title="Netlify" /></li>
       </ul>
     ),
-    img: <img src={ilttcom} alt="ilttcom react" loading="lazy" />,
+    img: <img src={appMusic} alt="App musicale" loading="lazy" />,
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/ilttcom-react-airtable" target="_blank" rel="noreferrer">github</a></li>
