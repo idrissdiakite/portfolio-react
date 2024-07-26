@@ -6,11 +6,12 @@ import Accordion from "./accordion";
 const jobs = [
   {
     title: "Développeur full-stack/créatif - Digital Cover",
-    subtitle: "cdi - janvier 2023 à ce jour",
+    subtitle: "cdi - janvier 2023 à avril 2024",
     description: (
       <ul>
         <li>・ Création de sites web/thèmes wordpress sur-mesure <span>(php/laravel/blade, acf/cpt ui, es6, gsap/scrolltrigger, taxi.js, lenis...)</span></li>
-        <li>・ Déploiement et mise à jour prods/preprods via ssh <span>(terminal/wrap)</span></li>
+        <li>・ CI/CD, déploiements et mises à jour prods/preprods <span>(terminal/wrap, gitlab, ssh)</span></li>
+        <li>・ Maintenance, debug, TMA, ajout de fonctionnalités sur divers projets <span>(PHP, Gatsby, Vuejs..)</span></li>
         <li>・ Rédaction de documentations techniques <span>(google docs)</span></li>
         <li>・ Tests compatibilité navigateurs et accessibilité <span>(lighthouse, caniuse..)</span></li>
         <li>・ Gestion hébergements serveurs + création bases de données <span>(ovh)</span></li>
