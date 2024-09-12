@@ -66,6 +66,7 @@ const projects = [
     img: <img src={ilttcom} alt="ilovethistrack.com" loading="lazy" />,
     links: (
       <ul>
+        <li><span>‣</span><a href="https://github.com/idrissdiakite/ilovethistrack.com" target="_blank" rel="noreferrer">github</a></li>
         <li><span>‣</span><a href="https://ilttcom-next.vercel.app/" target="_blank" rel="noreferrer">live</a></li>
       </ul>
     ),
@@ -132,7 +133,7 @@ const projects = [
     img: <img src={cimes} alt="Cimes" loading="lazy" />,
     links: (
       <ul>
-        <li><span>‣</span><a href="https://cimes.idiakite.fr/" target="_blank" rel="noreferrer">live</a></li>
+        <li><span>‣</span><a href="https://www.cimesfrance.com/" target="_blank" rel="noreferrer">live</a></li>
       </ul>
     ),
   },
