@@ -9,7 +9,7 @@ const Contact = () => {
       <Title className="contact__title">Contact</Title>
       <div className="contact__suptitle">
         <p>À la recherche d'un nouveau challenge.</p>
-        <p>Ouvert aux propositions - développeur front-end/créatif.</p>
+        <p>Ouvert aux propositions - développeur front-end.</p>
       </div>
       <Details />
     </>
