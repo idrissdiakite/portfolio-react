@@ -67,7 +67,7 @@ const projects = [
     links: (
       <ul>
         <li><span>‣</span><a href="https://github.com/idrissdiakite/ilovethistrack.com" target="_blank" rel="noreferrer">github</a></li>
-        <li><span>‣</span><a href="https://ilttcom-next.vercel.app/" target="_blank" rel="noreferrer">live</a></li>
+        <li><span>‣</span><a href="https://www.beta.ilovethistrack.com/" target="_blank" rel="noreferrer">live</a></li>
       </ul>
     ),
   },
